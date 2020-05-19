@@ -227,12 +227,12 @@ P6_r := origin(RF6_r):</Text-field>
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">q6_r := [theta6(t)]:
 <Font style="Text">Unit Vectors:</Font>
 i6   := uvec_X(RF6_r):
-j6   := uvec_Y(RF6_r):<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation>
+j6   := uvec_Y(RF6_r):<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation>
 k6   := uvec_Z(RF6_r):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L43" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font bold="true">Constraints</Font></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Font size="18" bold="true">Constraints</Font></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L61" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -260,7 +260,7 @@ k6   := uvec_Z(RF6_r):</Text-field>
 </Input>
 </Group><Presentation-Block>
 <Group view="code" labelreference="L36833" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Heading 2" layout="Heading 2">Plot function</Text-field>
+<Input><Text-field style="Heading 2" layout="Heading 2"><Font size="18">Plot function</Font></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L36834" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -269,7 +269,7 @@ plots[setcolors](&quot;spring&quot;):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L36832" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech:=proc(sol_kine::{set(`=`)}, data::{set(`=`)}, dof::{set(`=`)},$)<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=</Equation>local p0,p1, p2, p3, p4, p5, p5_a,p6,pp2,pp3,r,lt,p6_a,p6_b,p_seat:
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech:=proc(sol_kine::{set(`=`)}, data::{set(`=`)}, dof::{set(`=`)},$)<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=</Equation>local p0,p1, p2, p3, p4, p5, p5_a,p6,pp2,pp3,r,lt,p6_a,p6_b,p_seat, p6x, p6y, p6z:
 r:=10:lt:=10:
 p0:=subs(sol_kine,data,dof,[comp_XYZ(P0,ground)]):
 p1:=subs(sol_kine,data,dof,[comp_XYZ(P1_r,ground)]):
@@ -284,6 +284,10 @@ p6_b:=subs(sol_kine,data,dof,[comp_XYZ(P6_r+make_VECTOR(RF6_r, 0,0,-L9)+make_VEC
 #p_seat:=subs(sol_kine,data,dof,[comp_XYZ(SSeat,ground)]):
 pp2:=subs(sol_kine,data,dof,[comp_XYZ(Pp_2r,ground)]):
 pp3:=subs(sol_kine,data,dof,[comp_XYZ(Pp_3r,ground)]):
+
+p6x:=subs(sol_kine,data,dof,[comp_XYZ(P6_r+make_VECTOR(RF6_r, 100,0,0),ground)]):
+p6y:=subs(sol_kine,data,dof,[comp_XYZ(P6_r+make_VECTOR(RF6_r, 0,100,0),ground)]):
+p6z:=subs(sol_kine,data,dof,[comp_XYZ(P6_r+make_VECTOR(RF6_r, 0,0,100),ground)]):
 
 display(plottools:-sphere(p1,r,color=cc[1]),
 plottools:-sphere(p2,r,color=cc[1]),
@@ -310,22 +314,30 @@ plottools:-line(p6_a,p6_b,color=&quot;Blue&quot;, thickness=lt),
 plots:-arrow(p0,[100,0,0],color=&quot;Red&quot;, shape=arrow),
 plots:-arrow(p0,[0,100,0],color=&quot;Green&quot;, shape=arrow),
 plots:-arrow(p0,[0,0,100],color=&quot;Black&quot;, shape=arrow),
+
+plottools:-line(p6,p6x,color=&quot;Red&quot;, thickness=lt),
+plottools:-line(p6,p6y,color=&quot;Green&quot;, thickness=lt),
+plottools:-line(p6,p6z,color=&quot;Black&quot;, thickness=lt),
 scaling=constrained,
 axes=boxed
 ):
 end:</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
-<Group view="code" hide-input="false" labelreference="L36831" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEpc2ltcGxpZnlGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSShtZmVuY2VkR0YkNiQtRiM2KC1GLDYlUSVzdWJzRidGL0YyLUY2NiQtRiM2KS1GNjYmLUYjNjctRiw2JVEic0YnRi9GMi1GNjYkLUYjNiUtRiw2JVEidEYnRi9GMi8lK2V4ZWN1dGFibGVHUSZmYWxzZUYnL0YzUSdub3JtYWxGJ0ZSLUkjbW9HRiQ2LVEiPUYnRlIvJSZmZW5jZUdGUS8lKnNlcGFyYXRvckdGUS8lKXN0cmV0Y2h5R0ZRLyUqc3ltbWV0cmljR0ZRLyUobGFyZ2VvcEdGUS8lLm1vdmFibGVsaW1pdHNHRlEvJSdhY2NlbnRHRlEvJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0Ziby1JI21uR0YkNiRRIjBGJ0ZSLUZVNi1RIixGJ0ZSRlgvRmVuRjFGZm5GaG5Gam5GXG9GXm8vRmFvUSYwLjBlbUYnL0Zkb1EsMC4zMzMzMzMzZW1GJy1GLDYlUSd0aGV0YTFGJ0YvRjJGSEZURmVvRmlvLUYsNiVRJ3RoZXRhNUYnRi9GMkZIRlRGZW9GaW8tRiw2JVEndGhldGE2RidGL0YyRkhGVEZlb0ZPRlJGUi8lJW9wZW5HUSJ8ZnJGJy8lJmNsb3NlR1EifGhyRidGaW8tRiw2JVElZGF0YUYnRi9GMkZpby1GLDYlUSRraW5GJ0YvRjJGT0ZSRlJGaW8tRiw2JVEpZXhwbGljaXRGJ0YvRjJGT0ZSRlJGT0ZS">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEpc2ltcGxpZnlGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSShtZmVuY2VkR0YkNiQtRiM2KC1GLDYlUSVzdWJzRidGL0YyLUY2NiQtRiM2KS1GNjYmLUYjNjctRiw2JVEic0YnRi9GMi1GNjYkLUYjNiUtRiw2JVEidEYnRi9GMi8lK2V4ZWN1dGFibGVHUSZmYWxzZUYnL0YzUSdub3JtYWxGJ0ZSLUkjbW9HRiQ2LVEiPUYnRlIvJSZmZW5jZUdGUS8lKnNlcGFyYXRvckdGUS8lKXN0cmV0Y2h5R0ZRLyUqc3ltbWV0cmljR0ZRLyUobGFyZ2VvcEdGUS8lLm1vdmFibGVsaW1pdHNHRlEvJSdhY2NlbnRHRlEvJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0Ziby1JI21uR0YkNiRRIjBGJ0ZSLUZVNi1RIixGJ0ZSRlgvRmVuRjFGZm5GaG5Gam5GXG9GXm8vRmFvUSYwLjBlbUYnL0Zkb1EsMC4zMzMzMzMzZW1GJy1GLDYlUSd0aGV0YTFGJ0YvRjJGSEZURmVvRmlvLUYsNiVRJ3RoZXRhNUYnRi9GMkZIRlRGZW9GaW8tRiw2JVEndGhldGE2RidGL0YyRkhGVEZlb0ZPRlJGUi8lJW9wZW5HUSJ8ZnJGJy8lJmNsb3NlR1EifGhyRidGaW8tRiw2JVElZGF0YUYnRi9GMkZpby1GLDYlUSRraW5GJ0YvRjJGT0ZSRlJGaW8tRiw2JVEpZXhwbGljaXRGJ0YvRjJGT0ZSRlJGT0ZS</Equation></Text-field>
+<Group view="code" hide-input="false" labelreference="L37047" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dof := {s(t) = 88, theta1(t) = Pi/3, theta5(t) = -Pi/3, theta6(t) = 0};</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" labelreference="L37017" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">simplify(subs(dof, data, kin), explicit);</Text-field>
 </Input>
 </Group></Presentation-Block>
 <Group labelreference="L274" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech(kin, data, {s(t)=0,theta1(t)=0,theta5(t)=0,theta6(t)=0});#{theta2(t)=0,theta4(t)=0}</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech(kin, data, dof);</Text-field>
 </Input>
 </Group>
 <Group labelreference="L271" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font bold="true">ANIMATION</Font></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Font size="18" bold="true">ANIMATION</Font></Text-field>
 </Input>
 </Group>
 <Group labelreference="L66" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -333,32 +345,25 @@ end:</Text-field>
 #dof:={s(t)=0,theta1(t)=0,theta5(t)=0,theta6(t)=-THETA1}:</Text-field>
 </Input>
 </Group>
-<Group labelreference="L77" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">animate(draw_mech, [kin, data, dof], THETA1 =0 .. 2*Pi)</Text-field>
+<Group hide-input="false" labelreference="L77" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#animate(draw_mech, [kin, data, dof], THETA1 =0 .. 2*Pi)</Text-field>
 </Input>
-<Input><Text-field prompt="&gt; " style="Maple Input" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false"></Text-field>
+<Input><Text-field style="Text" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false"><Font size="18" bold="true">Constraints' Plots</Font></Text-field>
 </Input>
-<Input><Text-field prompt="&gt; " style="Maple Input" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false"></Text-field>
-</Input>
-<Input><Text-field prompt="&gt; " style="Maple Input" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false"></Text-field>
-</Input>
-<Input><Text-field prompt="&gt; " style="Maple Input" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false"></Text-field>
-</Input>
-<Input><Text-field prompt="&gt; " style="Maple Input" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L269" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">subs( kin, data, s(t) = st, -theta4(t)*180/Pi<Font encoding="UTF-8">); # theta \303\250 definita al contrario
-</Font>plot(%, st = 88..89,
+<Input><Text-field prompt="&gt; " style="Maple Input" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false">display(Array(1..2,
+[plot(subs( kin, data, s(t) = st, theta2(t)*180/Pi), st = 0..100,
+view = -180..180,
+labels = [typeset(s, [m]), typeset(theta2, [deg])],
+title = typeset(&quot;First revolute joint angle &quot;,  theta2, &quot; as a function of joint angle &quot;, s) ),
+plot(subs( kin, data, s(t) = st, theta4(t)*180/Pi), st = 0..100,
 view = -180..180,
 labels = [typeset(s, [m]), typeset(theta4, [deg])],
-title = typeset(&quot;Second revolute joint angle &quot;,  theta4, &quot; as a function of joint angle &quot;, s) );
-
-min(subs( kin, data, s(t) = st, -theta4(t)*180/Pi))</Text-field>
+title = typeset(&quot;Second revolute joint angle &quot;,  theta4, &quot; as a function of joint angle &quot;, s) )]
+));</Text-field>
 </Input>
 </Group>
-<Group labelreference="L280" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Group labelreference="L36918" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Worksheet>
