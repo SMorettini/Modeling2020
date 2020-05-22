@@ -124,7 +124,7 @@ with(plots):
 with(MBSymba_r6):with(LinearAlgebra):</Text-field>
 </Input>
 </Group>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Recursive Formulation</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Recursive Formulation</Font></Text-field></Title>
 <Group labelreference="L4" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">Global referrence frame</Text-field>
 </Input>
@@ -282,11 +282,67 @@ k6   := uvec_Z(RF6_r):</Text-field>
 <Group hide-input="false" labelreference="L64" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data := {L1 = 195, L2 = 266, L3 = 130, L4 = 59.3, L5 = 175, L6 = 207, L7 = 64.9, L8 = 64.9, L9 = 120, L10=40, phi1 = -Pi/5, phi2 = Pi/4};
 qd_vars := {theta2(t), theta4(t)};
-qi_vars := {s(t)};</Text-field>
+qi_vars := {s(t)};
+q_vars := {theta1(t),s(t),theta2(t), theta4(t),theta5(t), theta6(t)};</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L59" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin := solve(subs(data,PPhi), qd_vars);</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin := solve(subs(data,PPhi), qd_vars);
+</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43745" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">q_vars_to_symbol := {seq(q_vars[i] = op(0, q_vars[i]), i = 1 .. nops(q_vars))};</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43746" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">q_vars_to_function := {seq(op(0,lhs(q_vars_to_symbol[i])) =  lhs(q_vars_to_symbol[i]), i = 1 .. nops(q_vars_to_symbol))};</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43728" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Heading 3" layout="Heading 3"><Font size="16">Aumented jacobian</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L45048" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Invece di metter omega_*t basterebbe metterci i valori ottenuti numericamente nelle sezioni finali come funzione del tempo</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43727" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile_time := omegas*t;#unapply( subs( profile_data, s_profile) , time): 
+theta1_profile_time := omega1*t;#unapply( subs( profile_data, theta1_profile), time):
+theta5_profile_time := omega5*t;#unapply( subs( profile_data, theta5_profile), time):
+theta6_profile_time := omega6*t;#unapply( subs( profile_data, theta6_profile), time):
+omegas :=0.4; omega1 := 0.007; omega5 := 0.008; omega6 := 0.009;
+</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43730" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">PSI := PPhi union 
+[s(t) - s_profile_time] union 
+[theta1(t) - theta1_profile_time] union 
+[theta5(t) - theta5_profile_time] union 
+[theta6(t) - theta6_profile_time]: &lt;%&gt;;</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43731" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_augmented := solve(subs(data,PSI), q_vars);</Text-field>
+</Input>
+</Group><Presentation-Block></Presentation-Block><Presentation-Block>
+<Group view="code" hide-input="false" labelreference="L43836" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_solutions := Vector( [ seq( subs(t=x, kin_augmented)  , x=0..180) ] ):
+display( 
+plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][1])  ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[1],legend=typeset(q_vars[1]) ),
+plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][2]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[2],legend=typeset(q_vars[2]) ),
+plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][3]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[3],legend=typeset(q_vars[3]) ),
+plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][4]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[4],legend=typeset(q_vars[4]) ),
+plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][5]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[5],legend=typeset(q_vars[5]) ),
+plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][6]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[6],legend=typeset(q_vars[6]) ),
+         labels = [typeset(t,&quot;[s]&quot;),pos],
+         title = &quot;Position&quot;);</Text-field>
+</Input>
+</Group></Presentation-Block>
+<Group hide-input="false" labelreference="L43732" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
 </Section>
@@ -377,177 +433,7 @@ plot(subs( kin, data, s(t) = st, theta4(t)*180/Pi), st = 0..100, color = cc[2], 
 </Group>
 </Section>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Motion Profiles</Font></Text-field></Title>
-<Group hide-input="false" labelreference="L41922" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">profile_data := { f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60}:</Text-field>
-</Input>
-</Group>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">s(time) profile</Text-field></Title>
-<Group hide-input="false" labelreference="L40587" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile := 0.51 + 0.51 * piecewise(
-time&gt;=0 and time&lt;=45, sin(2*Pi*(f_0*time+((f_1-f_0)/2*T)*time^2)),
-time&gt;45 and time&lt;=90, sin(2*Pi*(f_0*(90-time)+((f_1-f_0)/2*T)*(90-time)^2)),
-time&gt;90 and time&lt;=140, sin(2*Pi*(f_0*(time-90)+((f_1-f_0)/2*T)*(time-90)^2)), 
-time&gt;140 and time&lt;=180, sin(2*Pi*(f_0*(180-time)+((f_1-f_0)/2*T)*(180-time)^2)));</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40591" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(profile_data, 50*s_profile),time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40592" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40595" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dst:= diff(s_profile, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40593" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=40, dst),time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40596" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40594" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2st:= diff(dst, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40590" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=60, d2st),time=0..180);</Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta1(time) profile</Text-field></Title>
-<Group hide-input="false" labelreference="L40574" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta1_profile:= piecewise(
-time&gt;=0 and time&lt;=85, time^2/45 - trunc(time^2/45 / (2*Pi))*2*Pi,
-time&gt;85 and time&lt;=105, -((time - 95)/(4*Pi))^2 + 2*Pi,
-time&gt;105 and time&lt;=180, (180-time)^2/36 - trunc((180-time)^2/36 / (2*Pi))*2*Pi);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40589" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(theta1_profile),time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40573" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40580" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta1t:= diff(theta1_profile, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40582" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(dtheta1t,time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40575" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40583" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta1t:= diff(dtheta1t, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40572" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(d2theta1t,time=0..180);</Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta5(time) profile</Text-field></Title>
-<Group hide-input="false" labelreference="L40586" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta5_profile:= piecewise(
-time&gt;=0 and time&lt;=45, time^2/45 - trunc(time^2/45 / (2*Pi))*2*Pi,
-time&gt;45 and time&lt;=90, (90-time)^2/45 - trunc((90-time)^2/45 / (2*Pi))*2*Pi,
-time&gt;90 and time&lt;=135, (time-90)^2/45 - trunc((time-90)^2/45 / (2*Pi))*2*Pi,
-time&gt;105 and time&lt;=180, (180-time)^2/36 - trunc((180-time)^2/36 / (2*Pi))*2*Pi);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40578" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(theta5_profile),time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40585" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40581" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta5t:= diff(theta5_profile, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40579" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(dtheta5t,time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40584" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40576" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta5t:= diff(dtheta5t, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40577" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(d2theta5t,time=0..180);</Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta6(time) profile</Text-field></Title>
-<Group hide-input="false" labelreference="L40776" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta6_profile:= piecewise(
-time&gt;=0 and time&lt;=45, sin(2*Pi*(f_0*time+((f_1-f_0)/2*T)*time^2)),
-time&gt;45 and time&lt;=90, sin(2*Pi*(f_0*(90-time)+((f_1-f_0)/2*T)*(90-time)^2)), 
-time&gt;90 and time&lt;=140, sin(2*Pi*(f_0*(time-90)+((f_1-f_0)/2*T)*(time-90)^2)), 
-time&gt;140 and time&lt;=180, sin(2*Pi*(f_0*(180-time)+((f_1-f_0)/2*T)*(180-time)^2)));</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40779" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(profile_data, theta6_profile),time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40775" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40777" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta6t:= diff(theta6_profile, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40780" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, dtheta6t),time=0..180);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40778" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L40774" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta6t:= diff(dtheta6t, time):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L40773" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, d2theta6t),time=0..180);</Text-field>
-</Input>
-</Group>
-</Section>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Animation</Font></Text-field></Title>
-<Group hide-input="false" labelreference="L40724" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dof:={s(t)=40+sin(time)*10,theta1(t)=time,theta5(t)=-time,theta6(t)=-time}: 
-animate(draw_mech, [kin, data, dof], time =0 .. 2*Pi);
-</Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L41460" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#dof:={s(t)=s_profile,theta1(t)=theta1_profile,theta5(t)=theta5_profile,theta6(t)=theta6_profile}:
-#animate(draw_mech, [kin, data, subs(profile_data, dof)], time=0..180,frames=180); # Think twice before executing 180 frames of those profile (&gt;300MB file)</Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Working space</Font></Text-field></Title><Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Working Space</Font></Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L42172" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#plot mechanism for animating
 
@@ -614,7 +500,7 @@ plots:-display( Ptriang,
 </Input>
 </Group></Presentation-Block>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Initial position Problem</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Initial position Problem</Font></Text-field></Title>
 <Group labelreference="L37063" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" size="18" layout="Normal"><Font size="18" bold="true">Analityc method</Font></Text-field>
 </Input>
@@ -668,7 +554,7 @@ plots:-display( Ptriang,
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Velocity</Font></Text-field></Title><Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Velocity</Font></Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L39115" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal"><Font size="16" bold="true">Jacobians:</Font></Text-field>
 </Input>
@@ -700,10 +586,10 @@ nops(%);</Text-field>
 </Group>
 <Group view="code" labelreference="L39900" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" bold="false" layout="Normal"><Font bold="true">display( 
-plot(subs(subs_qd_vars_vel, kin, data, diff(s(t), t)<Font opaque="true" background="[255,255,0]"> = 1</Font> , s(t) = st, qd_vars_dot[1]*180/Pi),st = 0..57,color=cc[1],legend=typeset(diff(qd_vars[1],t))),
-plot(subs(subs_qd_vars_vel, kin, data, diff(s(t), t)<Font opaque="true" background="[255,255,0]"> = 1</Font>, s(t) = st, qd_vars_dot[2]*180/Pi),st = 0..57,color=cc[2],legend=typeset(diff(qd_vars[2],t))),
+plot(subs(subs_qd_vars_vel, kin, data, <Font opaque="true" background="[255,255,0]" foreground="[0,0,0]">diff(s(t),t) = 1</Font>, s(t) = st, qd_vars_dot[1]*180/Pi), st = 0..100,color=cc[1],legend=typeset(diff(qd_vars[1],t))),
+plot(subs(subs_qd_vars_vel, kin, data, <Font opaque="true" background="[255,255,0]">diff(s(t),t) = 1</Font>, s(t) = st, qd_vars_dot[2]*180/Pi), st = 0..100,color=cc[2],legend=typeset(diff(qd_vars[2],t))),
          labels = [typeset(s,&quot;[m]&quot;),vel],
-         title = &quot; Velocity with driven body moving at constant velocity rate&quot;);</Font></Text-field>
+         title = &quot; Velocity with driven body <Font opaque="true" background="[255,255,0]">moving at constant velocity rate</Font>&quot;);</Font></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" labelreference="L39121" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -732,7 +618,7 @@ plot(subs(subs_qd_vars_vel, kin, data, diff(s(t), t)<Font opaque="true" backgrou
 </Input>
 </Group></Presentation-Block>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Acceleration</Font></Text-field></Title><Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Acceleration</Font></Text-field></Title><Presentation-Block>
 <Group labelreference="L39132" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">We can now compute the acceleration just by differentiating the velocities.
 qD' = Tau(qD,qI).qI'
@@ -799,6 +685,398 @@ plot(subs(subs_qd_vars_acc, kin,data, s(t) = st, s__dot__dot<Font opaque="true" 
 <Group labelreference="L40454" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
+</Group>
+<Group view="code" labelreference="L42958" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+</Input>
 </Group></Presentation-Block>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Motion Profiles</Font></Text-field></Title>
+<Group hide-input="false" labelreference="L42932" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">profile_data := { f_0 = 1/(Pi*3000), f_1 = 1/(Pi*6000), T = 60}:</Text-field>
+</Input>
+</Group>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">s(time) profile</Text-field></Title>
+<Group hide-input="false" labelreference="L42905" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile := 0.51 + 0.51 * piecewise(
+time&gt;=0 and time&lt;=45, sin(2*Pi*(f_0*time+((f_1-f_0)/2*T)*time^2)),
+time&gt;45 and time&lt;=90, sin(2*Pi*(f_0*(90-time)+((f_1-f_0)/2*T)*(90-time)^2)),
+time&gt;90 and time&lt;=140, sin(2*Pi*(f_0*(time-90)+((f_1-f_0)/2*T)*(time-90)^2)), 
+time&gt;140 and time&lt;=180, sin(2*Pi*(f_0*(180-time)+((f_1-f_0)/2*T)*(180-time)^2))):
+
+SS := [ seq(  evalf( subs(profile_data, eval( s_profile, time = x ))) , x = 0..180)]:
+CurveFitting:-Spline( &lt; [seq(i, i=0..180)] &gt; , &lt;SS&gt; , Timee):
+SS_spline := unapply(%,[Timee]):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42908" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(profile_data, s_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(SS_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42907" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42915" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dst:= diff(s_profile, time):
+dSSt := diff(SS_spline(Timer), Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42906" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=40, dst),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(dSSt(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42913" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42917" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2st:= diff(dst, time):
+d2SSt := diff(SS_spline(Timer), Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42909" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=60, d2st),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(d2SSt(Timer), Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43448" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L43441" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3st:= diff(d2st, time):
+d3SSt := diff(SS_spline(Timer), Timer, Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43442" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=60, d3st),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(d3SSt(Timer), Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta1(time) profile</Text-field></Title>
+<Group hide-input="false" labelreference="L42914" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta1_profile:= piecewise(
+time&gt;=0 and time&lt;=85, time^2/45 - trunc(time^2/45 / (2*Pi))*2*Pi,
+time&gt;85 and time&lt;=105, -((time - 95)/(4*Pi))^2 + 2*Pi,
+time&gt;105 and time&lt;=180, (180-time)^2/36 - trunc((180-time)^2/36 / (2*Pi))*2*Pi):
+
+THETA1 := [ seq(  evalf( subs(profile_data, eval( theta1_profile, time = x ))) , x = 0..180)]:
+CurveFitting:-Spline( &lt; [seq(i, i=0..180)] &gt; , &lt;THETA1&gt; , Timee):
+THETA1_spline := unapply(%,[Timee]):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42903" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(theta1_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(THETA1_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42916" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42898" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta1t:= diff(theta1_profile, time):
+dTHETA1t := diff(THETA1_spline(Timer), Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42895" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(dtheta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(dTHETA1t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42910" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42902" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta1t:= diff(dtheta1t, time):
+d2THETA1t := diff(THETA1_spline(Timer), Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42918" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(d2theta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(d2THETA1t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43449" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43452" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta1t:= diff(d2theta1t, time):
+d3THETA1t := diff(THETA1_spline(Timer), Timer, Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43451" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(d3theta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(d3THETA1t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta5(time) profile</Text-field></Title>
+<Group hide-input="false" labelreference="L42899" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta5_profile:= piecewise(
+time&gt;=0 and time&lt;=45, time^2/45 - trunc(time^2/45 / (2*Pi))*2*Pi,
+time&gt;45 and time&lt;=90, (90-time)^2/45 - trunc((90-time)^2/45 / (2*Pi))*2*Pi,
+time&gt;90 and time&lt;=135, (time-90)^2/45 - trunc((time-90)^2/45 / (2*Pi))*2*Pi,
+time&gt;105 and time&lt;=180, (180-time)^2/36 - trunc((180-time)^2/36 / (2*Pi))*2*Pi):
+
+THETA5 := [ seq(  evalf( subs(profile_data, eval( theta5_profile, time = x ))) , x = 0..180)]:
+CurveFitting:-Spline( &lt; [seq(i, i=0..180)] &gt; , &lt;THETA5&gt; , Timee):
+THETA5_spline := unapply(%,[Timee]):
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42921" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(theta5_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(THETA5_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42900" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42897" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta5t:= diff(theta5_profile, time):
+dTHETA5t := diff(THETA5_spline(Timer), Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42919" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(dtheta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(dTHETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42901" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42927" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta5t:= diff(dtheta5t, time):
+d2THETA5t := diff(THETA5_spline(Timer), Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42924" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(d2theta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;, color=cc[1],  legend=&quot;exact&quot;),
+plot(d2THETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43488" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43490" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta5t:= diff(d2theta5t, time):
+d3THETA5t := diff(THETA5_spline(Timer), Timer, Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43492" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(d3theta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(d3THETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43489" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta6(time) profile</Text-field></Title>
+<Group hide-input="false" labelreference="L42922" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta6_profile:= piecewise(
+time&gt;=0 and time&lt;=45, sin(2*Pi*(f_0*time+((f_1-f_0)/2*T)*time^2)),
+time&gt;45 and time&lt;=90, sin(2*Pi*(f_0*(90-time)+((f_1-f_0)/2*T)*(90-time)^2)), 
+time&gt;90 and time&lt;=140, sin(2*Pi*(f_0*(time-90)+((f_1-f_0)/2*T)*(time-90)^2)), 
+time&gt;140 and time&lt;=180, sin(2*Pi*(f_0*(180-time)+((f_1-f_0)/2*T)*(180-time)^2))):
+
+THETA6 := [ seq(  evalf( subs(profile_data, eval( theta6_profile, time = x ))) , x = 0..180)]:
+CurveFitting:-Spline( &lt; [seq(i, i=0..180)] &gt; , &lt;THETA6&gt; , Timee):
+THETA6_spline := unapply(%,[Timee]):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42930" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(profile_data, theta6_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(THETA6_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42925" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42920" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta6t:= diff(theta6_profile, time):
+dTHETA6t := diff(THETA6_spline(Timer), Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42896" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, dtheta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(dTHETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42931" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42928" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta6t:= diff(dtheta6t, time):
+d2THETA6t := diff(THETA6_spline(Timer), Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42911" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, d2theta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(d2THETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43508" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43510" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta6t:= diff(d2theta6t, time):
+d3THETA6t := diff(THETA6_spline(Timer), Timer, Timer, Timer):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43511" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, d3theta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+plot(d3THETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43509" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Dependent Variables profile</Text-field></Title>
+<Group labelreference="L42912" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">qd_vars_profile := Vector( [ seq( [ evalf( subs( eval( s(t) = s_profile, time = x ) , profile_data, kin) ) ] , x=0..180) ] ):
+display( 
+plot(   [  seq(  [  i  ,  rhs(qd_vars_profile[i][1]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_profile)  )  ] ,color=cc[1],legend=typeset(qd_vars[1]) ),
+plot(   [  seq(  [  i  ,  rhs(qd_vars_profile[i][2]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_profile)  )  ] ,color=cc[2],legend=typeset(qd_vars[2]) ),
+         labels = [typeset(s,&quot;[m]&quot;),pos],
+         title = &quot;Position&quot;);</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L44388" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">qd_vars_profile_spline := Vector( [ seq( [ evalf( subs( eval( s(t) = SS_spline(Timer), Timer = x ) , profile_data, kin) ) ] , x=0..180) ] ):
+display( 
+plot(   [  seq(  [  i  ,  rhs(qd_vars_profile_spline[i][1]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_profile_spline)  )  ] ,color=cc[1],legend=typeset(qd_vars[1]) ),
+plot(   [  seq(  [  i  ,  rhs(qd_vars_profile_spline[i][2]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_profile_spline)  )  ] ,color=cc[2],legend=typeset(qd_vars[2]) ),
+         labels = [typeset(s,&quot;[m]&quot;),pos],
+         title = &quot;Position Spline&quot;);</Text-field>
+</Input>
+</Group>
+<Group labelreference="L44389" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" labelreference="L42904" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">subs_dst_profile := Vector( [ seq( [ evalf( subs( f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=40, time = x, dst) ) ] , x=0..180 ) ] ):
+qd_vars_vel_profile := Vector( [ seq( [ evalf( subs( data, diff(s(t),t) = subs_dst_profile[x+1] , eval( s(t) = s_profile, time = x ), profile_data, subs_qd_vars_vel ) ) ], x = 0..180)]):
+display( 
+plot(   [  seq(  [  i  ,  eval(subs(qd_vars_profile[i], rhs(qd_vars_vel_profile[i][1])) * 180/Pi) ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_vel_profile)  )  ] ,color=cc[1],legend=typeset(diff(qd_vars[1],t)) ),
+plot(   [  seq(  [  i  ,  eval(subs(qd_vars_profile[i], rhs(qd_vars_vel_profile[i][2])) * 180/Pi) ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_vel_profile)  )  ] ,color=cc[2],legend=typeset(diff(qd_vars[2],t)) ),
+         labels = [typeset(s,&quot;[m]&quot;),vel],
+         title = &quot; Velocity&quot;);</Text-field>
+</Input>
+</Group>
+<Group labelreference="L44426" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42933" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">subs_d2st_profile := Vector( [ seq( [ evalf( subs( f_0 = 1/(Pi*10000), f_1 = 1/(Pi*500), T=60, time = x, d2st ) ) ] , x = 0..180) ] ):
+qd_vars_acc_profile := Vector([seq([evalf(subs(data, s__dot__dot = subs_d2st_profile[x+1], s__dot2 = (subs_dst_profile[x+1])^2 , eval( s(t) = s_profile, time=x), profile_data, subs_qd_vars_acc))], x=0..180)]):
+display( 
+plot(   [  seq(  [  i  ,  eval(subs(qd_vars_profile[i], qd_vars_vel_profile[i], rhs(qd_vars_acc_profile[i][1])) * 180/Pi) ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_acc_profile)  )  ] ,color=cc[1],legend=typeset(diff(qd_vars[2],t,t)) ),
+plot(   [  seq(  [  i  ,  eval(subs(qd_vars_profile[i], qd_vars_vel_profile[i], rhs(qd_vars_acc_profile[i][2])) * 180/Pi) ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_acc_profile)  )  ] ,color=cc[2],legend=typeset(diff(qd_vars[2],t,t)) ),
+         labels = [typeset(s,&quot;[m]&quot;),vel],
+         title = &quot; Acceleration&quot;);
+d2st:= diff(dst, time):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L44833" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font bold="true">JERK</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L43558" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">subs_d3st_profile := Vector( [ seq( [ evalf( subs( f_0 = 1/(Pi*10000), f_1 = 1/(Pi*500), T=60, time = x, d3st ) ) ] , x = 0..180) ] ):
+(*
+qd_vars_jerk_profile := Vector([seq([evalf(subs(data, s__dot__dot_dot = subs_d2st_profile[x+1], s__dot2 = (subs_dst_profile[x+1])^2 , eval( s(t) = s_profile, time=x), profile_data, subs_qd_jerk_acc))], x=0..180)]):
+display( 
+plot(   [  seq(  [  i  ,  eval(subs(qd_vars_profile[i], qd_vars_vel_profile[i], rhs(qd_vars_acc_profile[i][1])) * 180/Pi) ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_acc_profile)  )  ] ,color=cc[1],legend=typeset(diff(qd_vars[2],t,t)) ),
+plot(   [  seq(  [  i  ,  eval(subs(qd_vars_profile[i], qd_vars_vel_profile[i], rhs(qd_vars_acc_profile[i][2])) * 180/Pi) ]  ,  i=1..LinearAlgebra[Dimension](qd_vars_acc_profile)  )  ] ,color=cc[2],legend=typeset(diff(qd_vars[2],t,t)) ),
+         labels = [typeset(s,&quot;[m]&quot;),vel],
+         title = &quot; Acceleration&quot;);
+d2st:= diff(dst, time):
+*)</Text-field>
+</Input>
+</Group>
+<Group labelreference="L44832" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group>
+<Group labelreference="L44831" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile</Text-field></Title>
+<Group hide-input="false" labelreference="L43439" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Seat := comp_XYZ(project(origin(RFSeat), RF0));</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L43602" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile := Vector( [ seq( [ subs( data,
+evalf( subs(profile_data, eval( s(t) = s_profile, time = x ))), 
+eval( theta2(t) = rhs(qd_vars_profile[x+1][1]), time = x), 
+eval( theta4(t) = rhs(qd_vars_profile[x+1][2]), time = x), 
+evalf( subs(profile_data, eval( theta1(t) = theta1_profile, time = x ))), 
+evalf( subs(profile_data, eval( theta5(t) = theta5_profile, time = x ))), 
+evalf( subs(profile_data, eval( theta6(t) = theta6_profile, time = x ))),
+[Seat]) ] , x=0..180) ] ):
+display( 
+plot(   [  seq(  [  i  ,  seat_profile[i][1] ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[1],legend=typeset(x) ),
+plot(   [  seq(  [  i  ,  seat_profile[i][2] ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[2],legend=typeset(y) ), 
+plot(   [  seq(  [  i  ,  seat_profile[i][3] ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[3],legend=typeset(z) ), 
+         labels = [typeset(t,&quot;[s]&quot;),pos],
+         title = &quot; Position &quot;);</Text-field>
+</Input>
+</Group>
+<Group labelreference="L43559" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="24">Animation</Font></Text-field></Title>
+<Group hide-input="false" labelreference="L42965" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dof:={s(t)=40+sin(time)*10,theta1(t)=time,theta5(t)=-time,theta6(t)=-time}: 
+animate(draw_mech, [kin, data, dof], time =0 .. 2*Pi);
+</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L42964" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#dof:={s(t)=s_profile,theta1(t)=theta1_profile,theta5(t)=theta5_profile,theta6(t)=theta6_profile}:
+#animate(draw_mech, [kin, data, subs(profile_data, dof)], time=0..180,frames=180); # Think twice before executing 180 frames of those profile (&gt;300MB file)</Text-field>
+</Input>
+</Group>
 </Section>
 </Worksheet>
