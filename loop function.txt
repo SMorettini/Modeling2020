@@ -1,0 +1,48 @@
+LOOP Function
+x2y := [s(t) = s, theta2(t) = theta2]:
+y2x := [s=s(t), theta2 = theta2(t)]:
+
+
+N := 1001: i_print := 980:
+Delta__theta1 := 30*Pi/180/N:
+
+#dof   := theta1(t) = 0:
+guess := {s = 1.5,theta2 = 0}:
+
+sol_kine_A_num := Array(1..N+1,[]):
+sol_vel_A_num  := Array(1..N+1,[]):
+
+printf("Starting kinematic analysis problem ...\n");
+for i from 1 to N+1 do
+  
+  dof := theta1(t) = Delta__theta1*(i-1);
+
+  # position step (finite displacement)
+  tmp := fsolve(subs(data_A,dof, x2y,Phi), guess): #print(%);
+  # no solution found
+  if has(tmp,fsolve) then 
+    tmp1 := evalf(subs(data_A,sol_kine_A_num[i-1],JPhi_qD));
+    tmp2 := evalf(subs(data_A,sol_kine_A_num[i-1],JPhi_q));
+    print(tmp1,tmp2);
+    printf("Rank(JPhi_q)=%2d > Rank(JPhi_q)%2d: det(JPhi_qD): %12.8g\n", 
+            LinearAlgebra:-Rank(tmp2), LinearAlgebra:-Rank(tmp1), LinearAlgebra:-Determinant(tmp1));
+    break ;
+  end:
+  if i > i_print then 
+    printf("step: %2d -- s=%8.5f(m) - theta = %6.3f(deg)",
+            i, subs(tmp,s),subs(tmp,theta2*180/Pi));
+  end:
+  guess := tmp:
+  sol_kine_A_num[i] := [dof,op(subs(y2x,tmp))]:
+  
+  # velocity analysis
+  tmp1 := subs(data_A,sol_kine_A_num[i],JPhi_qD);
+  tmp2 := subs(data_A,sol_kine_A_num[i],JPhi_q);
+  sol_vel_A_num[i] := map(x->lhs(x)=subs( data_A, Phi_qI,sol_kine_A_num[i], rhs(x)), sol_vel_qD):
+  if i > i_print then
+    printf(" -- s'=%12.3g(m/s) - theta2' = %12.3g(deg/s)\n",
+            subs(sol_vel_A_num[i],diff(s(t),t)),
+            subs(sol_vel_A_num[i],diff(theta2(t),t)*180/Pi));
+  end:
+  
+end:

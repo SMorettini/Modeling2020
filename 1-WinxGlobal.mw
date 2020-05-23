@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Worksheet>
-<Version major="2019" minor="1"/>
+<Version major="2019" minor="2"/>
 <Label-Scheme value="2" prefix=""/>
 <View-Properties presentation="true" autoexpanding_sections="true" UserProfileName="Maple Default Profile" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false" editable="true">
 </View-Properties>
-<MapleNet-Properties prettyprint="3" warnlevel="3" compactdisplay="false" preplot="" helpbrowser="standard" displayprecision="10" echo="1" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" historytimestamp="false" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="1080" rtablesize="30" useclientjvm="true" labelwidth="20" postplot="" typesetting="extended" ansi="false" ansicolor="[]" elisiondigitsthreshold="10000" showassumed="1" ansilprint="false" trailingsemicolon="true" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
+<MapleNet-Properties prettyprint="3" warnlevel="3" compactdisplay="false" preplot="" helpbrowser="standard" displayprecision="-1" echo="1" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" historytimestamp="false" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="1080" rtablesize="30" useclientjvm="true" labelwidth="20" postplot="" typesetting="extended" ansi="false" ansicolor="[]" elisiondigitsthreshold="10000" showassumed="1" ansilprint="false" trailingsemicolon="true" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
 <Styles>
 <Font name="Heading 1" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
 <Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
@@ -89,7 +89,7 @@
 </Task-table>
 <Task/><Presentation-Block>
 <Group view="presentation" inline-output="false" labelreference="L11866" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group></Presentation-Block><Table visible="true" editable="true" exterior="bottom" pagebreak="cell" showlabel="false" title="" plotalignlists="" hiddenborderdisplay="worksheet" interior="none" postexecute="advance" drawcaption="false" drawtitle="false" width="100.0%" captionalignment="0" showinput="false" captionposition="1" id="Table0" alignment="left" randomized="false" labelreference="L11881" showgroup="false" order="row"><Table-Column weight="4" separator="true"></Table-Column><Table-Column weight="196" separator="true"></Table-Column><Table-Row align="top" separator="true"><Table-Cell padding="5" visible="true" fillcolor="[255,255,255]" rowspan="1" backgroundstyle="0" columnspan="1"><Text-field style="Text" layout="Normal"></Text-field></Table-Cell><Table-Cell padding="5" visible="true" fillcolor="[255,255,255]" rowspan="1" backgroundstyle="0" columnspan="1">
 <Group labelreference="L11879" drawlabel="true">
@@ -733,60 +733,6 @@ plots:-display( Ptriang,
 <Group view="code" hide-input="false" labelreference="L39702" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">animate(draw_mech_for_animate, [convert(solutions_workingspace, list), INDEX, data, convert(dofs_workingspace, list)], INDEX = 1 .. dim_of_s*dim_of_theta1, frames = dim_of_s*dim_of_theta1/10)</Text-field>
 </Input>
-</Group></Presentation-Block><Presentation-Block>
-<Group view="code" labelreference="L37024" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font size="18" bold="true">LOOP Function</Font></Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L36832" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">x2y := [s(t) = s, theta2(t) = theta2]:
-y2x := [s=s(t), theta2 = theta2(t)]:
-
-
-N := 1001: <Font foreground="[128,128,0]">i_print := 980:</Font>
-Delta__theta1 := 30*Pi/180/N:
-
-#dof   := theta1(t) = 0:
-guess := {s = 1.5,theta2 = 0}:
-
-sol_kine_A_num := Array(1..N+1,[]):
-sol_vel_A_num  := Array(1..N+1,[]):
-
-<Font encoding="UTF-8">printf(&quot;Starting kinematic analysis problem ...\134n&quot;);</Font>
-for i from 1 to N+1 do
-  
-  dof := theta1(t) = Delta__theta1*(i-1);
-
-  <Font foreground="[128,0,128]"># position step (finite displacement)
-</Font>  tmp := fsolve(subs(data_A,dof, x2y,Phi), guess): #print(%);
-  <Font foreground="[0,0,128]"># no solution found
-  if has(tmp,fsolve) then 
-    tmp1 := evalf(subs(data_A,sol_kine_A_num[i-1],JPhi_qD));
-    tmp2 := evalf(subs(data_A,sol_kine_A_num[i-1],JPhi_q));
-    print(tmp1,tmp2);
-    printf(&quot;Rank(JPhi_q)=%2d &gt; Rank(JPhi_q)%2d: det(JPhi_qD<Font encoding="UTF-8">): %12.8g\134n</Font>&quot;, 
-            LinearAlgebra:-Rank(tmp2), LinearAlgebra:-Rank(tmp1), LinearAlgebra:-Determinant(tmp1));
-    break ;
-  end:</Font>
-  <Font foreground="[128,128,0]">if i &gt; i_print then 
-    printf(&quot;step: %2d -- s=%8.5f(m) - theta = %6.3f(deg)&quot;,
-            i, subs(tmp,s),subs(tmp,theta2*180/Pi));
-  end:</Font><Font foreground="[128,128,128]">
-  </Font>guess := tmp:
-  sol_kine_A_num[i] := [dof,op(subs(y2x,tmp))]:
-  
-  <Font foreground="[128,0,128]"># velocity analysis</Font>
-  tmp1 := subs(data_A,sol_kine_A_num[i],JPhi_qD);
-  tmp2 := subs(data_A,sol_kine_A_num[i],JPhi_q);
-  sol_vel_A_num[i] := map(x-&gt;lhs(x)=subs( data_A, Phi_qI,sol_kine_A_num[i], rhs(x)), sol_vel_qD):
-  <Font foreground="[128,128,0]">if i &gt; i_print then</Font>
- <Font foreground="[128,128,0]" encoding="UTF-8">   printf(&quot; -- s'=%12.3g(m/s) - theta2' = %12.3g(deg/s)\134n&quot;,
-</Font><Font foreground="[128,128,0]">            subs(sol_vel_A_num[i],diff(s(t),t)),
-            subs(sol_vel_A_num[i],diff(theta2(t),t)*180/Pi));
- </Font> <Font foreground="[128,128,0]">end:</Font><Font foreground="[128,128,128]">
-  </Font>
-end:</Text-field>
-</Input>
 </Group></Presentation-Block>
 <Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Velocity analysis</Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L39078" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -879,53 +825,6 @@ subs_kin_s_vel := diff(kin_s,t): nops(%); # Differentiate to get velocity of sim
 <Group view="code" hide-input="false" labelreference="L39013" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq_det_s := simplify(LinearAlgebra:-Determinant(JPhiD_s));</Text-field>
 </Input>
-</Group>
-<Group labelreference="L39113" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Heading 3" layout="Heading 3">Plot of velocities ratios</Text-field>
-</Input>
-</Group>
-<Group labelreference="L39112" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">In velocity analysis, positions (i.e. coordinate values) must be known</Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L39114" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">TAU1 := evalf([seq(subs(data,sol_FDPos[i],theta1(t)=dof_range[i],Tau[1,1]),i=1..NS_good)]): <Font foreground="[128,128,128]"># = diffF(qD[1],qI[])</Font>
-TAU2 := evalf([seq(subs(data,sol_FDPos[i],theta1(t)=dof_range[i],Tau[2,1]),i=1..NS_good)]): <Font foreground="[128,128,128]"># = diffF(qD[1],qI[])</Font>
-TAU3 := evalf([seq(subs(data,sol_FDPos[i],theta1(t)=dof_range[i],Tau[3,1]),i=1..NS_good)]): <Font foreground="[128,128,128]"># = diffF(qD[1],qI[])</Font>
-</Text-field>
-</Input>
-</Group>
-<Group labelreference="L39115" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display( plot( &lt;dof_range&gt;*180/Pi,&lt;TAU1&gt;,color=c_set[1],legend=typeset('diff'(op(0,qD[1]),op(0,qI[1])))),
-         plot( &lt;dof_range&gt;*180/Pi,&lt;TAU2&gt;,color=c_set[2],legend=typeset('diff'(op(0,qD[2]),op(0,qI[1])))),
-         plot( &lt;dof_range&gt;*180/Pi,&lt;TAU3&gt;,color=c_set[3],legend=typeset('diff'(op(0,qD[3]),op(0,qI[1])))),
-<Font encoding="UTF-8">         labels = [typeset(theta__1,&quot;[\302\260]&quot;),tau],
-</Font>         title = &quot; Velocity ratios&quot;);</Text-field>
-</Input>
-</Group></Presentation-Block><Presentation-Block>
-<Group view="code" labelreference="L39010" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">We compute analytical singular configurations</Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L39004" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">SCs_s := solve([op(Phi_s),eq_det_s],q_vars,explicit=true): &lt;%&gt;:
-nops(%); # 3 Singular Configurations???
-nops(%%[1]);
-&lt;%%%[1]&gt;:</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L39006" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font opaque="true" size="14" background="[255,255,0]" bold="true">Comment of the professor regarding T04-04 tutorial</Font><Font opaque="true" background="[255,255,0]">:
-The SCs evaluated with the parameters of the system turn out not to be feasible: complex numbers
-<Font bold="true">SCs exists analytically but not for this specific mechanism with given parameter values.</Font></Font></Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L39008" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">map(Vector,map(evalf,subs(data,subs(q_vars_to_function,dof),SCs_s))): # ???
-nops(%); # ???
-#evalf(subs(data,sol_kine_all,&lt;%%[1]&gt;));
-#subs(q_vars_to_function,sol_kine_all);</Text-field>
-</Input>
 </Group></Presentation-Block>
 <Group labelreference="L39001" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal"></Text-field>
@@ -933,68 +832,27 @@ nops(%); # ???
 </Group>
 </Section><Presentation-Block>
 <Group view="presentation" inline-output="false" labelreference="L39018" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
 <Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Acceleration analysis</Text-field></Title>
 <Group labelreference="L38995" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">We can now compute the acceleration just by differentiating the velocities.
-qD' = Tau(qD,qI).qI'
-<Font underline="true">Remember that accelerations of dependents are: qD'' = Tau.qI''+diff(Tau,t).qD';</Font></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L38991" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#qD_dot;</Text-field>
-</Input>
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">qd_vars_acc := simplify( map(diff,qd_vars_dot,t),size):
-AA,res := LinearAlgebra:-GenerateMatrix(convert(qd_vars_acc ,list),diff(qi_vars,t,t)):</Text-field>
-</Input>
-<Input><Text-field style="Text" layout="Normal">Proof =&gt; AA should be equal to Tau, and It is</Text-field>
-</Input>
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">simplify(AA-Tau);</Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L38992" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#simplify(subs(subs_qd_vars_vel,qd_vars_acc[1]),size);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L38996" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">In acceleration analysis, positions (i.e. coordinate values) and velocities of the coordinates must be known</Text-field>
-</Input>
-</Group>
-<Group labelreference="L38994" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">here the substitution can be done analytically since the model is not complex.</Text-field><Text-field style="Text" layout="Normal"><Font bold="true">However, it would be better to compute velocities and accelerations in sequence given the position, velocity and acceleration of independent:</Font></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L38993" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">qd_vars_acc_full := subs( subs_qd_vars_vel,qd_vars_acc):</Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L39017" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">qd_vars_acc_full: nops(%); # ????
-</Text-field>
-</Input>
-</Group>
-<Group labelreference="L39015" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Can be rewritten as: AA1.qI''+AA2.qI'^2: <Font bold="true">????? </Font></Text-field>
-</Input>
-</Group>
-<Group hide-input="false" labelreference="L39016" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#AA1 ,  res := LinearAlgebra:-GenerateMatrix(convert(qd_vars_acc_full,list),diff(qi_vars,t,t)):
-#AA2 ,  res := LinearAlgebra:-GenerateMatrix(<Font opaque="true" background="[255,255,0]">subs(diff(</Font>qi_vars<Font opaque="true" background="[255,255,0]">,t)^2=qI2</Font>,convert(<Font opaque="true" background="[255,255,0]">-</Font>res,list)),[qI2]):
-
-#simplify(res);</Text-field>
+<Input><Text-field style="Text" layout="Normal">To implement</Text-field>
 </Input>
 </Group>
 </Section>
 </Section>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Motion Profiles</Font></Text-field></Title>
+<Group labelreference="L46040" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"></Text-field>
+</Input>
+</Group>
 <Group hide-input="false" labelreference="L44885" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">profile_data := { f_0 = 1/(Pi*3000), f_1 = 1/(Pi*6000), T = 60}:</Text-field>
 </Input>
 </Group>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">s(time) profile</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">s(time) profile</Text-field></Title>
 <Group hide-input="false" labelreference="L44871" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile := 0.51 + 0.51 * piecewise(
 time&gt;=0 and time&lt;=45, sin(2*Pi*(f_0*time+((f_1-f_0)/2*T)*time^2)),
@@ -1018,14 +876,12 @@ plot(SS_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44865" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dst:= diff(s_profile, time):
-dSSt := diff(SS_spline(Timer), Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dst:= diff(s_profile, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44872" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=40, dst),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(dSSt(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+plot(subs(profile_data, dst),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44863" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1033,14 +889,12 @@ plot(dSSt(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44859" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2st:= diff(dst, time):
-d2SSt := diff(SS_spline(Timer), Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2st:= diff(dst, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44879" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=60, d2st),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(d2SSt(Timer), Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+plot(subs(profile_data, d2st),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44851" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1048,18 +902,16 @@ plot(d2SSt(Timer), Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Tex
 </Input>
 </Group>
 <Group labelreference="L44850" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3st:= diff(d2st, time):
-d3SSt := diff(SS_spline(Timer), Timer, Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3st:= diff(d2st, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44849" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
-plot(subs(f_0 = 1/(Pi*10000), f_1= 1/(Pi*500), T=60, d3st),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(d3SSt(Timer), Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(subs(profile_data, d3st),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta1(time) profile</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta1(time) profile</Text-field></Title>
 <Group hide-input="false" labelreference="L44864" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta1_profile:= piecewise(
 time&gt;=0 and time&lt;=85, time^2/45 - trunc(time^2/45 / (2*Pi))*2*Pi,
@@ -1072,9 +924,8 @@ THETA1_spline := unapply(%,[Timee]):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44877" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(theta1_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(THETA1_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(subs(theta1_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44858" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1082,14 +933,12 @@ plot(THETA1_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;)
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44882" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta1t:= diff(theta1_profile, time):
-dTHETA1t := diff(THETA1_spline(Timer), Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta1t:= diff(theta1_profile, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44888" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(dtheta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(dTHETA1t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(dtheta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44853" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1097,33 +946,29 @@ plot(dTHETA1t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</T
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44876" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta1t:= diff(dtheta1t, time):
-d2THETA1t := diff(THETA1_spline(Timer), Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta1t:= diff(dtheta1t, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44860" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(d2theta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(d2THETA1t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(d2theta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44854" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44837" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta1t:= diff(d2theta1t, time):
-d3THETA1t := diff(THETA1_spline(Timer), Timer, Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta1t:= diff(d2theta1t, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44835" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(d3theta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(d3THETA1t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(d3theta1t,time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta5(time) profile</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta5(time) profile</Text-field></Title>
 <Group hide-input="false" labelreference="L44886" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta5_profile:= piecewise(
 time&gt;=0 and time&lt;=45, time^2/45 - trunc(time^2/45 / (2*Pi))*2*Pi,
@@ -1138,9 +983,8 @@ THETA5_spline := unapply(%,[Timee]):
 </Input>
 </Group>
 <Group labelreference="L44842" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(theta5_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(THETA5_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(subs(theta5_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44868" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1148,14 +992,12 @@ plot(THETA5_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;)
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44880" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta5t:= diff(theta5_profile, time):
-dTHETA5t := diff(THETA5_spline(Timer), Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta5t:= diff(theta5_profile, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44861" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(dtheta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(dTHETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(dtheta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44875" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1163,37 +1005,34 @@ plot(dTHETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</T
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44845" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta5t:= diff(dtheta5t, time):
-d2THETA5t := diff(THETA5_spline(Timer), Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta5t:= diff(dtheta5t, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44847" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(d2theta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;, color=cc[1],  legend=&quot;exact&quot;),
-plot(d2THETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(d2theta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44856" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44838" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta5t:= diff(d2theta5t, time):
-d3THETA5t := diff(THETA5_spline(Timer), Timer, Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta5t:= diff(d2theta5t, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44839" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(d3theta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(d3THETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(d3theta5t,time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+#plot(d3THETA5t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44857" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta6(time) profile</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">theta6(time) profile</Text-field></Title>
 <Group hide-input="false" labelreference="L44843" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">theta6_profile:= piecewise(
 time&gt;=0 and time&lt;=45, sin(2*Pi*(f_0*time+((f_1-f_0)/2*T)*time^2)),
@@ -1207,9 +1046,8 @@ THETA6_spline := unapply(%,[Timee]):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44881" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(profile_data, theta6_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(THETA6_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(subs(profile_data, theta6_profile),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44848" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1217,14 +1055,12 @@ plot(THETA6_spline(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;)
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44840" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta6t:= diff(theta6_profile, time):
-dTHETA6t := diff(THETA6_spline(Timer), Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dtheta6t:= diff(theta6_profile, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44890" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, dtheta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(dTHETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(subs(profile_data, dtheta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44883" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1232,14 +1068,12 @@ plot(dTHETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</T
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44846" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta6t:= diff(dtheta6t, time):
-d2THETA6t := diff(THETA6_spline(Timer), Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d2theta6t:= diff(dtheta6t, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44855" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, d2theta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(d2THETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(subs(profile_data, d2theta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44893" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1247,14 +1081,13 @@ plot(d2THETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L44869" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta6t:= diff(d2theta6t, time):
-d3THETA6t := diff(THETA6_spline(Timer), Timer, Timer, Timer):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">d3theta6t:= diff(d2theta6t, time):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44870" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(subs(f_0 = 1/(Pi*3000), f_1= 1/(Pi*6000), T=60, d3theta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
-plot(d3THETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#display(
+#plot(subs(profile_data, d3theta6t),time=0..180, color=cc[1],  legend=&quot;exact&quot;),
+#plot(d3THETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</Text-field>
 </Input>
 </Group>
 <Group labelreference="L44892" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1263,62 +1096,16 @@ plot(d3THETA6t(Timer),Timer=0..180, color=cc[2],  legend=&quot;spline&quot;));</
 </Group>
 </Section>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Seat Profile</Font></Text-field></Title><Presentation-Block>
-<Group view="code" labelreference="L45206" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Heading 2" layout="Heading 2">Working space</Text-field>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="24">Seat Profile</Font></Text-field></Title><Presentation-Block></Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Plot with motion profiles of seat </Text-field></Title>
+<Group labelreference="L46043" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font bold="true">POSITION</Font></Text-field>
 </Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L45205" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile_complete:= subs(profile_data, s_profile): theta6_profile_complete:= subs(profile_data, theta6_profile):
-dim_of_s:=5:    dim_of_theta1:=5: dim_of_theta5:=5: dim_of_theta6:=5:
-const:= 10:
-solutions_workingspace := Array(1..dim_of_s*dim_of_theta1*dim_of_theta5*dim_of_theta6,[]):
-dofs_workingspace:= Array(1..dim_of_s*dim_of_theta1*dim_of_theta5*dim_of_theta6,[]):
-x_seat := Array(1 .. dim_of_s*dim_of_theta1*dim_of_theta5*dim_of_theta6, []):
-y_seat := Array(1 .. dim_of_s*dim_of_theta1*dim_of_theta5*dim_of_theta6, []):
-z_seat := Array(1 .. dim_of_s*dim_of_theta1*dim_of_theta5*dim_of_theta6, []):
-i:=1:
-sol_tmp:=1:
-for si from 1 to dim_of_s do
-  for th1i from 1 to dim_of_theta1 do
-    for th5i from 1 to dim_of_theta5 do
-      for th6i from 1 to dim_of_theta6 do
-        dofs_workingspace[i] := {s = evalf(subs(time=si*const, s_profile_complete)), 
-                                 theta1 = evalf(subs(time=th1i*const, theta1_profile)),
-                                 theta5 = evalf(subs(time=th5i*const, theta5_profile)),
-                                 theta6__y =evalf(subs(time=th6i*const, theta6_profile_complete))}:
-        solutions_workingspace[i] := fsolve(subs(q_vars_to_symbol,data,dofs_workingspace[i],Phi),guess);
-        guess:=solutions_workingspace[i];        
-        sol_tmp:= simplify(subs(q_vars_to_symbol,data, dofs_workingspace[i],solutions_workingspace[i], &lt;comp_XYZ(SSeat, RF0)&gt;));
-        x_seat[i]:=sol_tmp[1];
-        y_seat[i]:=sol_tmp[2];
-        z_seat[i]:=sol_tmp[3];
-        i:=i+1;
-
-      end do:
-    end do:
-  end do:
-end do:</Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L45204" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">XXXX := Vector(convert(x_seat, list)):
-YYYY := Vector(convert(y_seat, list)):
-ZZZZ := Vector(convert(z_seat, list)):</Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L45208" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"># animate(draw_mech_for_animate, [convert(solutions_workingspace, list), INDEX, data, convert(dofs_workingspace, list)], INDEX = 1 .. dim_of_s*dim_of_theta1*dim_of_theta5*dim_of_theta6, frames = dim_of_s*dim_of_theta1*dim_of_theta5*dim_of_theta6)</Text-field>
-</Input>
-</Group></Presentation-Block><Presentation-Block>
-<Group view="presentation" inline-output="false" labelreference="L45201" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
-</Input>
-</Group></Presentation-Block>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Plot with motion profiles</Text-field></Title><Presentation-Block>
+</Group><Presentation-Block>
 <Group view="code" labelreference="L45374" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile_complete:= subs(profile_data, s_profile): theta6_profile_complete:= subs(profile_data, theta6_profile):
 solutions := Array(1..180, []):
+solutions_v := Array(1..180, []):
 dofs:= Array(1..180,[]):
 x_seat := Array(1..180, []):
 y_seat := Array(1..180, []):
@@ -1332,7 +1119,7 @@ while i &lt; 180 do
                     theta6__y =evalf(subs(time=i, theta6_profile_complete))}:
         solutions[i] := fsolve(subs(q_vars_to_symbol,data,dofs[i],Phi),guess);
         guess:=solutions[i];
-        sol_tmp:= simplify(subs(q_vars_to_symbol,data, dofs_workingspace[i],solutions_workingspace[i], &lt;comp_XYZ(SSeat, RF0)&gt;));
+        sol_tmp:= simplify(subs(q_vars_to_symbol,data, dofs[i],solutions[i], &lt;comp_XYZ(SSeat, RF0)&gt;));
         x_seat[i]:=sol_tmp[1];
         y_seat[i]:=sol_tmp[2];
         z_seat[i]:=sol_tmp[3];        
@@ -1341,135 +1128,115 @@ end do:</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" labelreference="L45399" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(plot([seq([i,  x_seat[i]],  i=1..180)],color=cc[1],legend=typeset(q_vars[15]) ,
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(plot([seq([i,  x_seat[i]],  i=1..180)],color=cc[1],legend=typeset(x) ,
          labels = [typeset(t,&quot;[s]&quot;),pos],
          title = &quot;Position&quot;),
-        plot([seq([i,  y_seat[i]],  i=1..180)],color=cc[2],legend=typeset(q_vars[16]) ,
+        plot([seq([i,  y_seat[i]],  i=1..180)],color=cc[2],legend=typeset(y) ,
          labels = [typeset(t,&quot;[s]&quot;),pos],
          title = &quot;Position&quot;),
-        plot([seq([i,  z_seat[i]],  i=1..180)],color=cc[3],legend=typeset(q_vars[17]) ,
+        plot([seq([i,  z_seat[i]],  i=1..180)],color=cc[3],legend=typeset(z) ,
          labels = [typeset(t,&quot;[s]&quot;),pos],
          title = &quot;Position&quot;));
 </Text-field>
 </Input>
-<Output><Text-field style="Maple Plot" layout="Maple Plot"><Plot height="400.0" type="two-dimensional" width="400.0" plot-scale="1.0" plot-xtrans="0.0" plot-ytrans="0.0" gridlinevisibility="1" legendvisibility="true">NiwtJSdDVVJWRVNHNiU3YHY3JCQiIzUhIiIkISspeTUiNEQhIig3JCQiIz8hIiIkIStGNC0hbyIhIig3JCQiI0khIiIkISt2JEddTyMhIig3JCQiI1MhIiIkIStLZVl3PiEiKDckJCIjXSEiIiQhK0tlWXc+ISIoNyQkIiNnISIiJCErSE43NUMhIig3JCQiI3EhIiIkISswRlIlNCIhIig3JCQiIyEpISIiJCErVygpZiE9IyEiKDckJCIjISohIiIkIStuTSdRYyIhIig3JCQiJCsiISIiJCErbk0nUWMiISIoNyQkIiQ1IiEiIiQhK2gqPnlXIyEiKDckJCIkPyIhIiIkIStzJSplT0whIig3JCQiJEkiISIiJCEqMl9gZyMhIic3JCQiJFMiISIiJCErV3JDQUkhIig3JCQiJF0iISIiJCErV3JDQUkhIig3JCQiJGciISIiJCEqIlFZTUUhIig3JCQiJHEiISIiJCErZSJHImY4ISIoNyQkIiQhPSEiIiQhKnZzSWQlISIoNyQkIiQhPiEiIiQhKzsqeUByKiEiKTckJCIkKyMhIiIkISs7KnlAciohIik3JCQiJDUjISIiJCEqIlFZTUUhIig3JCQiJD8jISIiJCErZSJHImY4ISIoNyQkIiRJIyEiIiQhKnZzSWQlISIoNyQkIiRTIyEiIiQhKzsqeUByKiEiKTckJCIkXSMhIiIkISs7KnlAciohIik3JCQiJGcjISIiJCErcCVlUlkiISIoNyQkIiRxIyEiIiQhKyVwIkgoeSMhIig3JCQiJCFHISIiJCErJmY1JSlwIiEiKDckJCIkIUghIiIkIStPUzg+QiEiKDckJCIkKyQhIiIkIStPUzg+QiEiKDckJCIkNSQhIiIkIStWKnovNiohIik3JCQiJD8kISIiJCErWjZWSEQhIig3JCQiJEkkISIiJCErWFBJKD4iISIoNyQkIiRTJCEiIiQhKyYzb2omPiEiKDckJCIkXSQhIiIkISsmM29qJj4hIig3JCQiJGckISIiJCErVnc2JXokISIoNyQkIiRxJCEiIiQhK29KXzdOISIoNyQkIiQhUSEiIiQhKzpMeVlQISIoNyQkIiQhUiEiIiQhK0woKipcaCQhIig3JCQiJCslISIiJCErTCgqKlxoJCEiKDckJCIkNSUhIiIkISoocGpQRCEiJzckJCIkPyUhIiIkISttOWwyPyEiKDckJCIkSSUhIiIkISo+InBZQyEiJzckJCIkUyUhIiIkISlRVyk+IyEiJjckJCIkXSUhIiIkISlRVyk+IyEiJjckJCIkZyUhIiIkISoocGpQRCEiJzckJCIkcSUhIiIkISttOWwyPyEiKDckJCIkIVshIiIkISo+InBZQyEiJzckJCIkIVwhIiIkISlRVyk+IyEiJjckJCIkKyYhIiIkISlRVyk+IyEiJjckJCIkNSYhIiIkIitBZDRTNSEiKDckJCIkPyYhIiIkIisnPSpIbTohIik3JCQiJEkmISIiJCIrZFghKWYpKSEiKTckJCIkUyYhIiIkIitMQmw9WiEiKTckJCIkXSYhIiIkIitMQmw9WiEiKTckJCIkZyYhIiIkIisjR2VvZiohIik3JCQiJHEmISIiJCIxLCsrcHIjeXYnISM5NyQkIiQhZSEiIiQiK3dEUjMiKiEiKTckJCIkIWYhIiIkIis7cVV5eCEiKTckJCIkKychIiIkIis7cVV5eCEiKTckJCIkNSchIiIkIilSKip6OSEiJjckJCIkPychIiIkISpNLHooPiEiKDckJCIkSSchIiIkIiplOms9IiEiJzckJCIkUychIiIkIioyaCcpKlIhIig3JCQiJF0nISIiJCIqMmgnKSpSISIoNyQkIiRnJyEiIiQiK2koZXJfJCEiKDckJCIkcSchIiIkIio8a0gpPSEiJzckJCIkIW8hIiIkIitOelpSSyEiKDckJCIkIXAhIiIkIipreCdvQyEiJzckJCIkKyghIiIkIipreCdvQyEiJzckJCIkNSghIiIkIitpKGVyXyQhIig3JCQiJD8oISIiJCIqPGtIKT0hIic3JCQiJEkoISIiJCIrTnpaUkshIig3JCQiJFMoISIiJCIqa3gnb0MhIic3JCQiJF0oISIiJCIqa3gnb0MhIic3JCQiJGcoISIiJCEqdlhrQCUhIik3JCQiJHEoISIiJCEqdHZ1OCIhIic3JCQiJCF5ISIiJCErbWQtZUIhIik3JCQiJCF6ISIiJCEqeTNfXCghIig3JCQiJCspISIiJCEqeTNfXCghIig3JCQiJDUpISIiJCErclw5IjMoISIpNyQkIiQ/KSEiIiQhK2tRTVg3ISIoNyQkIiRJKSEiIiQhK00lcHcuKSEiKTckJCIkUykhIiIkISsiejplMCIhIig3JCQiJF0pISIiJCErIno6ZTAiISIoNyQkIiRnKSEiIiQiKnZ0YWcjISIoNyQkIiRxKSEiIiQhKzJxZClRIiEiKDckJCIkISkpISIiJCEoI3BLSSEiJzckJCIkISopISIiJCEpOjhQISkhIic3JCQiJCsqISIiJCEpOjhQISkhIic3JCQiJDUqISIiJCErM1hcYDshIig3JCQiJD8qISIiJCErbE4nM0IkISIoNyQkIiRJKiEiIiQhKy8ueEo+ISIoNyQkIiRTKiEiIiQhKzhDXnJFISIoNyQkIiRdKiEiIiQhKzhDXnJFISIoNyQkIiRnKiEiIiQhKzNYXGA7ISIoNyQkIiRxKiEiIiQhK2xOJzNCJCEiKDckJCIkISkqISIiJCErLy54Sj4hIig3JCQiJCEqKiEiIiQhKzhDXnJFISIoNyQkIiUrNSEiIiQhKzhDXnJFISIoNyQkIiU1NSEiIiQiKykzblVKIyEiKDckJCIlPzUhIiIkIis+OyZbZiIhIig3JCQiJUk1ISIiJCIrWEtIKj0jISIoNyQkIiVTNSEiIiQiK1ZtOF89ISIoNyQkIiVdNSEiIiQiK1ZtOF89ISIoNyQkIiVnNSEiIiQiKmtxaUEjISInNyQkIiVxNSEiIiQiK0U7cTIqKiEiKTckJCIlITMiISIiJCIraVpvNT8hIig3JCQiJSE0IiEiIiQiKzcqXDpWIiEiKDckJCIlKzYhIiIkIis3Klw6ViIhIig3JCQiJTU2ISIiJCIrUktwPUEhIig3JCQiJT82ISIiJCIrWHI4NUshIig3JCQiJUk2ISIiJCIrKSlbNSVSIyEiKDckJCIlUzYhIiIkIiskekIiZkchIig3JCQiJV02ISIiJCIrJHpCImZHISIoNyQkIiVnNiEiIiQhKXBCIVElISIoNyQkIiVxNiEiIiQiK0JYJ0c5IiEiKDckJCIlIT0iISIiJCIqNmQpZTshIig3JCQiJSE+IiEiIiQiKnUkUkNzISIoNyQkIiUrNyEiIiQiKnUkUkNzISIoNyQkIiU1NyEiIiQhKXBCIVElISIoNyQkIiU/NyEiIiQiK0JYJ0c5IiEiKDckJCIlSTchIiIkIio2ZCllOyEiKDckJCIlUzchIiIkIip1JFJDcyEiKDckJCIlXTchIiIkIip1JFJDcyEiKDckJCIlZzchIiIkISowOltQIiEiJzckJCIlcTchIiIkISowbltAIyEiJzckJCIlIUciISIiJCErKEd3Z18iISIoNyQkIiUhSCIhIiIkISswIylSPz4hIig3JCQiJSs4ISIiJCErMCMpUj8+ISIoNyQkIiU1OCEiIiQhK2xeNV5nISIpNyQkIiU/OCEiIiQhKzp1IT0kPiEiKDckJCIlSTghIiIkISo8WyI9JSkhIig3JCQiJVM4ISIiJCErOThKazkhIig3JCQiJV04ISIiJCErOThKazkhIig3JCQiJWc4ISIiJCErJTNNNW8kISIoNyQkIiVxOCEiIiQhKyM+U0whRyEiKDckJCIlIVEiISIiJCErQzJxSU4hIig3JCQiJSFSIiEiIiQhK0sjPSc+SiEiKDckJCIlKzkhIiIkIStLIz0nPkohIig3JCQiJTU5ISIiJCErO0smPXkiISIoNyQkIiU/OSEiIiQhKkJLRihwISIoNyQkIiVJOSEiIiQhK2xjPiZmIiEiKDckJCIlUzkhIiIkISsqKik0cjMiISIoNyQkIiVdOSEiIiQhKyoqKTRyMyIhIig3JCQiJWc5ISIiJCErO0smPXkiISIoNyQkIiVxOSEiIiQhKkJLRihwISIoNyQkIiUhWyIhIiIkIStsYz4mZiIhIig3JCQiJSFcIiEiIiQhKyoqKTRyMyIhIig3JCQiJSs6ISIiJCErKiopNHIzIiEiKDckJCIlNTohIiIkISt2VVwqSCQhIig3JCQiJT86ISIiJCErRio0QSo+ISIoNyQkIiVJOiEiIiQhK2kySnZJISIoNyQkIiVTOiEiIiQhK1YyKkhZIyEiKDckJCIlXTohIiIkIStWMipIWSMhIig3JCQiJWc6ISIiJCErMU9GYEohIig3JCQiJXE6ISIiJCErXlAkNGIiISIoNyQkIiUhZSIhIiIkISspWyZHeEchIig3JCQiJSFmIiEiIiQhK2A+aUVAISIoNyQkIiUrOyEiIiQhK2A+aUVAISIoNyQkIiU1OyEiIiQhK2NIYjxNISIoNyQkIiU/OyEiIiQhKk1OXXIkISInNyQkIiVJOyEiIiQhK0x3N3ZNISIoNyQkIiVTOyEiIiQhK2oiUl9oJCEiKDckJCIlXTshIiIkIStqIlJfaCQhIig3JCQiJWc7ISIiJCErXzl5PT0hIig3JCQiJXE7ISIiJCErN3doa0IhIig3JCQiJSFvIiEiIiQhKi9oKj4+ISInNyQkIiUhcCIhIiIkISs3Kj1sPCMhIig3JCQiJSs8ISIiJCErNyo9bDwjISIoNyQkIiU1PCEiIiQhK185eT09ISIoNyQkIiU/PCEiIiQhKzd3aGtCISIoNyQkIiVJPCEiIiQhKi9oKj4+ISInNyQkIiVTPCEiIiQhKzcqPWw8IyEiKDckJCIlXTwhIiIkISs3Kj1sPCMhIig3JCQiJWc8ISIiJCErXCk0IT48ISIpNyQkIiVxPCEiIiQiKyIqelUqPSghIik3JCQiJSF5IiEiIiQhKmUvYUgiISIpNyQkIiUheiIhIiIkIissW1BdUyEiKTckJCIlKz0hIiIkIiIhISIiLSUnTEVHRU5ERzYjLSUpX1RZUEVTRVRHNiMtSSVtcm93RzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNjctSSNtaUc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjY1USN4NjYiLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuNiIvJSVzaXplR1EjMTI2Ii8lJWJvbGRHUSZmYWxzZTYiLyUnaXRhbGljR1EldHJ1ZTYiLyUqdW5kZXJsaW5lR1EmZmFsc2U2Ii8lKnN1YnNjcmlwdEdRJmZhbHNlNiIvJSxzdXBlcnNjcmlwdEdRJmZhbHNlNiIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXTYiLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV02Ii8lJ29wYXF1ZUdRJmZhbHNlNiIvJStleGVjdXRhYmxlR1EmZmFsc2U2Ii8lKXJlYWRvbmx5R1EmZmFsc2U2Ii8lKWNvbXBvc2VkR1EmZmFsc2U2Ii8lKmNvbnZlcnRlZEdRJmZhbHNlNiIvJStpbXNlbGVjdGVkR1EmZmFsc2U2Ii8lLHBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdRJmZhbHNlNiIvJSxtYXRodmFyaWFudEdRJ2l0YWxpYzYiLUkjbW9HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHNiI2LVEwJkFwcGx5RnVuY3Rpb247NiIvJSxtYXRodmFyaWFudEdRJ25vcm1hbDYiLyUmZmVuY2VHUSZmYWxzZTYiLyUqc2VwYXJhdG9yR1EmZmFsc2U2Ii8lKXN0cmV0Y2h5R1EmZmFsc2U2Ii8lKnN5bW1ldHJpY0dRJmZhbHNlNiIvJShsYXJnZW9wR1EmZmFsc2U2Ii8lLm1vdmFibGVsaW1pdHNHUSZmYWxzZTYiLyUnYWNjZW50R1EmZmFsc2U2Ii8lJ2xzcGFjZUdRJjAuMGVtNiIvJSdyc3BhY2VHUSYwLjBlbTYiLUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjY1LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjY1LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHNiI2NVEidDYiLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuNiIvJSVzaXplR1EjMTI2Ii8lJWJvbGRHUSZmYWxzZTYiLyUnaXRhbGljR1EldHJ1ZTYiLyUqdW5kZXJsaW5lR1EmZmFsc2U2Ii8lKnN1YnNjcmlwdEdRJmZhbHNlNiIvJSxzdXBlcnNjcmlwdEdRJmZhbHNlNiIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXTYiLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV02Ii8lJ29wYXF1ZUdRJmZhbHNlNiIvJStleGVjdXRhYmxlR1EmZmFsc2U2Ii8lKXJlYWRvbmx5R1EmZmFsc2U2Ii8lKWNvbXBvc2VkR1EmZmFsc2U2Ii8lKmNvbnZlcnRlZEdRJmZhbHNlNiIvJStpbXNlbGVjdGVkR1EmZmFsc2U2Ii8lLHBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdRJmZhbHNlNiIvJSxtYXRodmFyaWFudEdRJ2l0YWxpYzYiLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuNiIvJSVzaXplR1EjMTI2Ii8lJWJvbGRHUSZmYWxzZTYiLyUnaXRhbGljR1EmZmFsc2U2Ii8lKnVuZGVybGluZUdRJmZhbHNlNiIvJSpzdWJzY3JpcHRHUSZmYWxzZTYiLyUsc3VwZXJzY3JpcHRHUSZmYWxzZTYiLyUrZm9yZWdyb3VuZEdRKFswLDAsMF02Ii8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdNiIvJSdvcGFxdWVHUSZmYWxzZTYiLyUrZXhlY3V0YWJsZUdRJmZhbHNlNiIvJSlyZWFkb25seUdRJmZhbHNlNiIvJSljb21wb3NlZEdRJmZhbHNlNiIvJSpjb252ZXJ0ZWRHUSZmYWxzZTYiLyUraW1zZWxlY3RlZEdRJmZhbHNlNiIvJSxwbGFjZWhvbGRlckdRJmZhbHNlNiIvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHUSZmYWxzZTYiLyUsbWF0aHZhcmlhbnRHUSdub3JtYWw2Ii8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbjYiLyUlc2l6ZUdRIzEyNiIvJSVib2xkR1EmZmFsc2U2Ii8lJ2l0YWxpY0dRJmZhbHNlNiIvJSp1bmRlcmxpbmVHUSZmYWxzZTYiLyUqc3Vic2NyaXB0R1EmZmFsc2U2Ii8lLHN1cGVyc2NyaXB0R1EmZmFsc2U2Ii8lK2ZvcmVncm91bmRHUShbMCwwLDBdNiIvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XTYiLyUnb3BhcXVlR1EmZmFsc2U2Ii8lK2V4ZWN1dGFibGVHUSZmYWxzZTYiLyUpcmVhZG9ubHlHUSZmYWxzZTYiLyUpY29tcG9zZWRHUSZmYWxzZTYiLyUqY29udmVydGVkR1EmZmFsc2U2Ii8lK2ltc2VsZWN0ZWRHUSZmYWxzZTYiLyUscGxhY2Vob2xkZXJHUSZmYWxzZTYiLyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lLG1hdGh2YXJpYW50R1Enbm9ybWFsNiIvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW42Ii8lJXNpemVHUSMxMjYiLyUlYm9sZEdRJmZhbHNlNiIvJSdpdGFsaWNHUSZmYWxzZTYiLyUqdW5kZXJsaW5lR1EmZmFsc2U2Ii8lKnN1YnNjcmlwdEdRJmZhbHNlNiIvJSxzdXBlcnNjcmlwdEdRJmZhbHNlNiIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXTYiLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV02Ii8lJ29wYXF1ZUdRJmZhbHNlNiIvJStleGVjdXRhYmxlR1EmZmFsc2U2Ii8lKXJlYWRvbmx5R1EmZmFsc2U2Ii8lKWNvbXBvc2VkR1EmZmFsc2U2Ii8lKmNvbnZlcnRlZEdRJmZhbHNlNiIvJStpbXNlbGVjdGVkR1EmZmFsc2U2Ii8lLHBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdRJmZhbHNlNiIvJSxtYXRodmFyaWFudEdRJ25vcm1hbDYiLSUmQ09MT1JHNiYlJFJHQkckIiIhISIiJCIpJz4hXFghIikkIiIpISIiLSUnQ1VSVkVTRzYlN2B2NyQkIiM1ISIiJCIqWiUzX0QhIic3JCQiIz8hIiIkIitlQS8lNCIhIig3JCQiI0khIiIkIis7aC4pSCMhIig3JCQiI1MhIiIkIit0JUhZaCIhIig3JCQiI10hIiIkIit0JUhZaCIhIig3JCQiI2chIiIkIisoNGNsUyMhIig3JCQiI3EhIiIkIisnKkc2bTghIig3JCQiIyEpISIiJCIrQyFHZUEjISIoNyQkIiMhKiEiIiQiKzpBQVE8ISIoNyQkIiQrIiEiIiQiKzpBQVE8ISIoNyQkIiQ1IiEiIiQiK1s/bj5JISIoNyQkIiQ/IiEiIiQiK3NlRiRmIiEiKDckJCIkSSIhIiIkIit2Kno2eCMhIig3JCQiJFMiISIiJCIrKEg2RTUjISIoNyQkIiRdIiEiIiQiKyhINkU1IyEiKDckJCIkZyIhIiIkIio0NDE7JSEiJzckJCIkcSIhIiIkIiskUlNfKUchIig3JCQiJCE9ISIiJCIrJnlMJ1FSISIoNyQkIiQhPiEiIiQiKnp4M00kISInNyQkIiQrIyEiIiQiKnp4M00kISInNyQkIiQ1IyEiIiQiKjQ0MTslISInNyQkIiQ/IyEiIiQiKyRSU18pRyEiKDckJCIkSSMhIiIkIismeUwnUVIhIig3JCQiJFMjISIiJCIqengzTSQhIic3JCQiJF0jISIiJCIqengzTSQhIic3JCQiJGcjISIiJCEpJnozPSIhIig3JCQiJHEjISIiJCIrTUdWTjUhIig3JCQiJCFHISIiJCIqWUVKdCIhIig3JCQiJCFIISIiJCIqUUxbaychIig3JCQiJCskISIiJCIqUUxbaychIig3JCQiJDUkISIiJCIpciopXG4hIic3JCQiJD8kISIiJCIrKj0nKUc6IiEiKDckJCIkSSQhIiIkIjEqKioqKipbI3o5ZyghIzk3JCQiJFMkISIiJCIrXzhvVikqISIpNyQkIiRdJCEiIiQiK184b1YpKiEiKTckJCIkZyQhIiIkISsuXCFvKyUhIik3JCQiJHEkISIiJCIrS0cmKmY3ISIoNyQkIiQhUSEiIiQhK29KaXk1ISIpNyQkIiQhUiEiIiQiKiczNjRuISIoNyQkIiQrJSEiIiQiKiczNjRuISIoNyQkIiQ1JSEiIiQiKnQ2NWMiISInNyQkIiQ/JSEiIiQiK3RNK2ZKISIoNyQkIiRJJSEiIiQiK2U6JEclPSEiKDckJCIkUyUhIiIkIitEU0IjZiMhIig3JCQiJF0lISIiJCIrRFNCI2YjISIoNyQkIiRnJSEiIiQiKnQ2NWMiISInNyQkIiRxJSEiIiQiK3RNK2ZKISIoNyQkIiQhWyEiIiQiK2U6JEclPSEiKDckJCIkIVwhIiIkIitEU0IjZiMhIig3JCQiJCsmISIiJCIrRFNCI2YjISIoNyQkIiQ1JiEiIiQiKzxvWUNNISIoNyQkIiQ/JiEiIiQiK1xncikqPiEiKDckJCIkSSYhIiIkIitIbFB3SiEiKDckJCIkUyYhIiIkIit6VzkzRCEiKDckJCIkXSYhIiIkIit6VzkzRCEiKDckJCIkZyYhIiIkIit3aCF6RSQhIig3JCQiJHEmISIiJCIrXG1xOTshIig3JCQiJCFlISIiJCIrI1IiKSl6SCEiKDckJCIkIWYhIiIkIislei9dPyMhIig3JCQiJCsnISIiJCIrJXovXT8jISIoNyQkIiQ1JyEiIiQiK3MxVSVmJCEiKDckJCIkPychIiIkIitbZT0jcCQhIig3JCQiJEknISIiJCIrL0gjUWgkISIoNyQkIiRTJyEiIiQiKzloIypmTyEiKDckJCIkXSchIiIkIis5aCMqZk8hIig3JCQiJGcnISIiJCIrXmhWQUEhIig3JCQiJHEnISIiJCIra3c6dUQhIig3JCQiJCFvISIiJCIrcHBVJ0cjISIoNyQkIiQhcCEiIiQiKlQuO1gjISInNyQkIiQrKCEiIiQiKlQuO1gjISInNyQkIiQ1KCEiIiQiK15oVkFBISIoNyQkIiQ/KCEiIiQiK2t3OnVEISIoNyQkIiRJKCEiIiQiK3BwVSdHIyEiKDckJCIkUyghIiIkIipULjtYIyEiJzckJCIkXSghIiIkIipULjtYIyEiJzckJCIkZyghIiIkISp5KVJqOSEiJzckJCIkcSghIiIkIStDJ0dzdSMhIig3JCQiJCF5ISIiJCErOnYnM3AiISIoNyQkIiQheiEiIiQhKyZHaklIIyEiKDckJCIkKykhIiIkISsmR2pJSCMhIig3JCQiJDUpISIiJCErQydwYSYpKSEiKTckJCIkPykhIiIkISsuUEAmWyMhIig3JCQiJEkpISIiJCErNyFwJW82ISIoNyQkIiRTKSEiIiQhK0ZAdj0+ISIoNyQkIiRdKSEiIiQhK0ZAdj0+ISIoNyQkIiRnKSEiIiQhK1ghNGohUSEiKDckJCIkcSkhIiIkISs6M3BqTSEiKDckJCIkISkpISIiJCErcEdAW1AhIig3JCQiJCEqKSEiIiQhKyw4InllJCEiKDckJCIkKyohIiIkISssOCJ5ZSQhIig3JCQiJDUqISIiJCErKFJwJHlDISIoNyQkIiQ/KiEiIiQhKygzUSkqKT0hIig3JCQiJEkqISIiJCErUW80eEIhIig3JCQiJFMqISIiJCErLkxSLEAhIig3JCQiJF0qISIiJCErLkxSLEAhIig3JCQiJGcqISIiJCErKFJwJHlDISIoNyQkIiRxKiEiIiQhKygzUSkqKT0hIig3JCQiJCEpKiEiIiQhK1FvNHhCISIoNyQkIiQhKiohIiIkISsuTFIsQCEiKDckJCIlKzUhIiIkISsuTFIsQCEiKDckJCIlNTUhIiIkISs9dCtJRiEiKDckJCIlPzUhIiIkIStuVyVbQCIhIig3JCQiJUk1ISIiJCErR1QubUMhIig3JCQiJVM1ISIiJCErW3UmZXYiISIoNyQkIiVdNSEiIiQhK1t1JmV2IiEiKDckJCIlZzUhIiIkIStpOmV4RCEiKDckJCIlcTUhIiIkIStvJkhJVyIhIig3JCQiJSEzIiEiIiQhK0JXViFRIyEiKDckJCIlITQiISIiJCErVGVyWz0hIig3JCQiJSs2ISIiJCErVGVyWz0hIig3JCQiJTU2ISIiJCEqXDM9PiQhIic3JCQiJT82ISIiJCEraypvWiQ9ISIoNyQkIiVJNiEiIiQhK0d6ZmJIISIoNyQkIiVTNiEiIiQhKyMpNGM+QiEiKDckJCIlXTYhIiIkISsjKTRjPkIhIig3JCQiJWc2ISIiJCErbDZyb1QhIig3JCQiJXE2ISIiJCEqJUhgeEghIic3JCQiJSE9IiEiIiQhK0s9aWhSISIoNyQkIiUhPiIhIiIkIStaRk4uTSEiKDckJCIlKzchIiIkIStaRk4uTSEiKDckJCIlNTchIiIkIStsNnJvVCEiKDckJCIlPzchIiIkISolSGB4SCEiJzckJCIlSTchIiIkIStLPWloUiEiKDckJCIlUzchIiIkIStaRk4uTSEiKDckJCIlXTchIiIkIStaRk4uTSEiKDckJCIlZzchIiIkIislUXpgYCYhIik3JCQiJXE3ISIiJCIrKltkZi0jISIoNyQkIiUhRyIhIiIkIitjbSxxIikhIik3JCQiJSFIIiEiIiQiKyQqPid6XSIhIig3JCQiJSs4ISIiJCIrJCo+J3pdIiEiKDckJCIlNTghIiIkIitgKXpmJCkqISIpNyQkIiU/OCEiIiQiKydvQiVRPyEiKDckJCIlSTghIiIkIitVQnV0NiEiKDckJCIlUzghIiIkIipELypvOyEiJzckJCIlXTghIiIkIipELypvOyEiJzckJCIlZzghIiIkIiszMlxrNSEiKDckJCIlcTghIiIkIisqPThhXSMhIig3JCQiJSFRIiEiIiQiKzlWVUE4ISIoNyQkIiUhUiIhIiIkIis9bGgpKj4hIig3JCQiJSs5ISIiJCIrPWxoKSo+ISIoNyQkIiU1OSEiIiQiK2N5ZjhDISIoNyQkIiU/OSEiIiQiK1ZyXy5QISIoNyQkIiVJOSEiIiQiKzYyLVhFISIoNyQkIiVTOSEiIiQiKzRqVF1LISIoNyQkIiVdOSEiIiQiKzRqVF1LISIoNyQkIiVnOSEiIiQiK2N5ZjhDISIoNyQkIiVxOSEiIiQiK1ZyXy5QISIoNyQkIiUhWyIhIiIkIis2Mi1YRSEiKDckJCIlIVwiISIiJCIrNGpUXUshIig3JCQiJSs6ISIiJCIrNGpUXUshIig3JCQiJTU6ISIiJCIrOjRbUTkhIig3JCQiJT86ISIiJCIqTSt4KyUhIig3JCQiJUk6ISIiJCIrXHZYZjchIig3JCQiJVM6ISIiJCIqI0h4S3ghIig3JCQiJV06ISIiJCIqI0h4S3ghIig3JCQiJWc6ISIiJCIrblhkUzghIig3JCQiJXE6ISIiJCIrQV8wQSgpISIpNyQkIiUhZSIhIiIkIitaUV5oNyEiKDckJCIlIWYiISIiJCIrO0RHVTUhIig3JCQiJSs7ISIiJCIrO0RHVTUhIig3JCQiJTU7ISIiJCIqYzNdKj0hIic3JCQiJT87ISIiJCIoLiJRQyEiJjckJCIlSTshIiIkIitpO0YzOyEiKDckJCIlUzshIiIkIipIUVdNKSEiKDckJCIlXTshIiIkIipIUVdNKSEiKDckJCIlZzshIiIkIispPSsveCQhIig3JCQiJXE7ISIiJCIrWzkjPT0jISIoNyQkIiUhbyIhIiIkIitpeGwlXCQhIig3JCQiJSFwIiEiIiQiK0EwPl1GISIoNyQkIiUrPCEiIiQiK0EwPl1GISIoNyQkIiU1PCEiIiQiKyk9Ky94JCEiKDckJCIlPzwhIiIkIitbOSM9PSMhIig3JCQiJUk8ISIiJCIraXhsJVwkISIoNyQkIiVTPCEiIiQiK0EwPl1GISIoNyQkIiVdPCEiIiQiK0EwPl1GISIoNyQkIiVnPCEiIiQiKz1NMXM5ISIoNyQkIiVxPCEiIiQiKygqKj5WIkghIig3JCQiJSF5IiEiIiQiK19IJzR0IiEiKDckJCIlIXoiISIiJCIrYHAneVMjISIoNyQkIiUrPSEiIiQiIiEhIiItJSdMRUdFTkRHNiMtJSlfVFlQRVNFVEc2Iy1JJW1yb3dHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHNiI2Ny1JI21pRzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNjVRI3k2NiIvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW42Ii8lJXNpemVHUSMxMjYiLyUlYm9sZEdRJmZhbHNlNiIvJSdpdGFsaWNHUSV0cnVlNiIvJSp1bmRlcmxpbmVHUSZmYWxzZTYiLyUqc3Vic2NyaXB0R1EmZmFsc2U2Ii8lLHN1cGVyc2NyaXB0R1EmZmFsc2U2Ii8lK2ZvcmVncm91bmRHUShbMCwwLDBdNiIvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XTYiLyUnb3BhcXVlR1EmZmFsc2U2Ii8lK2V4ZWN1dGFibGVHUSZmYWxzZTYiLyUpcmVhZG9ubHlHUSZmYWxzZTYiLyUpY29tcG9zZWRHUSZmYWxzZTYiLyUqY29udmVydGVkR1EmZmFsc2U2Ii8lK2ltc2VsZWN0ZWRHUSZmYWxzZTYiLyUscGxhY2Vob2xkZXJHUSZmYWxzZTYiLyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lLG1hdGh2YXJpYW50R1EnaXRhbGljNiItSSNtb0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjYtUTAmQXBwbHlGdW5jdGlvbjs2Ii8lLG1hdGh2YXJpYW50R1Enbm9ybWFsNiIvJSZmZW5jZUdRJmZhbHNlNiIvJSpzZXBhcmF0b3JHUSZmYWxzZTYiLyUpc3RyZXRjaHlHUSZmYWxzZTYiLyUqc3ltbWV0cmljR1EmZmFsc2U2Ii8lKGxhcmdlb3BHUSZmYWxzZTYiLyUubW92YWJsZWxpbWl0c0dRJmZhbHNlNiIvJSdhY2NlbnRHUSZmYWxzZTYiLyUnbHNwYWNlR1EmMC4wZW02Ii8lJ3JzcGFjZUdRJjAuMGVtNiItSShtZmVuY2VkRzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNjUtSSVtcm93RzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNjUtSSNtaUc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjY1USJ0NiIvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW42Ii8lJXNpemVHUSMxMjYiLyUlYm9sZEdRJmZhbHNlNiIvJSdpdGFsaWNHUSV0cnVlNiIvJSp1bmRlcmxpbmVHUSZmYWxzZTYiLyUqc3Vic2NyaXB0R1EmZmFsc2U2Ii8lLHN1cGVyc2NyaXB0R1EmZmFsc2U2Ii8lK2ZvcmVncm91bmRHUShbMCwwLDBdNiIvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XTYiLyUnb3BhcXVlR1EmZmFsc2U2Ii8lK2V4ZWN1dGFibGVHUSZmYWxzZTYiLyUpcmVhZG9ubHlHUSZmYWxzZTYiLyUpY29tcG9zZWRHUSZmYWxzZTYiLyUqY29udmVydGVkR1EmZmFsc2U2Ii8lK2ltc2VsZWN0ZWRHUSZmYWxzZTYiLyUscGxhY2Vob2xkZXJHUSZmYWxzZTYiLyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lLG1hdGh2YXJpYW50R1EnaXRhbGljNiIvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW42Ii8lJXNpemVHUSMxMjYiLyUlYm9sZEdRJmZhbHNlNiIvJSdpdGFsaWNHUSZmYWxzZTYiLyUqdW5kZXJsaW5lR1EmZmFsc2U2Ii8lKnN1YnNjcmlwdEdRJmZhbHNlNiIvJSxzdXBlcnNjcmlwdEdRJmZhbHNlNiIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXTYiLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV02Ii8lJ29wYXF1ZUdRJmZhbHNlNiIvJStleGVjdXRhYmxlR1EmZmFsc2U2Ii8lKXJlYWRvbmx5R1EmZmFsc2U2Ii8lKWNvbXBvc2VkR1EmZmFsc2U2Ii8lKmNvbnZlcnRlZEdRJmZhbHNlNiIvJStpbXNlbGVjdGVkR1EmZmFsc2U2Ii8lLHBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdRJmZhbHNlNiIvJSxtYXRodmFyaWFudEdRJ25vcm1hbDYiLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuNiIvJSVzaXplR1EjMTI2Ii8lJWJvbGRHUSZmYWxzZTYiLyUnaXRhbGljR1EmZmFsc2U2Ii8lKnVuZGVybGluZUdRJmZhbHNlNiIvJSpzdWJzY3JpcHRHUSZmYWxzZTYiLyUsc3VwZXJzY3JpcHRHUSZmYWxzZTYiLyUrZm9yZWdyb3VuZEdRKFswLDAsMF02Ii8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdNiIvJSdvcGFxdWVHUSZmYWxzZTYiLyUrZXhlY3V0YWJsZUdRJmZhbHNlNiIvJSlyZWFkb25seUdRJmZhbHNlNiIvJSljb21wb3NlZEdRJmZhbHNlNiIvJSpjb252ZXJ0ZWRHUSZmYWxzZTYiLyUraW1zZWxlY3RlZEdRJmZhbHNlNiIvJSxwbGFjZWhvbGRlckdRJmZhbHNlNiIvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHUSZmYWxzZTYiLyUsbWF0aHZhcmlhbnRHUSdub3JtYWw2Ii8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbjYiLyUlc2l6ZUdRIzEyNiIvJSVib2xkR1EmZmFsc2U2Ii8lJ2l0YWxpY0dRJmZhbHNlNiIvJSp1bmRlcmxpbmVHUSZmYWxzZTYiLyUqc3Vic2NyaXB0R1EmZmFsc2U2Ii8lLHN1cGVyc2NyaXB0R1EmZmFsc2U2Ii8lK2ZvcmVncm91bmRHUShbMCwwLDBdNiIvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XTYiLyUnb3BhcXVlR1EmZmFsc2U2Ii8lK2V4ZWN1dGFibGVHUSZmYWxzZTYiLyUpcmVhZG9ubHlHUSZmYWxzZTYiLyUpY29tcG9zZWRHUSZmYWxzZTYiLyUqY29udmVydGVkR1EmZmFsc2U2Ii8lK2ltc2VsZWN0ZWRHUSZmYWxzZTYiLyUscGxhY2Vob2xkZXJHUSZmYWxzZTYiLyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lLG1hdGh2YXJpYW50R1Enbm9ybWFsNiItJSZDT0xPUkc2JiUkUkdCRyQiIikhIiIkIiIhISIiJCIpJz4hXFghIiktJSdDVVJWRVNHNiU3YHY3JCQiIzUhIiIkIitFKyk9bSohIik3JCQiIz8hIiIkIipNVG4xJCEiKDckJCIjSSEiIiQiK0VJXmNhISIpNyQkIiNTISIiJCIrXFshXCsjISIpNyQkIiNdISIiJCIrXFshXCsjISIpNyQkIiNnISIiJCIrUilbeGsqISIpNyQkIiNxISIiJCIrTXFlYkkhIik3JCQiIyEpISIiJCIrM1ghSFcmISIpNyQkIiMhKiEiIiQiKzRAcCMqPiEiKTckJCIkKyIhIiIkIis0QHAjKj4hIik3JCQiJDUiISIiJCIxLCsrKD0heilvKiEjOTckJCIkPyIhIiIkIitZXlV6SiEiKTckJCIkSSIhIiIkIitqSFspXCYhIik3JCQiJFMiISIiJCIrPjw0KDMjISIpNyQkIiRdIiEiIiQiKz48NCgzIyEiKTckJCIkZyIhIiIkIitgJVxfbCohIik3JCQiJHEiISIiJCIrXClHYzskISIpNyQkIiQhPSEiIiQiK3UpMyVvYSEiKTckJCIkIT4hIiIkIitoX0ZtPyEiKTckJCIkKyMhIiIkIitoX0ZtPyEiKTckJCIkNSMhIiIkIitgJVxfbCohIik3JCQiJD8jISIiJCIrXClHYzskISIpNyQkIiRJIyEiIiQiK3UpMyVvYSEiKTckJCIkUyMhIiIkIitoX0ZtPyEiKTckJCIkXSMhIiIkIitoX0ZtPyEiKTckJCIkZyMhIiIkIip0JzR4JSohIig3JCQiJHEjISIiJCIrKSpHNF1KISIpNyQkIiQhRyEiIiQiMiYqKioqKio+eCEpPWAhIzo3JCQiJCFIISIiJCIrJnA/SCo+ISIpNyQkIiQrJCEiIiQiKyZwP0gqPiEiKTckJCIkNSQhIiIkIitQJm9xWSohIik3JCQiJD8kISIiJCIrQ3kzUEohIik3JCQiJEkkISIiJCIrZW9EM2AhIik3JCQiJFMkISIiJCIrYlMoNCk+ISIpNyQkIiRdJCEiIiQiK2JTKDQpPiEiKTckJCIkZyQhIiIkIitIdkFBJyohIik3JCQiJHEkISIiJCIrYCtYNEshIik3JCQiJCFRISIiJCIrVih5KVthISIpNyQkIiQhUiEiIiQiKyZ5dUYzIyEiKTckJCIkKyUhIiIkIismeXVGMyMhIik3JCQiJDUlISIiJCIrI0grZmgqISIpNyQkIiQ/JSEiIiQiK2wkeUw9JCEiKTckJCIkSSUhIiIkIitlWzNSYSEiKTckJCIkUyUhIiIkIitrS3NqPyEiKTckJCIkXSUhIiIkIitrS3NqPyEiKTckJCIkZyUhIiIkIisjSCtmaCohIik3JCQiJHElISIiJCIrbCR5TD0kISIpNyQkIiQhWyEiIiQiK2VbM1JhISIpNyQkIiQhXCEiIiQiK2tLc2o/ISIpNyQkIiQrJiEiIiQiK2tLc2o/ISIpNyQkIiQ1JiEiIiQiK0UrKT1tKiEiKTckJCIkPyYhIiIkIipNVG4xJCEiKDckJCIkSSYhIiIkIitFSV5jYSEiKTckJCIkUyYhIiIkIitcWyFcKyMhIik3JCQiJF0mISIiJCIrXFshXCsjISIpNyQkIiRnJiEiIiQiK1IpW3hrKiEiKTckJCIkcSYhIiIkIitNcWViSSEiKTckJCIkIWUhIiIkIisyWCFIVyYhIik3JCQiJCFmISIiJCIrNEBwIyo+ISIpNyQkIiQrJyEiIiQiKzRAcCMqPiEiKTckJCIkNSchIiIkIispPSF6KW8qISIpNyQkIiQ/JyEiIiQiK1heVXpKISIpNyQkIiRJJyEiIiQiK2pIWylcJiEiKTckJCIkUychIiIkIis+PDQoMyMhIik3JCQiJF0nISIiJCIrPjw0KDMjISIpNyQkIiRnJyEiIiQiK1glXF9sKiEiKTckJCIkcSchIiIkIitgKUdjOyQhIik3JCQiJCFvISIiJCIrbykzJW9hISIpNyQkIiQhcCEiIiQiKkV2aTEjISIoNyQkIiQrKCEiIiQiKkV2aTEjISIoNyQkIiQ1KCEiIiQiK1glXF9sKiEiKTckJCIkPyghIiIkIitgKUdjOyQhIik3JCQiJEkoISIiJCIrbykzJW9hISIpNyQkIiRTKCEiIiQiKkV2aTEjISIoNyQkIiRdKCEiIiQiKkV2aTEjISIoNyQkIiRnKCEiIiQiKnQnNHglKiEiKDckJCIkcSghIiIkIispKkc0XUohIik3JCQiJCF5ISIiJCIyJioqKioqKj54ISk9YCEjOjckJCIkIXohIiIkIismcD9IKj4hIik3JCQiJCspISIiJCIrJnA/SCo+ISIpNyQkIiQ1KSEiIiQiK1Amb3FZKiEiKTckJCIkPykhIiIkIitDeTNQSiEiKTckJCIkSSkhIiIkIitmb0QzYCEiKTckJCIkUykhIiIkIitiUyg0KT4hIik3JCQiJF0pISIiJCIrYlMoNCk+ISIpNyQkIiRnKSEiIiQiK0d2QUEnKiEiKTckJCIkcSkhIiIkIitgK1g0SyEiKTckJCIkISkpISIiJCIrVSh5KVthISIpNyQkIiQhKikhIiIkIismeXVGMyMhIik3JCQiJCsqISIiJCIrJnl1RjMjISIpNyQkIiQ1KiEiIiQiKyJIK2ZoKiEiKTckJCIkPyohIiIkIitsJHlMPSQhIik3JCQiJEkqISIiJCIrZVszUmEhIik3JCQiJFMqISIiJCIra0tzaj8hIik3JCQiJF0qISIiJCIra0tzaj8hIik3JCQiJGcqISIiJCIrIkgrZmgqISIpNyQkIiRxKiEiIiQiK2wkeUw9JCEiKTckJCIkISkqISIiJCIrZVszUmEhIik3JCQiJCEqKiEiIiQiK2tLc2o/ISIpNyQkIiUrNSEiIiQiK2tLc2o/ISIpNyQkIiU1NSEiIiQiK0UrKT1tKiEiKTckJCIlPzUhIiIkIipNVG4xJCEiKDckJCIlSTUhIiIkIitFSV5jYSEiKTckJCIlUzUhIiIkIitcWyFcKyMhIik3JCQiJV01ISIiJCIrXFshXCsjISIpNyQkIiVnNSEiIiQiK1IpW3hrKiEiKTckJCIlcTUhIiIkIitNcWViSSEiKTckJCIlITMiISIiJCIrMlghSFcmISIpNyQkIiUhNCIhIiIkIis0QHAjKj4hIik3JCQiJSs2ISIiJCIrNEBwIyo+ISIpNyQkIiU1NiEiIiQiKj0heilvKiEiKDckJCIlPzYhIiIkIitcXlV6SiEiKTckJCIlSTYhIiIkIitkSFspXCYhIik3JCQiJVM2ISIiJCIrPTw0KDMjISIpNyQkIiVdNiEiIiQiKz08NCgzIyEiKTckJCIlZzYhIiIkIitYJVxfbCohIik3JCQiJXE2ISIiJCIrYClHYzskISIpNyQkIiUhPSIhIiIkIjInKioqKioqbykzJW9hISM6NyQkIiUhPiIhIiIkIipFdmkxIyEiKDckJCIlKzchIiIkIipFdmkxIyEiKDckJCIlNTchIiIkIitYJVxfbCohIik3JCQiJT83ISIiJCIrYClHYzskISIpNyQkIiVJNyEiIiQiMicqKioqKipvKTMlb2EhIzo3JCQiJVM3ISIiJCIqRXZpMSMhIig3JCQiJV03ISIiJCIqRXZpMSMhIig3JCQiJWc3ISIiJCIrKWV2SmoqISIpNyQkIiVxNyEiIiQiK1UnKUg4TiEiKTckJCIlIUciISIiJCIreiQpeTZiISIpNyQkIiUhSCIhIiIkIitcMTMkRyMhIik3JCQiJSs4ISIiJCIrXDEzJEcjISIpNyQkIiU1OCEiIiQiK3kjUnhnKiEiKTckJCIlPzghIiIkIitOOkohWyQhIik3JCQiJUk4ISIiJCIyJyoqKioqPkxFXVsmISM6NyQkIiVTOCEiIiQiK1EjeUZEIyEiKTckJCIlXTghIiIkIitRI3lGRCMhIik3JCQiJWc4ISIiJCIrI3BILCsiISIoNyQkIiVxOCEiIiQiK1RvJlFtJCEiKTckJCIlIVEiISIiJCIrKSkzclRlISIpNyQkIiUhUiIhIiIkIis6UCo0XiMhIik3JCQiJSs5ISIiJCIrOlAqNF4jISIpNyQkIiU1OSEiIiQiKzAhW18pKiohIik3JCQiJT85ISIiJCIrbWxzKGYkISIpNyQkIiVJOSEiIiQiKy0qb28iZSEiKTckJCIlUzkhIiIkIitPKnBFWSMhIik3JCQiJV05ISIiJCIrTypwRVkjISIpNyQkIiVnOSEiIiQiKzAhW18pKiohIik3JCQiJXE5ISIiJCIrbWxzKGYkISIpNyQkIiUhWyIhIiIkIistKm9vImUhIik3JCQiJSFcIiEiIiQiK08qcEVZIyEiKTckJCIlKzohIiIkIitPKnBFWSMhIik3JCQiJTU6ISIiJCIrbHU9NTUhIig3JCQiJT86ISIiJCIrNyJ6PUkkISIpNyQkIiVJOiEiIiQiKyQzdjUnZSEiKTckJCIlUzohIiIkIis2I3lNSiMhIik3JCQiJV06ISIiJCIrNiN5TUojISIpNyQkIiVnOiEiIiQiKz1KZzE1ISIoNyQkIiVxOiEiIiQiKlcnZXRLISIoNyQkIiUhZSIhIiIkIipOZGwjZSEiKDckJCIlIWYiISIiJCIrVTNdI0cjISIpNyQkIiUrOyEiIiQiK1UzXSNHIyEiKTckJCIlNTshIiIkIitySiw8NSEiKDckJCIlPzshIiIkIisjSCpwKGUkISIpNyQkIiVJOyEiIiQiK2I0YG5mISIpNyQkIiVTOyEiIiQiK0ROJT5fIyEiKTckJCIlXTshIiIkIitETiU+XyMhIik3JCQiJWc7ISIiJCIrTWNdMzUhIig3JCQiJXE7ISIiJCIrKUcwRmIkISIpNyQkIiUhbyIhIiIkIitoJ1s3KmUhIik3JCQiJSFwIiEiIiQiK0NJOXBDISIpNyQkIiUrPCEiIiQiK0NJOXBDISIpNyQkIiU1PCEiIiQiK01jXTM1ISIoNyQkIiU/PCEiIiQiKylHMEZiJCEiKTckJCIlSTwhIiIkIitoJ1s3KmUhIik3JCQiJVM8ISIiJCIrQ0k5cEMhIik3JCQiJV08ISIiJCIrQ0k5cEMhIik3JCQiJWc8ISIiJCIrKGV2SmoqISIpNyQkIiVxPCEiIiQiK1UnKUg4TiEiKTckJCIlIXkiISIiJCIreSQpeTZiISIpNyQkIiUheiIhIiIkIitcMTMkRyMhIik3JCQiJSs9ISIiJCIiISEiIi0lJ0xFR0VOREc2Iy0lKV9UWVBFU0VURzYjLUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjY3LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHNiI2NVEjejY2Ii8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbjYiLyUlc2l6ZUdRIzEyNiIvJSVib2xkR1EmZmFsc2U2Ii8lJ2l0YWxpY0dRJXRydWU2Ii8lKnVuZGVybGluZUdRJmZhbHNlNiIvJSpzdWJzY3JpcHRHUSZmYWxzZTYiLyUsc3VwZXJzY3JpcHRHUSZmYWxzZTYiLyUrZm9yZWdyb3VuZEdRKFswLDAsMF02Ii8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdNiIvJSdvcGFxdWVHUSZmYWxzZTYiLyUrZXhlY3V0YWJsZUdRJmZhbHNlNiIvJSlyZWFkb25seUdRJmZhbHNlNiIvJSljb21wb3NlZEdRJmZhbHNlNiIvJSpjb252ZXJ0ZWRHUSZmYWxzZTYiLyUraW1zZWxlY3RlZEdRJmZhbHNlNiIvJSxwbGFjZWhvbGRlckdRJmZhbHNlNiIvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHUSZmYWxzZTYiLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWM2Ii1JI21vRzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNi1RMCZBcHBseUZ1bmN0aW9uOzYiLyUsbWF0aHZhcmlhbnRHUSdub3JtYWw2Ii8lJmZlbmNlR1EmZmFsc2U2Ii8lKnNlcGFyYXRvckdRJmZhbHNlNiIvJSlzdHJldGNoeUdRJmZhbHNlNiIvJSpzeW1tZXRyaWNHUSZmYWxzZTYiLyUobGFyZ2VvcEdRJmZhbHNlNiIvJS5tb3ZhYmxlbGltaXRzR1EmZmFsc2U2Ii8lJ2FjY2VudEdRJmZhbHNlNiIvJSdsc3BhY2VHUSYwLjBlbTYiLyUncnNwYWNlR1EmMC4wZW02Ii1JKG1mZW5jZWRHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHNiI2NS1JJW1yb3dHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHNiI2NS1JI21pRzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNjVRInQ2Ii8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbjYiLyUlc2l6ZUdRIzEyNiIvJSVib2xkR1EmZmFsc2U2Ii8lJ2l0YWxpY0dRJXRydWU2Ii8lKnVuZGVybGluZUdRJmZhbHNlNiIvJSpzdWJzY3JpcHRHUSZmYWxzZTYiLyUsc3VwZXJzY3JpcHRHUSZmYWxzZTYiLyUrZm9yZWdyb3VuZEdRKFswLDAsMF02Ii8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdNiIvJSdvcGFxdWVHUSZmYWxzZTYiLyUrZXhlY3V0YWJsZUdRJmZhbHNlNiIvJSlyZWFkb25seUdRJmZhbHNlNiIvJSljb21wb3NlZEdRJmZhbHNlNiIvJSpjb252ZXJ0ZWRHUSZmYWxzZTYiLyUraW1zZWxlY3RlZEdRJmZhbHNlNiIvJSxwbGFjZWhvbGRlckdRJmZhbHNlNiIvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHUSZmYWxzZTYiLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWM2Ii8lJ2ZhbWlseUdRMFRpbWVzfk5ld35Sb21hbjYiLyUlc2l6ZUdRIzEyNiIvJSVib2xkR1EmZmFsc2U2Ii8lJ2l0YWxpY0dRJmZhbHNlNiIvJSp1bmRlcmxpbmVHUSZmYWxzZTYiLyUqc3Vic2NyaXB0R1EmZmFsc2U2Ii8lLHN1cGVyc2NyaXB0R1EmZmFsc2U2Ii8lK2ZvcmVncm91bmRHUShbMCwwLDBdNiIvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XTYiLyUnb3BhcXVlR1EmZmFsc2U2Ii8lK2V4ZWN1dGFibGVHUSZmYWxzZTYiLyUpcmVhZG9ubHlHUSZmYWxzZTYiLyUpY29tcG9zZWRHUSZmYWxzZTYiLyUqY29udmVydGVkR1EmZmFsc2U2Ii8lK2ltc2VsZWN0ZWRHUSZmYWxzZTYiLyUscGxhY2Vob2xkZXJHUSZmYWxzZTYiLyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lLG1hdGh2YXJpYW50R1Enbm9ybWFsNiIvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW42Ii8lJXNpemVHUSMxMjYiLyUlYm9sZEdRJmZhbHNlNiIvJSdpdGFsaWNHUSZmYWxzZTYiLyUqdW5kZXJsaW5lR1EmZmFsc2U2Ii8lKnN1YnNjcmlwdEdRJmZhbHNlNiIvJSxzdXBlcnNjcmlwdEdRJmZhbHNlNiIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXTYiLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV02Ii8lJ29wYXF1ZUdRJmZhbHNlNiIvJStleGVjdXRhYmxlR1EmZmFsc2U2Ii8lKXJlYWRvbmx5R1EmZmFsc2U2Ii8lKWNvbXBvc2VkR1EmZmFsc2U2Ii8lKmNvbnZlcnRlZEdRJmZhbHNlNiIvJStpbXNlbGVjdGVkR1EmZmFsc2U2Ii8lLHBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdRJmZhbHNlNiIvJSxtYXRodmFyaWFudEdRJ25vcm1hbDYiLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuNiIvJSVzaXplR1EjMTI2Ii8lJWJvbGRHUSZmYWxzZTYiLyUnaXRhbGljR1EmZmFsc2U2Ii8lKnVuZGVybGluZUdRJmZhbHNlNiIvJSpzdWJzY3JpcHRHUSZmYWxzZTYiLyUsc3VwZXJzY3JpcHRHUSZmYWxzZTYiLyUrZm9yZWdyb3VuZEdRKFswLDAsMF02Ii8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdNiIvJSdvcGFxdWVHUSZmYWxzZTYiLyUrZXhlY3V0YWJsZUdRJmZhbHNlNiIvJSlyZWFkb25seUdRJmZhbHNlNiIvJSljb21wb3NlZEdRJmZhbHNlNiIvJSpjb252ZXJ0ZWRHUSZmYWxzZTYiLyUraW1zZWxlY3RlZEdRJmZhbHNlNiIvJSxwbGFjZWhvbGRlckdRJmZhbHNlNiIvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHUSZmYWxzZTYiLyUsbWF0aHZhcmlhbnRHUSdub3JtYWw2Ii0lJkNPTE9SRzYmJSRSR0JHJCIpJz4hXFghIikkIiIpISIiJCIiISEiIi0mJSZfQVhJU0c2IyIiIjYmLSUmQ09MT1JHNiYlJFJHQkckIiIhISIiJCIiISEiIiQiIiEhIiItJSpMSU5FU1RZTEVHNiMiIiEtJSpUSElDS05FU1NHNiMiIiEtJS1UUkFOU1BBUkVOQ1lHNiMkIiIhISIiLSYlJl9BWElTRzYjIiIjNiYtJSZDT0xPUkc2JiUkUkdCRyQiIiEhIiIkIiIhISIiJCIiISEiIi0lKkxJTkVTVFlMRUc2IyIiIS0lKlRISUNLTkVTU0c2IyIiIS0lLVRSQU5TUEFSRU5DWUc2IyQiIiEhIiItJStBWEVTTEFCRUxTRzYlNiQtSSNtaUc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjY1USJ0NiIvJSdmYW1pbHlHUShERUZBVUxUNiIvJSVzaXplR1EjMTM2Ii8lJWJvbGRHUSZmYWxzZTYiLyUnaXRhbGljR1EldHJ1ZTYiLyUqdW5kZXJsaW5lR1EmZmFsc2U2Ii8lKnN1YnNjcmlwdEdRJmZhbHNlNiIvJSxzdXBlcnNjcmlwdEdRJmZhbHNlNiIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXTYiLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV02Ii8lJ29wYXF1ZUdRJmZhbHNlNiIvJStleGVjdXRhYmxlR1EmZmFsc2U2Ii8lKXJlYWRvbmx5R1EmZmFsc2U2Ii8lKWNvbXBvc2VkR1EmZmFsc2U2Ii8lKmNvbnZlcnRlZEdRJmZhbHNlNiIvJStpbXNlbGVjdGVkR1EmZmFsc2U2Ii8lLHBsYWNlaG9sZGVyR1EmZmFsc2U2Ii8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdRJmZhbHNlNiIvJSxtYXRodmFyaWFudEdRJ2l0YWxpYzYiUSRbc102Ii1JI21pRzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNjVRJHBvczYiLyUnZmFtaWx5R1EoREVGQVVMVDYiLyUlc2l6ZUdRIzEzNiIvJSVib2xkR1EmZmFsc2U2Ii8lJ2l0YWxpY0dRJXRydWU2Ii8lKnVuZGVybGluZUdRJmZhbHNlNiIvJSpzdWJzY3JpcHRHUSZmYWxzZTYiLyUsc3VwZXJzY3JpcHRHUSZmYWxzZTYiLyUrZm9yZWdyb3VuZEdRKFswLDAsMF02Ii8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdNiIvJSdvcGFxdWVHUSZmYWxzZTYiLyUrZXhlY3V0YWJsZUdRJmZhbHNlNiIvJSlyZWFkb25seUdRJmZhbHNlNiIvJSljb21wb3NlZEdRJmZhbHNlNiIvJSpjb252ZXJ0ZWRHUSZmYWxzZTYiLyUraW1zZWxlY3RlZEdRJmZhbHNlNiIvJSxwbGFjZWhvbGRlckdRJmZhbHNlNiIvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHUSZmYWxzZTYiLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWM2Ii0lJUZPTlRHNiUlKERFRkFVTFRHJShERUZBVUxURyIjOC0lJlRJVExFRzYkLSUpX1RZUEVTRVRHNiMtSSVtcm93RzYjL0krbW9kdWxlbmFtZUc2IkksVHlwZXNldHRpbmdHSShfc3lzbGliRzYiNjYtSSNtc0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkc2IjYjUSlQb3NpdGlvbjYiLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuNiIvJSVzaXplR1EjMTM2Ii8lJWJvbGRHUSZmYWxzZTYiLyUnaXRhbGljR1EmZmFsc2U2Ii8lKnVuZGVybGluZUdRJmZhbHNlNiIvJSpzdWJzY3JpcHRHUSZmYWxzZTYiLyUsc3VwZXJzY3JpcHRHUSZmYWxzZTYiLyUrZm9yZWdyb3VuZEdRKFswLDAsMF02Ii8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdNiIvJSdvcGFxdWVHUSZmYWxzZTYiLyUrZXhlY3V0YWJsZUdRJmZhbHNlNiIvJSlyZWFkb25seUdRJmZhbHNlNiIvJSljb21wb3NlZEdRJmZhbHNlNiIvJSpjb252ZXJ0ZWRHUSZmYWxzZTYiLyUraW1zZWxlY3RlZEdRJmZhbHNlNiIvJSxwbGFjZWhvbGRlckdRJmZhbHNlNiIvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHUSZmYWxzZTYiLyUwZm9udF9zdHlsZV9uYW1lR1ElVGV4dDYiLyUsbWF0aHZhcmlhbnRHUSdub3JtYWw2Ii0lLVRSQU5TUEFSRU5DWUc2IyQiIiEhIiItJSlfVklTSUJMRUc2IyIiIi0lJVJPT1RHNictJSlCT1VORFNfWEc2IyQiIiEhIiItJSlCT1VORFNfWUc2IyQiIiEhIiItJS1CT1VORFNfV0lEVEhHNiMkIiUrUyEiIi0lLkJPVU5EU19IRUlHSFRHNiMkIiUrUyEiIi0lKUNISUxEUkVORzYiLSUrQU5OT1RBVElPTkc2Jy0lKUJPVU5EU19YRzYjJCIiISEiIi0lKUJPVU5EU19ZRzYjJCIiISEiIi0lLUJPVU5EU19XSURUSEc2IyQiJStTISIiLSUuQk9VTkRTX0hFSUdIVEc2IyQiJStTISIiLSUpQ0hJTERSRU5HNiI=NiI=</Plot></Text-field>
-</Output>
+</Group>
+<Group view="code" hide-input="false" labelreference="L45594" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font bold="true">VELOCITY</Font></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="code" hide-input="false" labelreference="L45582" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">solutions := Array(1..180, []):
+dofs:= Array(1..180,[]):
+dofs_v:= Array(1..180,[]):
+x_seat_v := Array(1..180, []):
+y_seat_v := Array(1..180, []):
+z_seat_v := Array(1..180, []):
+i:=1:
+sol_tmp:=1:
+guess_v:={}:
+while i &lt; 180 do
+        dofs_v[i]:= {diff(s(t),t) = evalf(subs(time=i, dst)), 
+                    diff(theta1(t),t) = evalf(subs(time=i, dtheta1t)),
+                    diff(theta5(t),t) = evalf(subs(time=i, dtheta5t)),
+                    diff(theta6__y(t),t) =evalf(subs(time=i, dtheta6t))}:
+        dofs[i] := {s = evalf(subs(time=i, s_profile_complete)), 
+                    theta1 = evalf(subs(time=i, theta1_profile)),
+                    theta5 = evalf(subs(time=i, theta5_profile)),
+                    theta6__y =evalf(subs(time=i, theta6_profile_complete))}:
+        solutions[i] := fsolve(subs(q_vars_to_symbol,data,dofs[i],Phi),guess);
+        guess:=solutions[i];
+        solutions_v[i] := subs(data, dofs_v[i], subs_qd_vars_s_vel);
+        sol_tmp:= simplify(subs(solutions_v[i],dofs_v[i] , q_vars_to_symbol,data, dofs[i],solutions[i], &lt;comp_XYZ(velocity(SSeat), RF0)&gt;));
+        x_seat_v[i]:=sol_tmp[1];
+        y_seat_v[i]:=sol_tmp[2];
+        z_seat_v[i]:=sol_tmp[3];        
+        i:=i+1;
+end do:</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" labelreference="L45581" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(plot([seq([i,  x_seat_v[i]],  i=1..180)],color=cc[1],legend=typeset(x) ,
+         labels = [typeset(t,&quot;[s]&quot;),pos],
+         title = &quot;Velocity&quot;),
+plot([seq([i,  y_seat_v[i]],  i=1..180)],color=cc[2],legend=typeset(y) ,
+         labels = [typeset(t,&quot;[s]&quot;),pos],
+         title = &quot;Velocity&quot;),
+        plot([seq([i,  z_seat_v[i]],  i=1..180)],color=cc[3],legend=typeset(z) ,
+         labels = [typeset(t,&quot;[s]&quot;),pos],
+         title = &quot;Velocity&quot;)
+);</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L46042" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font bold="true">ACCELERATION</Font></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="code" hide-input="false" labelreference="L45580" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline( &lt; [seq(i, i=1..180)] &gt; ,  &lt;convert(x_seat_v,list)&gt;, T):
+X_spline := unapply(%,[Timer]):
+CurveFitting:-Spline( &lt; [seq(i, i=1..180)] &gt; , &lt;convert(y_seat_v,list)&gt; , T):
+Y_spline := unapply(%,[T]):
+CurveFitting:-Spline( &lt; [seq(i, i=1..180)] &gt; , &lt;convert(z_seat_v,list)&gt; , T):
+Z_spline := unapply(%,[T]):
+derive_spline := proc(_spline, T, degree) 
+  local L, i;
+  L := convert(_spline, list);
+  L:=piecewise(seq([L[2*i - 1], diff(L[2*i], `$`(T,degree))][], i = 1 .. floor(1/2*nops(L))), diff(L[-1], `$`(T,degree))); 
+  return L:
+end:
+x_seat_a:=derive_spline(X_spline(T),T,1):
+y_seat_a:=derive_spline(Y_spline(T),T,1):
+z_seat_a:=derive_spline(Z_spline(T),T,1):
+x_seat_j:=derive_spline(X_spline(T),T,2):
+y_seat_j:=derive_spline(Y_spline(T),T,2):
+z_seat_j:=derive_spline(Z_spline(T),T,2):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L45975" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(x_seat_a(T),T=0..180, color=cc[1],  legend=&quot;x&quot;,title = &quot;Acceleration&quot;),
+plot(y_seat_a(T),T=0..180, color=cc[2],  legend=&quot;y&quot;,title = &quot;Acceleration&quot;),
+plot(z_seat_a(T),T=0..180, color=cc[3],  legend=&quot;z&quot;,title = &quot;Acceleration&quot;));</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L45957" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
+plot(x_seat_j(T),T=0..180, color=cc[1],  legend=&quot;x&quot;,title = &quot;Jerk&quot;),
+plot(y_seat_j(T),T=0..180, color=cc[2],  legend=&quot;y&quot;,title = &quot;Jerk&quot;),
+plot(z_seat_j(T),T=0..180, color=cc[3],  legend=&quot;z&quot;,title = &quot;Jerk&quot;));</Text-field>
+</Input>
 </Group></Presentation-Block>
 </Section>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"></Text-field></Title>
-<Group labelreference="L11853" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input>
-</Input>
-</Group>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Dynamics</Text-field></Title>
-<Group labelreference="L11870" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">First order semi-explicit form</Text-field></Title><Presentation-Block>
-<Group view="code" labelreference="L11884" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Semi-explicit form</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L11860" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group></Presentation-Block>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Initial conditions</Text-field></Title><Presentation-Block>
-<Group view="code" labelreference="L11883" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group></Presentation-Block>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Numerical solution</Text-field></Title>
-<Group labelreference="L11855" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-</Section>
-<Group labelreference="L11897" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"></Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Recursive approach</Text-field></Title>
-<Group labelreference="L11856" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input>
-</Input>
-</Group>
-<Group hide-output="false" labelreference="L11861" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Kinematics</Text-field></Title>
-<Group labelreference="L11886" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input>
-</Input>
-</Group>
-<Group labelreference="L11859" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group labelreference="L11899" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-</Section>
-<Group labelreference="L11862" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input>
-</Input>
-</Group>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Dynamics</Text-field></Title>
-<Group labelreference="L11908" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group labelreference="L11905" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"></Text-field>
-</Input>
-</Group>
-<Group labelreference="L11898" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">First order semi-explicit form</Text-field></Title><Presentation-Block>
-<Group view="code" labelreference="L11836" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Semi-explicit form</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L11901" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group></Presentation-Block>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">First order semi-explicit form</Text-field></Title><Presentation-Block>
-<Group view="code" labelreference="L11890" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Semi-explicit form</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L11893" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group></Presentation-Block>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"></Text-field></Title><Presentation-Block>
-<Group view="code" labelreference="L11891" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group></Presentation-Block>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Numerical solution</Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title></Title>
 <Group labelreference="L11900" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+<Input>
 </Input>
 </Group>
 </Section>
 </Section><Presentation-Block>
-<Group view="presentation" inline-output="false" labelreference="L11998" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group view="presentation" inline-output="false" labelreference="L46024" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
