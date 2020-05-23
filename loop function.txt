@@ -46,3 +46,104 @@ for i from 1 to N+1 do
   end:
   
 end:
+
+
+
+
+
+
+
+
+
+
+
+
+
+Plot of velocities ratios
+In velocity analysis, positions (i.e. coordinate values) must be known
+#TAU1 := evalf([seq(subs(data,sol_FDPos[i],theta1(t)=dof_range[i],Tau[1,1]),i=1..NS_good)]): # = diffF(qD[1],qI[])
+#TAU2 := evalf([seq(subs(data,sol_FDPos[i],theta1(t)=dof_range[i],Tau[2,1]),i=1..NS_good)]): # = diffF(qD[1],qI[])
+#TAU3 := evalf([seq(subs(data,sol_FDPos[i],theta1(t)=dof_range[i],Tau[3,1]),i=1..NS_good)]): # = diffF(qD[1],qI[])
+
+Error, unable to execute seq
+Error, unable to execute seq
+Error, unable to execute seq
+#display( plot( <dof_range>*180/Pi,<TAU1>,color=c_set[1],legend=typeset('diff'(op(0,qD[1]),op(0,qI[1])))),
+#         plot( <dof_range>*180/Pi,<TAU2>,color=c_set[2],legend=typeset('diff'(op(0,qD[2]),op(0,qI[1])))),
+#        plot( <dof_range>*180/Pi,<TAU3>,color=c_set[3],legend=typeset('diff'(op(0,qD[3]),op(0,qI[1])))),
+#         labels = [typeset(theta__1,"[°]"),tau],
+#         title = " Velocity ratios");
+Error, (in plot) two lists or Vectors of numerical values expected
+We compute analytical singular configurations
+SCs_s := solve([op(Phi_s),eq_det_s],q_vars,explicit=true): <%>:
+nops(%); # 3 Singular Configurations???
+nops(%%[1]);
+<%%%[1]>:
+                               3
+                               21
+Comment of the professor regarding T04-04 tutorial:
+The SCs evaluated with the parameters of the system turn out not to be feasible: complex numbers
+SCs exists analytically but not for this specific mechanism with given parameter values.
+map(Vector,map(evalf,subs(data,subs(q_vars_to_function,dof),SCs_s))): # ???
+nops(%); # ???
+#evalf(subs(data,sol_kine_all,<%%[1]>));
+#subs(q_vars_to_function,sol_kine_all);
+
+
+
+We can now compute the acceleration just by differentiating the velocities.
+qD' = Tau(qD,qI).qI'
+Remember that accelerations of dependents are: qD'' = Tau.qI''+diff(Tau,t).qD';
+#qD_dot;
+qd_vars_acc := simplify( map(diff,qd_vars_dot,t),size):
+AA,res := LinearAlgebra:-GenerateMatrix(convert(qd_vars_acc ,list),diff(qi_vars,t,t)):
+Proof => AA should be equal to Tau, and It is
+simplify(AA-Tau);
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+                          [          ]
+                          [0  0  0  0]
+#simplify(subs(subs_qd_vars_vel,qd_vars_acc[1]),size);
+In acceleration analysis, positions (i.e. coordinate values) and velocities of the coordinates must be known
+here the substitution can be done analytically since the model is not complex.
+However, it would be better to compute velocities and accelerations in sequence given the position, velocity and acceleration of independent:
+qd_vars_acc_full := subs( subs_qd_vars_vel,qd_vars_acc):
+qd_vars_acc_full: nops(%); # ????
+
+                               3
+Can be rewritten as: AA1.qI''+AA2.qI'^2: ????? 
+#AA1 ,  res := LinearAlgebra:-GenerateMatrix(convert(qd_vars_acc_full,list),diff(qi_vars,t,t)):
+#AA2 ,  res := LinearAlgebra:-GenerateMatrix(subs(diff(qi_vars,t)^2=qI2,convert(-res,list)),[qI2]):
+
+#simplify(res);
+
+
