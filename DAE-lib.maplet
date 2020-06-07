@@ -128,7 +128,7 @@ DAEindex3ToODE := proc( Mass, Phi, gfun, qvars, vvars )
   m     := nops( Phi );
   q_D   := map( diff, qvars, t );
   v_D   := map( diff, vvars, t );
-  v_dot := map( map( cat, map2( op, 0, vvars ), _dot ), (t) );
+  v_dot := map( map( cat, map2( op, 0, vvars ), __dot ), (t) );
   SUBS  := zip( (x,y)-> x = y, q_D, vvars );
   SUBS0 := seq( v_D[i] = 0, i=1..n );
   SUBSD := seq( v_dot[i] = diff(vvars[i],t), i=1..n );
@@ -149,10 +149,13 @@ end proc:
 F_TO_MATLAB := proc( F, vars, name )
   local i, str, LST, vals, vv;
   LST  := []:
-  vals := "":  for i from 1 to nops(F) do
-    vv := simplify(F[i]);    if evalb(vv <> 0) then
+  vals := "":
+  for i from 1 to nops(F) do
+    vv := simplify(F[i]);
+    if evalb(vv <> 0) then
       LST  := [op(LST), convert("res__"||i,symbol) = vv ];
-      vals := cat(vals,sprintf("  res__%s(%d) = res__%d;\n",name,i,i));    end;
+      vals := cat(vals,sprintf("  res__%s(%d) = res__%d;\n",name,i,i));
+    end;
   end;
   str := CodeGeneration[Matlab](LST,optimize=true,coercetypes=false,deducetypes=false,output=string);
   printf("function res__%s = %s( vars__ )\n",name,name);
@@ -171,11 +174,14 @@ JF_TO_MATLAB := proc( JF, vars, name )
   NR  := LinearAlgebra[RowDimension](JF);
   NC  := LinearAlgebra[ColumnDimension](JF);
   LST := []:
-  pat := "";  for i from 1 to NR do
+  pat := "";
+  for i from 1 to NR do
     for j from 1 to NC do
-      val := simplify(JF[i,j]);      if evalb(val <> 0) then
+      val := simplify(JF[i,j]);
+      if evalb(val <> 0) then
         LST := [op(LST), convert("jac__"||i||_||j,symbol) = val];
-        pat := cat(pat,sprintf("  jac__%s(%d,%d) = jac__%d_%d;\n",name,i,j,i,j));      end;
+        pat := cat(pat,sprintf("  jac__%s(%d,%d) = jac__%d_%d;\n",name,i,j,i,j));
+      end;
     end;
   end;
   str := CodeGeneration[Matlab](LST,optimize=true,coercetypes=false,deducetypes=false,output=string);
