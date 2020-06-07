@@ -1,15 +1,3 @@
-%
-% Matlab code for the Course:
-%
-%     Modelling and Simulation of Mechatronics System
-%
-% by
-% Enrico Bertolazzi
-% Dipartimento di Ingegneria Industriale
-% Universita` degli Studi di Trento
-% email: enrico.bertolazzi@unitn.it
-%
-%%addpath('../ode_lib');
 classdef Winx < ODEbaseClass_P
   properties (SetAccess = protected, Hidden = true)
     gravity;
@@ -23,7 +11,7 @@ classdef Winx < ODEbaseClass_P
     L6 = 1.5*207; 
     L7 = 1.5*64.9; 
     L8 = 1.5*64.9; 
-    L9 = 120; 
+    L9 = 120;  
     L10=40; 
     phi1=-pi/5;
     phi2=pi/4;
@@ -43,12 +31,9 @@ classdef Winx < ODEbaseClass_P
 
 
     c1 = 0;
-    c2 = 0;
-    c3 = 0;
-    c4 = 0;
     c5 = 0;
-    c6 = 10;
-    prism=100;
+    c6 = 0;
+    prism=0;
 
 
   end
@@ -780,9 +765,9 @@ classdef Winx < ODEbaseClass_P
       IZ6 = self.IZ6;
 
       c1 = self.c1;
-      c2 = self.c2;
-      c3 = self.c3;
-      c4 = self.c4;
+      
+      
+      
       c5 = self.c5;
       c6 = self.c6;
       prism = self.prism;
@@ -1285,9 +1270,9 @@ classdef Winx < ODEbaseClass_P
       IZ6 = self.IZ6;
 
       c1 = self.c1;
-      c2 = self.c2;
-      c3 = self.c3;
-      c4 = self.c4;
+      
+      
+      
       c5 = self.c5;
       c6 = self.c6;
       prism = self.prism;
@@ -3511,9 +3496,9 @@ classdef Winx < ODEbaseClass_P
       IZ6 = self.IZ6;
 
       c1 = self.c1;
-      c2 = self.c2;
-      c3 = self.c3;
-      c4 = self.c4;
+      
+      
+      
       c5 = self.c5;
       c6 = self.c6;
       prism = self.prism;
@@ -3631,9 +3616,9 @@ classdef Winx < ODEbaseClass_P
       IZ6 = self.IZ6;
 
       c1 = self.c1;
-      c2 = self.c2;
-      c3 = self.c3;
-      c4 = self.c4;
+      
+      
+      
       c5 = self.c5;
       c6 = self.c6;
       prism = self.prism;
