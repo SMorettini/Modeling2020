@@ -87,13 +87,15 @@
 <Task-table>
     <Task-category name="&lt;default&gt;"/>
 </Task-table>
-<Task/><Table visible="true" editable="true" exterior="bottom" pagebreak="cell" showlabel="false" title="" plotalignlists="" hiddenborderdisplay="worksheet" interior="none" postexecute="advance" drawcaption="false" drawtitle="false" width="100.0%" captionalignment="0" showinput="false" captionposition="1" id="Table0" alignment="left" randomized="false" labelreference="L40608" showgroup="false" order="row"><Table-Column weight="4" separator="true"></Table-Column><Table-Column weight="196" separator="true"></Table-Column><Table-Row align="top" separator="true"><Table-Cell padding="5" visible="true" fillcolor="[255,255,255]" rowspan="1" backgroundstyle="0" columnspan="1">
+<Task>
+<TaskVariable name="dot" description=""/>
+</Task><Table visible="true" editable="true" exterior="bottom" pagebreak="cell" showlabel="false" title="" plotalignlists="" hiddenborderdisplay="worksheet" interior="none" postexecute="advance" drawcaption="false" drawtitle="false" width="100.0%" captionalignment="0" showinput="false" captionposition="1" id="Table0" alignment="left" randomized="false" labelreference="L40608" showgroup="false" order="row"><Table-Column weight="4" separator="true"></Table-Column><Table-Column weight="196" separator="true"></Table-Column><Table-Row align="top" separator="true"><Table-Cell padding="5" visible="true" fillcolor="[255,255,255]" rowspan="1" backgroundstyle="0" columnspan="1">
 <Group labelreference="L40614" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group><Text-field style="Text" layout="Normal"></Text-field>
 <Group labelreference="L40613" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group></Table-Cell><Table-Cell padding="5" visible="true" fillcolor="[255,255,255]" rowspan="1" backgroundstyle="0" columnspan="1">
 <Group labelreference="L40607" drawlabel="true">
@@ -105,7 +107,7 @@ Winx Mechanism</Text-field>
 </Input>
 </Group>
 <Group labelreference="L40609" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group><Text-field style="Author" layout="Author">release 1.0 - date: 09/05/2020</Text-field>
 <Group labelreference="L40606" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -120,7 +122,7 @@ Winx Mechanism</Text-field>
 <Input><Text-field style="Heading 1" layout="Heading 1"><Font size="24">RECURSIVE</Font></Text-field>
 </Input>
 </Group>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Initial Settings</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Initial Settings</Font></Text-field></Title>
 <Group labelreference="L55431" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:
 with(plots):
@@ -139,14 +141,14 @@ with(MBSymba_r6):with(LinearAlgebra):</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Kinematics</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Kinematics</Font></Text-field></Title>
 <Group labelreference="L4" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">Global referrence frame</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L5" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">RF0  := ground;
-P0 := origin(RF0):<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjBlbUYnLyUmZGVwdGhHRmhuLyUqbGluZWJyZWFrR1EobmV3bGluZUYnLUZaNiZGZm5GaW5GXG8vRl9vUSVhdXRvRidGK0ZIL0ZXUSdub3JtYWxGJw==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjBlbUYnLyUmZGVwdGhHRmhuLyUqbGluZWJyZWFrR1EobmV3bGluZUYnLUZaNiZGZm5GaW5GXG8vRl9vUSVhdXRvRidGK0ZIL0ZXUSdub3JtYWxGJw==</Equation></Text-field>
+P0 := origin(RF0):<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1GMDYmRjJGNUY4L0Y7USVhdXRvRidGKy8lK2V4ZWN1dGFibGVHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJw==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1GMDYmRjJGNUY4L0Y7USVhdXRvRidGKy8lK2V4ZWN1dGFibGVHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJw==</Equation></Text-field>
 </Input>
 </Group>
 <Group labelreference="L6" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -267,7 +269,7 @@ SSeat  := origin(RFSeat):</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Constraints</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Constraints</Font></Text-field></Title>
 <Group labelreference="L55435" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">Get points to check prismatic joint</Text-field>
 </Input>
@@ -331,9 +333,9 @@ plot(subs( kin, data, s(t) = st, theta4(t)*180/Pi), st = 0..100, color = cc[2], 
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Plot</Font></Text-field></Title><Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Plot</Font></Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L36832" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech:=proc(kin_param::{set(`=`)}, data::{set(`=`)}, dof::{set(`=`)},$)<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjBlbUYnLyUmZGVwdGhHRmhuLyUqbGluZWJyZWFrR1EobmV3bGluZUYnLUkjbW9HRiQ2LVEifkYnL0ZXUSdub3JtYWxGJy8lJmZlbmNlR0Y2LyUqc2VwYXJhdG9yR0Y2LyUpc3RyZXRjaHlHRjYvJSpzeW1tZXRyaWNHRjYvJShsYXJnZW9wR0Y2LyUubW92YWJsZWxpbWl0c0dGNi8lJ2FjY2VudEdGNi8lJ2xzcGFjZUdGW28vJSdyc3BhY2VHRltvRlktRlo2JkZmbkZpbkZcby9GX29RJWF1dG9GJ0YrRkhGZW8=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjBlbUYnLyUmZGVwdGhHRmhuLyUqbGluZWJyZWFrR1EobmV3bGluZUYnLUkjbW9HRiQ2LVEifkYnL0ZXUSdub3JtYWxGJy8lJmZlbmNlR0Y2LyUqc2VwYXJhdG9yR0Y2LyUpc3RyZXRjaHlHRjYvJSpzeW1tZXRyaWNHRjYvJShsYXJnZW9wR0Y2LyUubW92YWJsZWxpbWl0c0dGNi8lJ2FjY2VudEdGNi8lJ2xzcGFjZUdGW28vJSdyc3BhY2VHRltvRlktRlo2JkZmbkZpbkZcby9GX29RJWF1dG9GJ0YrRkhGZW8=</Equation>local p0,p1, p2, p3, p4, p5, p5_a,p6,pp2,pp3,r,lt,p6_a,p6_b,p_seat, p6x, p6y, p6z:
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech:=proc(kin_param::{set(`=`)}, data::{set(`=`)}, dof::{set(`=`)},$)<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=</Equation>local p0,p1, p2, p3, p4, p5, p5_a,p6,pp2,pp3,r,lt,p6_a,p6_b,p_seat, p6x, p6y, p6z:
 r:=10:lt:=10:
 p0:=subs(kin_param,data,dof,[comp_XYZ(P0,ground)]):
 p1:=subs(kin_param,data,dof,[comp_XYZ(P1_r,ground)]):
@@ -389,7 +391,7 @@ end:</Text-field>
 </Input>
 </Group></Presentation-Block>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Working Space</Font></Text-field></Title><Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Working Space</Font></Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L55473" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">Plot mechanism for animating</Text-field>
 </Input>
@@ -469,7 +471,7 @@ plots:-display( Ptriang,
 </Input>
 </Group></Presentation-Block>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="22">Initial Position Problem - </Font><Font size="18">Analytic method</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="22">Initial Position Problem - </Font><Font size="18">Analytic method</Font></Text-field></Title>
 <Group labelreference="L55588" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">Find <Font bold="true">Singular Configurations</Font></Text-field>
 </Input>
@@ -502,7 +504,7 @@ evalf(simplify(subs(dof, data, kin), explicit)):
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Velocity</Font></Text-field></Title><Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Velocity</Font></Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L39115" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal"><Font size="16" bold="true">Jacobians:</Font></Text-field>
 </Input>
@@ -566,7 +568,7 @@ plot(subs(subs_qd_vars_vel, kin, data, <Font opaque="true" background="[255,255,
 </Input>
 </Group></Presentation-Block>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Acceleration</Font></Text-field></Title><Presentation-Block>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Acceleration</Font></Text-field></Title><Presentation-Block>
 <Group labelreference="L39132" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">We can now compute the acceleration just by differentiating the velocities.
 qD' = Tau(qD,qI).qI'
@@ -639,21 +641,20 @@ plot(subs(subs_qd_vars_acc, kin,data, s(t) = st, s__dot__dot<Font opaque="true" 
 </Input>
 </Group></Presentation-Block>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="22">Rehonomous Constraints</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="24" layout="Heading 1"><Font size="22">Rehonomous Constraints</Font></Text-field></Title>
 <Group labelreference="L46543" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">Invece di metter questi profili basterebbe metterci i valori ottenuti numericamente nelle sezioni finali come funzione del tempo</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L46560" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">alphas := 30:    
-omegas := Pi/3:   omega1 := 0.1:      omega5 := 0.5:     omega6 := 0.6:</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_profiles:={ alpha__s = 30, omega__s = Pi/3, omega__1 = 0.1, omega__5 = 0.5, omega__6 = 0.6};</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L46557" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile_time := alphas - alphas*cos(omegas*t);     
-theta1_profile_time := omega1*t; 
-theta5_profile_time := omega5*t; 
-theta6_profile_time := omega6*t; 
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile_time := alpha__s - alpha__s*cos(omega__s*t);     
+theta1_profile_time := omega__1*t; 
+theta5_profile_time := omega__5*t; 
+theta6_profile_time := omega__6*t; 
 </Text-field>
 </Input>
 </Group>
@@ -670,11 +671,11 @@ theta6_profile_time := omega6*t;
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L46556" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_augmented := solve(subs(data,PSI), q_vars):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_augmented := solve(PSI, q_vars):</Text-field>
 </Input>
 </Group><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L46558" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_solutions := Vector( [ seq( subs(t=x, kin_augmented), x=0..180) ] ):
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_solutions := Vector( [ seq( subs(data,data_profiles, t=x, kin_augmented), x=0..180) ] ):
 display( 
 plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][1])  ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[1],legend=typeset(q_vars[1]) ),
 plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][2]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions)  )  ] ,color=cc[2],legend=typeset(q_vars[2]) ),
@@ -697,12 +698,16 @@ solve(Determinant(subs(data,Aug_Jac))): #Aug_Jac in Not Singular</Text-field>
 </Group>
 <Group view="code" hide-input="false" labelreference="L46549" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">q_vars_dot := -(MatrixInverse(Aug_Jac)).&lt;diff(PSI,t)&gt;:
-subs_q_vars_vel := [seq( diff(q_vars[i],t) = solve(q_vars_dot[i],diff(q_vars[i],t)),i=1..Dimension(q_vars_dot))]:
+subs_q_vars_vel := [seq( diff(q_vars[i],t) = solve(q_vars_dot[i],diff(q_vars[i],t)),i=1..Dimension(q_vars_dot))];
 </Text-field>
 </Input>
 </Group>
+<Group view="code" hide-input="false" labelreference="L57059" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_augmented_vel := [seq( diff(q_vars[i],t) = subs(kin_augmented, op(subs_q_vars_vel[i])[2]) ,i=1..Dimension(q_vars_dot))]:</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L46552" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_solutions_vel := Vector( [ seq( [evalf(subs(subs_q_vars_vel, kin_augmented,  kin_solutions[x+1], t=x, data, subs_q_vars_vel))]  , x = 0..180) ] ):
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_solutions_vel := Vector( [ seq( [evalf(subs(subs_q_vars_vel, data, data_profiles, kin_augmented,  kin_solutions[x+1], t=x,data, data_profiles,subs_q_vars_vel))]  , x = 0..180) ] ):
 display( 
 plot(   [  seq(  [  i  ,  rhs(kin_solutions_vel[i][1])  ]          ,  i=1..LinearAlgebra[Dimension](kin_solutions_vel)  )  ] ,color=cc[1], legend=typeset(diff(q_vars[1],t)) ),
 plot(   [  seq(  [  i  ,  rhs(kin_solutions_vel[i][2]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions_vel)  )  ] ,color=cc[2], legend=typeset(diff(q_vars[2],t)) ),
@@ -723,8 +728,12 @@ plot(   [  seq(  [  i  ,  rhs(kin_solutions_vel[i][6]) * 180/Pi ]  ,  i=1..Linea
 subs_q_vars_acc := [seq( diff(q_vars[i],t,t) = solve(q_vars_dot_dot[i],diff(q_vars[i],t,t)),i=1..Dimension(q_vars_dot_dot))]:</Text-field>
 </Input>
 </Group>
+<Group hide-input="false" labelreference="L57061" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_augmented_acc := [seq( diff(q_vars[i],t,t) = subs(kin_augmented, op(subs_q_vars_acc[i])[2]) ,i=1..Dimension(q_vars_dot_dot))];</Text-field>
+</Input>
+</Group>
 <Group labelreference="L46540" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_solutions_acc := Vector( [ seq( [evalf(subs(subs_q_vars_acc, subs_q_vars_vel, kin_augmented,  kin_solutions[x+1], t=x, data, subs_q_vars_acc))]  , x = 0..180) ] ):
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">kin_solutions_acc := Vector( [ seq( [evalf(subs(subs_q_vars_acc, subs_q_vars_vel, kin_augmented,  kin_solutions[x+1], t=x, data_profiles,data, subs_q_vars_acc))]  , x = 0..180) ] ):
 display( 
 plot(   [  seq(  [  i  ,  rhs(kin_solutions_acc[i][1])  ]          ,  i=1..LinearAlgebra[Dimension](kin_solutions_acc)  )  ] ,color=cc[1], legend=typeset(diff(q_vars[1],t,t)) ),
 plot(   [  seq(  [  i  ,  rhs(kin_solutions_acc[i][2]) * 180/Pi ]  ,  i=1..LinearAlgebra[Dimension](kin_solutions_acc)  )  ] ,color=cc[2], legend=typeset(diff(q_vars[2],t,t)) ),
@@ -800,10 +809,10 @@ plot(q_vars_jerk_profile[6](Timer), Timer=0..180, color=cc[6],  legend=&quot;jer
 </Input>
 </Group>
 <Group labelreference="L48416" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile</Text-field></Title>
 <Group hide-input="false" labelreference="L48425" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Seat := comp_XYZ(project(origin(RFSeat), RF0));</Text-field>
 </Input>
@@ -969,6 +978,96 @@ animate(draw_mech, [kin, data, dof], time=0..180,frames=36); </Text-field>
 <Input><Text-field style="Text" layout="Normal"></Text-field>
 </Input>
 </Group>
+<Group labelreference="L57340" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Heading 2" layout="Heading 2">Performance indexes</Text-field>
+</Input>
+</Group>
+<Group labelreference="L57341" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">fun_evaluation:=proc(data::list, data_profiles::list $)
+  #global vel,acc,jerk,snap;
+  #local peak_val, k, zeros_snap, zeros_jerk,i,duration,jerk_val,axis;
+
+  #local pos_proc := subs(data, Matrix(EE_1,EE_2,EE_3)):
+  #local vel_proc := map(diff,pos_proc,t):
+  #local acc_proc := map(diff,vel_proc,t):
+
+  v_s := comp_XYZ(project(velocity(SSeat), RFSeat)):
+  vel_seat := subs(data, data_profiles, subs(kin_augmented_vel, kin_augmented, &lt;v_s[1], v_s[2], v_s[3]&gt;)):
+  
+  a_s := comp_XYZ(project(acceleration(SSeat) + make_VECTOR(RF0, 0, 0, 9.8), RFSeat)):
+  acc_seat:=:= subs(data, data_profiles, subs(kin_augmented_acc, kin_augmented_vel, kin_augmented, &lt;a_s[1], a_s[2], a_s[3]&gt;)):            
+
+  #jerk_seat:=diff(&lt;acc_seat[1],acc_seat[2],acc_seat[3]&gt;,t): ###TOO SLOW
+
+  #local jerk_proc := map(diff,acc_proc,t): jerk numericaly
+  #local snap_proc := map(diff,jerk_proc,t):
+    
+  local alpha_1 := 0.3:
+  local alpha_2 := 0.5:
+  local alpha_3 := 0.2:
+  local gamma_1 := 0.3:
+  local gamma_2 := 0.6: # Our y direction corresponds to the z direction in the passenger reference frame
+  local gamma_3 := 0.1:
+  local max_acc := [5,5,2.5]:
+  local min_acc := [-1.5,-1.5,-2.5]:
+  local max_jerk := [15,15,1000]:
+  global fun := [0,0,0]:
+
+  global fun_total := 0:
+  global safety := 0:
+
+  for ax from 1 to 3 do
+    vel_points := [seq(evalf(subs(t=x, vel_seat[ax])),x=1..180, 0.1)]:
+    acc_points := [seq(evalf(subs(t=x, acc_seat[ax])),x=1..180, 0.1)]:
+
+    CurveFitting:-Spline( &lt; [seq(i, i=0..180,0.1)] &gt; , &lt;acc_points&gt; , Timer):
+    d2St_spline := unapply(%,[Timer]):
+    jerk_f:=derive_spline(d2St_spline(Timer), Timer, 1):
+    jerk_points := [seq(evalf(jerk_f(Timer)),Timer=1..180, 0.1)]:
+
+    #zeros_snap := fsolve(snap_proc[axis,1]=0,t=0..90,maxsols=100000000000);
+    #zeros_jerk := fsolve(jerk_proc[axis,1]=0,t=0..90,maxsols=100000000000);
+    
+<Font encoding="UTF-8">      #printf(&quot;\134n Calculating fun equation \134n&quot;);
+</Font>    
+      for i from 1 to nops([zeros_snap])-1 do 
+
+           duration[i] := zeros_snap[i+1] - zeros_snap[i]:
+<Font encoding="UTF-8">           #printf(&quot;\134n Peak duration: %3f&quot;,duration[i]):
+</Font>
+           jerk_val[i] := subs(t=zeros_snap[i],jerk_proc[axis,1]/9.8):
+           #<Font encoding="UTF-8">printf(&quot;\134nJerk: %3f \134n \134n \134n \134n &quot;,jerk_val[i]):</Font>
+  
+           fun[axis] := fun[axis] +  alpha_1*duration[i]  - alpha_3*abs(jerk_val[i]):
+
+      end:
+
+      for k from 1 to nops([zeros_jerk]) do 
+           peak_val[k] := subs(t=zeros_jerk[k],acc_proc[axis,1]/9.8):
+<Font encoding="UTF-8">           #printf(&quot;\134n Peak value: %3f&quot;,peak_val[k]):
+</Font>
+           fun[axis] := fun[axis] + alpha_2*abs(peak_val[k]):
+      end: 
+    
+      if (simplify(max(convert(peak_val,list))) &gt; max_acc[axis]) or (simplify(max(convert(jerk_val,list))) &gt; max_jerk[axis]) or (simplify(min(convert(peak_val,list))) &lt; min_acc[axis]) or (abs       (simplify(min(convert(jerk_val,list)))) &gt; max_jerk[axis]) or (rhs(data[2])+rhs(data[3])*rhs(data[4]) &gt; rhs(data[1])*tan(rhs(data[5]))) then
+<Font encoding="UTF-8">        printf(&quot;\134n Ride does not satisfy safety standards&quot;):
+</Font>        safety := -1:
+      end if:
+
+      #printf(&quot;Fun Equation in %1d= %3f&quot;,axis, simplify(fun[axis])):
+
+  end:
+
+  fun_total := gamma_1*fun[1] + gamma_2*fun[2] + gamma_3*fun[3]:
+  #<Font encoding="UTF-8">printf(&quot;\134n Fun Equation is: %2f, safety rating is: %2f&quot;, fun_total, safety):
+</Font>  fun_total, safety:
+end:</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L57350" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJ0YrLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJ0YrLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYn</Equation></Text-field>
+</Input>
+</Group>
 <Group labelreference="L55298" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Heading 1" layout="Heading 1"><Font size="26">GLOBAL</Font></Text-field>
 </Input>
@@ -977,7 +1076,7 @@ animate(draw_mech, [kin, data, dof], time=0..180,frames=36); </Text-field>
 <Input><Text-field style="Text" layout="Normal"></Text-field>
 </Input>
 </Group>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="22" layout="Heading 1"><Font size="22">Initial Settings</Font></Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="22" layout="Heading 1"><Font size="22">Initial Settings</Font></Text-field></Title>
 <Group labelreference="L55299" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:
 with(plots):
@@ -1004,10 +1103,10 @@ with(MBSymba_r6):with(LinearAlgebra):</Text-field>
 <Group hide-input="false" labelreference="L55245" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" foreground="[192,192,192]" layout="Normal"><Font foreground="[192,192,192]">R<Font opaque="true">F0  := ground:
 P1_0 := origin(RF0):
-<Font style="Text">Unit Vectors:</Font>
+</Font></Font><Font style="Text">Unit Vectors:</Font><Font opaque="true" foreground="[192,192,192]">
 i0   := uvec_X(RF0):
 j0   := uvec_Y(RF0):
-k0   := uvec_Z(RF0):</Font></Font></Text-field>
+k0   := uvec_Z(RF0):</Font></Text-field>
 </Input>
 </Group>
 <Group labelreference="L55290" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1348,7 +1447,7 @@ nq-nc=nops(qi_vars);</Text-field>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font size="22">Plot Function</Font></Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L55300" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech:=proc(sol_kine::{set(`=`)}, data::{set(`=`)}, dof::{set(`=`)},$)<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjBlbUYnLyUmZGVwdGhHRmhuLyUqbGluZWJyZWFrR1EobmV3bGluZUYnLUkjbW9HRiQ2LVEifkYnL0ZXUSdub3JtYWxGJy8lJmZlbmNlR0Y2LyUqc2VwYXJhdG9yR0Y2LyUpc3RyZXRjaHlHRjYvJSpzeW1tZXRyaWNHRjYvJShsYXJnZW9wR0Y2LyUubW92YWJsZWxpbWl0c0dGNi8lJ2FjY2VudEdGNi8lJ2xzcGFjZUdGW28vJSdyc3BhY2VHRltvRlktRlo2JkZmbkZpbkZcby9GX29RJWF1dG9GJ0YrRkhGZW8=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjBlbUYnLyUmZGVwdGhHRmhuLyUqbGluZWJyZWFrR1EobmV3bGluZUYnLUkjbW9HRiQ2LVEifkYnL0ZXUSdub3JtYWxGJy8lJmZlbmNlR0Y2LyUqc2VwYXJhdG9yR0Y2LyUpc3RyZXRjaHlHRjYvJSpzeW1tZXRyaWNHRjYvJShsYXJnZW9wR0Y2LyUubW92YWJsZWxpbWl0c0dGNi8lJ2FjY2VudEdGNi8lJ2xzcGFjZUdGW28vJSdyc3BhY2VHRltvRlktRlo2JkZmbkZpbkZcby9GX29RJWF1dG9GJ0YrRkhGZW8=</Equation>local p0,p1, p2, p3, p4, p5, p5_a,p6,pp2,pp3,r,lt,p6_a,p6_b,p_seat, p6x,p6y,p6z:
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech:=proc(sol_kine::{set(`=`)}, data::{set(`=`)}, dof::{set(`=`)},$)<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUkjbWlHRiQ2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuMGVtRicvJSZkZXB0aEdGNC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1JI21vR0YkNi1RIn5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRkYvJSlzdHJldGNoeUdGRi8lKnN5bW1ldHJpY0dGRi8lKGxhcmdlb3BHRkYvJS5tb3ZhYmxlbGltaXRzR0ZGLyUnYWNjZW50R0ZGLyUnbHNwYWNlR0Y3LyUncnNwYWNlR0Y3Ri8tRjA2JkYyRjVGOC9GO1ElYXV0b0YnRisvJStleGVjdXRhYmxlR0ZGRkE=</Equation>local p0,p1, p2, p3, p4, p5, p5_a,p6,pp2,pp3,r,lt,p6_a,p6_b,p_seat, p6x,p6y,p6z:
 r:=10:lt:=10:
 p0:=subs(sol_kine,data,dof,[comp_XYZ(P1,ground)]):
 p1:=subs(sol_kine,data,dof,[comp_XYZ(P1,ground)]):
@@ -1421,7 +1520,11 @@ end:</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="22" layout="Heading 1"><Font size="22">Initial position problem - Numerically</Font></Text-field></Title><Presentation-Block></Presentation-Block><Presentation-Block>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" size="22" layout="Heading 1"><Font size="22">Initial position problem - Numerically</Font></Text-field></Title><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L56932" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L55308" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dof := {s = 0, theta1 = 0, theta5 = 0, theta6__y = 0}: 
 sol_kine_all := fsolve(subs(q_vars_to_symbol,data,dof,Phi),subs(q_vars_to_symbol, qd_vars), theta4=3..4):
@@ -1520,7 +1623,7 @@ plot(Vector([seq(s, s = 1 .. dim)], dim), Vector(sols[theta6__z], dim), color = 
 </Input>
 </Group></Presentation-Block>
 <Group labelreference="L55303" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -1599,7 +1702,7 @@ Dimension(Tau);</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" labelreference="L56030" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L56032" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1615,7 +1718,7 @@ Dimension(Tau);</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L56034" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L55332" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1685,7 +1788,7 @@ subs_kin_s_vel := diff(kin_s,t): nops(%); # Differentiate to get velocity of sim
 </Input>
 </Group>
 <Group view="code" hide-input="false" labelreference="L56012" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
 </Section>
@@ -1867,7 +1970,7 @@ plot(q_vars_jerk_profile[6](Timer), Timer=0..180, color=cc[6],  legend=&quot;jer
 </Input>
 </Group>
 <Group labelreference="L56075" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnRkgvRldRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2NVEhRicvJSdmYW1pbHlHRi4vJSVzaXplR1EjMTBGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUqdW5kZXJsaW5lR0Y2LyUqc3Vic2NyaXB0R0Y2LyUsc3VwZXJzY3JpcHRHRjYvJStmb3JlZ3JvdW5kR1EqWzI1NSwwLDBdRicvJStiYWNrZ3JvdW5kR1EuWzI1NSwyNTUsMjU1XUYnLyUnb3BhcXVlR0Y2LyUrZXhlY3V0YWJsZUdGNi8lKXJlYWRvbmx5R0Y2LyUpY29tcG9zZWRHRjYvJSpjb252ZXJ0ZWRHRjYvJStpbXNlbGVjdGVkR0Y2LyUscGxhY2Vob2xkZXJHRjYvJTZzZWxlY3Rpb24tcGxhY2Vob2xkZXJHRjYvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile</Text-field></Title>
@@ -2012,4 +2115,16 @@ plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1][3]/100 ]  ,  i=1..LinearAlgebr
 </Group>
 </Section>
 </Section>
+<Group labelreference="L57333" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group>
+<Group labelreference="L57334" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Heading 2" layout="Heading 2"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L57336" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group>
 </Worksheet>
