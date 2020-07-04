@@ -96,11 +96,11 @@
 <TaskVariable name="z" description=""/>
 </Task><Table visible="true" editable="true" exterior="bottom" pagebreak="cell" showlabel="false" title="" plotalignlists="" hiddenborderdisplay="worksheet" interior="none" postexecute="advance" drawcaption="false" drawtitle="false" width="100.0%" captionalignment="0" showinput="false" captionposition="1" id="Table0" alignment="left" randomized="false" labelreference="L40608" showgroup="false" order="row"><Table-Column weight="4" separator="true"></Table-Column><Table-Column weight="196" separator="true"></Table-Column><Table-Row align="top" separator="true"><Table-Cell padding="5" visible="true" fillcolor="[255,255,255]" rowspan="1" backgroundstyle="0" columnspan="1">
 <Group labelreference="L40614" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group><Text-field style="Text" layout="Normal"></Text-field>
 <Group labelreference="L40613" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group></Table-Cell><Table-Cell padding="5" visible="true" fillcolor="[255,255,255]" rowspan="1" backgroundstyle="0" columnspan="1">
 <Group labelreference="L40607" drawlabel="true">
@@ -112,7 +112,7 @@ Winx Mechanism</Text-field>
 </Input>
 </Group>
 <Group labelreference="L40609" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group><Text-field style="Author" layout="Author">release 1.0 - date: 09/05/2020</Text-field>
 <Group labelreference="L40606" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -508,7 +508,7 @@ evalf(simplify(subs(dof, data, kin), explicit)):
 %% union %;</Text-field>
 </Input>
 </Group></Presentation-Block>
-<Group labelreference="L55593" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-input="false" labelreference="L55593" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">draw_mech(kin, data, dof);</Text-field>
 </Input>
 </Group>
@@ -656,7 +656,7 @@ plot(subs(subs_qd_vars_acc, kin,data, s(t) = st, s__dot__dot<Font opaque="true" 
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L46560" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_profiles:={ alpha__6= Pi/4, alpha__s = 30, omega__s = Pi/3, omega__1 = 2, omega__5 = 2, omega__6 = 0.6};</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_profiles:={ alpha__6 = Pi/4, alpha__s = 30, omega__s = Pi/3, omega__1 = 2, omega__5 = 2, omega__6 = 0.6};</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L46557" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -696,7 +696,7 @@ plot(   [  seq(  [  i  ,  rhs(kin_solutions[i][6]) * 180/Pi ]  ,  i=1..LinearAlg
          title = &quot;Position&quot;);</Text-field>
 </Input>
 </Group>
-<Group view="code" labelreference="L46544" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group view="code" labelreference="L64892" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal"><Font size="18">Velocity</Font></Text-field>
 </Input>
 </Group>
@@ -818,31 +818,33 @@ plot(q_vars_jerk_profile[6](Timer), Timer=0..180, color=cc[6],  legend=&quot;jer
 </Input>
 </Group>
 <Group labelreference="L48416" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile</Text-field></Title>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile</Text-field></Title>
 <Group hide-input="false" labelreference="L48425" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Seat := comp_XYZ(project(origin(RFSeat), RF0));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Seat_ground := comp_XYZ(project(origin(RFSeat), RF0)): # Projected to ground
+Seat := comp_XYZ(project(origin(RFSeat), RFSeat)):&lt;%&gt;; # Projected to Seat
+</Text-field>
 </Input>
 </Group>
 <Group labelreference="L48429" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font bold="true">POSITION</Font></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Font bold="true">POSITION wrt ground</Font></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L48427" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile := Vector( [ seq( [ subs( data,
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile_ground := Vector( [ seq( [ subs( data,
 {s(t) = rhs(kin_solutions[x+1][1])},  
 {theta1(t) = rhs(kin_solutions[x+1][2])}, 
 {theta2(t) = rhs(kin_solutions[x+1][3])}, 
 {theta4(t) = rhs(kin_solutions[x+1][4])}, 
 {theta5(t) = rhs(kin_solutions[x+1][5])}, 
 {theta6(t) = rhs(kin_solutions[x+1][6])}, 
-[Seat]) ] , x=0..180) ] ):
+[Seat_ground]) ] , x=0..180) ] ):
 display( 
-plot(   [  seq(  [  i  ,  seat_profile[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[1],legend=typeset(x) ),
-plot(   [  seq(  [  i  ,  seat_profile[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[2],legend=typeset(y) ), 
-plot(   [  seq(  [  i  ,  seat_profile[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[3],legend=typeset(z) ), 
+plot(   [  seq(  [  i  ,  seat_profile_ground[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_ground)  )  ] ,color=cc[1],legend=typeset(x) ),
+plot(   [  seq(  [  i  ,  seat_profile_ground[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_ground)  )  ] ,color=cc[2],legend=typeset(y) ), 
+plot(   [  seq(  [  i  ,  seat_profile_ground[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_ground)  )  ] ,color=cc[3],legend=typeset(z) ), 
          labels = [typeset(t,&quot;[s]&quot;),typeset(pos,&quot;[m]&quot;)],
          title = &quot; Position &quot;);</Text-field>
 </Input>
@@ -851,8 +853,9 @@ plot(   [  seq(  [  i  ,  seat_profile[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimens
 <Input><Text-field style="Text" layout="Normal"><Font bold="true">VELOCITY</Font></Text-field>
 </Input>
 </Group>
-<Group labelreference="L48426" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_vel := [diff(Seat[1], t), diff(Seat[2], t), diff(Seat[3], t)]:</Text-field>
+<Group hide-input="false" labelreference="L48426" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_vel_ground := diff(Seat_ground[1], t), diff(Seat_ground[2], t), diff(Seat_ground[3], t): # Projected to ground
+_seat_profile_vel := comp_XYZ(project(velocity(origin(RFSeat)), RFSeat)): # Projected to Seat</Text-field>
 </Input>
 </Group>
 <Group labelreference="L48421" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -872,15 +875,11 @@ plot(   [  seq(  [  i  ,  seat_profile[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimens
 [_seat_profile_vel]) ] , x=0..180) ] ):
 
 display( 
-plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[1],legend=typeset(x__dot) ),
-plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[2],legend=typeset(y__dot) ), 
-plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[3],legend=typeset(z__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_vel[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[1],legend=typeset(x__dot) ),
+plot(   [  seq(  [  i  ,  seat_profile_vel[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[2],legend=typeset(y__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_vel[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[3],legend=typeset(z__dot) ), 
          labels = [typeset(t,&quot;[s]&quot;),typeset(vel,&quot;[m/s]&quot;)],
          title = &quot; Velocity &quot;);</Text-field>
-</Input>
-</Group>
-<Group labelreference="L56931" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
 <Group labelreference="L48428" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -888,7 +887,8 @@ plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][3]/100 ]  ,  i=1..LinearAlgebra
 </Input>
 </Group>
 <Group labelreference="L48419" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_acc := [diff(_seat_profile_vel[1], t), diff(_seat_profile_vel[2], t), diff(_seat_profile_vel[3], t)]:</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_acc_ground := diff(_seat_profile_vel_ground[1], t), diff(_seat_profile_vel_ground[2], t), diff(_seat_profile_vel_ground[3], t): # Projected to ground
+_seat_profile_acc := comp_XYZ(project(acceleration(origin(RFSeat)), RFSeat)): # Projected to Seat</Text-field>
 </Input>
 </Group>
 <Group labelreference="L48422" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -914,9 +914,9 @@ plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][3]/100 ]  ,  i=1..LinearAlgebra
 [_seat_profile_acc]) ] , x=0..180) ] ):
 
 display( 
-plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[1],legend=typeset(x__dot__dot) ),
-plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[2],legend=typeset(y__dot__dot) ), 
-plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[3],legend=typeset(z__dot__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_acc[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[1],legend=typeset(x__dot__dot) ),
+plot(   [  seq(  [  i  ,  seat_profile_acc[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[2],legend=typeset(y__dot__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_acc[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[3],legend=typeset(z__dot__dot) ), 
          labels = [typeset(t,&quot;[s]&quot;),typeset(acc,&quot;[m/s^2]&quot;)],
          title = &quot; Acceleration &quot;);</Text-field>
 </Input>
@@ -926,7 +926,8 @@ plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][3]/100 ]  ,  i=1..LinearAlgebra
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L48424" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_jerk := [diff(_seat_profile_acc[1], t), diff(_seat_profile_acc[2], t), diff(_seat_profile_acc[3], t)]:</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_jerk_ground := diff(_seat_profile_acc_ground[1], t), diff(_seat_profile_acc_ground[2], t), diff(_seat_profile_acc_ground[3], t): # Projected to ground
+_seat_profile_jerk := diff(_seat_profile_acc[1], t), diff(_seat_profile_acc[2], t), diff(_seat_profile_acc[3], t): # Projected to Seat</Text-field>
 </Input>
 </Group>
 <Group labelreference="L48423" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -958,9 +959,9 @@ plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][3]/100 ]  ,  i=1..LinearAlgebra
 [_seat_profile_jerk]) ] , x=0..180) ] ):
 
 display( 
-plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[1],legend=typeset(x__dot__dot__dot) ),
-plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[2],legend=typeset(y__dot__dot__dot) ), 
-plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[3],legend=typeset(z__dot__dot__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[1],legend=typeset(x__dot__dot__dot) ),
+plot(   [  seq(  [  i  ,  seat_profile_jerk[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[2],legend=typeset(y__dot__dot__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_jerk[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[3],legend=typeset(z__dot__dot__dot) ), 
          labels = [typeset(t,&quot;[s]&quot;),typeset(jerk,&quot;[m/s^3]&quot;)],
          title = &quot; Jerk &quot;);</Text-field>
 </Input>
@@ -1121,7 +1122,7 @@ end:</Text-field>
 </Group>
 </Section>
 <Group labelreference="L57528" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L57527" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1676,7 +1677,7 @@ end:</Text-field>
 <Group view="code" hide-input="false" labelreference="L63020" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dof := {s = 0, theta1 = 0, theta5 = 0, theta6__y = 0}: 
 sol_kine_all := fsolve(subs(q_vars_to_symbol,data,dof,Phi),subs(q_vars_to_symbol, qd_vars), theta4=3..4):
-%% union %<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+%% union %<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group labelreference="L63019" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1714,7 +1715,7 @@ dofs:= Array(1..dim,[]):</Text-field>
 <Group view="code" hide-input="false" labelreference="L63003" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dof := {s = 0, theta1 = 0, theta5 = 0, theta6__y = 0}:
 guess:=fsolve(subs(q_vars_to_symbol,data,dof,Phi),subs(q_vars_to_symbol, qd_vars), theta4=3..4):
-%% union %<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lMGZvbnRfc3R5bGVfbmFtZUdRKDJEfk1hdGhGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+%% union %<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lMGZvbnRfc3R5bGVfbmFtZUdRKDJEfk1hdGhGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L62999" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1845,7 +1846,7 @@ Dimension(Tau);</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" labelreference="L62930" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L62933" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1861,7 +1862,7 @@ Dimension(Tau);</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L62925" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63040" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1931,7 +1932,7 @@ subs_kin_s_vel := diff(kin_s,t): nops(%); # Differentiate to get velocity of sim
 </Input>
 </Group>
 <Group view="code" hide-input="false" labelreference="L63069" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
 </Section>
@@ -1958,15 +1959,19 @@ subs_kin_s_vel := diff(kin_s,t): nops(%); # Differentiate to get velocity of sim
 <Input><Text-field style="Text" layout="Normal">Invece di metter questi profili basterebbe metterci i valori ottenuti numericamente nelle sezioni finali come funzione del tempo</Text-field>
 </Input>
 </Group>
-<Group hide-input="false" labelreference="L62907" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_profiles:={ alpha__s = 30, omega__s = Pi/3, omega__1 = 0.1, omega__5 = 0.5, omega__6 = 0.6};</Text-field>
+<Group hide-input="false" labelreference="L65407" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_profiles:={ alpha__6 = Pi/4, alpha__s = 30, omega__s = Pi/3, omega__1 = 2, omega__5 = 2, omega__6 = 0.6};</Text-field>
 </Input>
 </Group>
-<Group hide-input="false" labelreference="L62909" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-input="false" labelreference="L65408" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">s_profile_time := alpha__s - alpha__s*cos(omega__s*t);     
 theta1_profile_time := omega__1*t; 
 theta5_profile_time := omega__5*t; 
-theta6_profile_time := omega__6*t; 
+theta6_profile_time := alpha__6*sin(omega__6*t); </Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L62909" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">
 </Text-field>
 </Input>
 </Group>
@@ -2147,7 +2152,7 @@ vel_sols := table([
 </Input>
 </Group>
 <Group view="code" labelreference="L63012" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" labelreference="L63009" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2228,7 +2233,7 @@ plot(Vector([seq(step, step =  1 .. steps)], steps), Vector(vel_sols[theta6__z__
 </Input>
 </Group></Presentation-Block>
 <Group labelreference="L63055" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group><Presentation-Block>
 <Group view="code" labelreference="L62921" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2263,7 +2268,7 @@ acc_sols := table([
 </Input>
 </Group>
 <Group view="code" labelreference="L62976" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" labelreference="L62912" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2273,7 +2278,7 @@ q_vars_dot2_to_symbol := [seq( dot2_function[j] = dot2_symbol[j],j=1..nops(qd_va
 </Input>
 </Group>
 <Group view="code" labelreference="L62958" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" labelreference="L62913" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2327,10 +2332,6 @@ plot(Vector([seq(step, step =  1 .. steps)], steps), Vector(acc_sols[theta6__z__
 <Font encoding="UTF-8">title = &quot; Acceleration analysis: angles dependent coordinates\134n&quot;)</Font></Text-field>
 </Input>
 </Group></Presentation-Block>
-<Group labelreference="L63002" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
-</Input>
-</Group>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="18">Jerk (using splines)</Font></Text-field></Title><Presentation-Block>
 <Group view="code" labelreference="L62939" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2343,107 +2344,128 @@ plot(Vector([seq(step, step =  1 .. steps)], steps), Vector(acc_sols[theta6__z__
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63025" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[s__dot2],list),T):
-s_dot3_spline := unapply(%,[T]):</Text-field>
+s__dot2_spline := unapply(%,[T]):
+s__dot3_spline := diff(s__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63026" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta1__dot2],list),T):
-theta1__dot3_spline := unapply(%,[T]):</Text-field>
+theta1__dot2_spline := unapply(%,[T]):
+theta1__dot3_spline := diff(theta1__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63027" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta2__dot2],list),T):
-theta2__dot3_spline := unapply(%,[T]):</Text-field>
+theta2__dot2_spline := unapply(%,[T]):
+theta2__dot3_spline := diff(theta2__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63028" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta3__dot2],list),T):
-theta3__dot3_spline := unapply(%,[T]):</Text-field>
+theta3__dot2_spline := unapply(%,[T]):
+theta3__dot3_spline := diff(theta3__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63029" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta4__dot2],list),T):
-theta4__dot3_spline := unapply(%,[T]):</Text-field>
+theta4__dot2_spline := unapply(%,[T]):
+theta4__dot3_spline := diff(theta4__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63030" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta5__dot2],list),T):
-theta5__dot3_spline := unapply(%,[T]):</Text-field>
+theta5__dot2_spline := unapply(%,[T]):
+theta5__dot3_spline := diff(theta5__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63031" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[x2__dot2],list),T):
-x2__dot3_spline := unapply(%,[T]):</Text-field>
+x2__dot2_spline := unapply(%,[T]):
+x2__dot3_spline := diff(x2__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63034" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[z2__dot2],list),T):
-z2__dot3_spline := unapply(%,[T]):</Text-field>
+z2__dot2_spline := unapply(%,[T]):
+z2__dot3_spline := diff(z2__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63038" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[x3__dot2],list),T):
-x3__dot3_spline := unapply(%,[T]):</Text-field>
+x3__dot2_spline := unapply(%,[T]):
+x3__dot3_spline := diff(x3__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63041" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[z3__dot2],list),T):
-z3__dot3_spline := unapply(%,[T]):</Text-field>
+z3__dot2_spline := unapply(%,[T]):
+z3__dot3_spline := diff(z3__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63059" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[x4__dot2],list),T):
-x4__dot3_spline := unapply(%,[T]):</Text-field>
+x4__dot2_spline := unapply(%,[T]):
+x4__dot3_spline := diff(x4__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63061" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[z4__dot2],list),T):
-z4__dot3_spline := unapply(%,[T]):</Text-field>
+z4__dot2_spline := unapply(%,[T]):
+z4__dot3_spline := diff(z4__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63063" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[x5__dot2],list),T):
-x5__dot3_spline := unapply(%,[T]):</Text-field>
+x5__dot2_spline := unapply(%,[T]):
+x5__dot3_spline := diff(x5__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63065" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[z5__dot2],list),T):
-z5__dot3_spline := unapply(%,[T]):</Text-field>
+z5__dot2_spline := unapply(%,[T]):
+z5__dot3_spline := diff(z5__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63067" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[x6__dot2],list),T):
-x6__dot3_spline := unapply(%,[T]):</Text-field>
+x6__dot2_spline := unapply(%,[T]):
+x6__dot3_spline := diff(x6__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L63070" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[y6__dot2],list),T):
-y6__dot3_spline := unapply(%,[T]):</Text-field>
+y6__dot2_spline := unapply(%,[T]):
+y6__dot3_spline := diff(y6__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L63073" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[z6__dot2],list),T):
-z6__dot3_spline := unapply(%,[T]):</Text-field>
+z6__dot2_spline := unapply(%,[T]):
+z6__dot3_spline := diff(z6__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" labelreference="L62972" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta4__5__dot2],list),T):
-theta4__5__dot3_spline := unapply(%,[T]):</Text-field>
+theta4__5__dot2_spline := unapply(%,[T]):
+theta4__5__dot3_spline := diff(theta4__5__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L62974" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta6__x__dot2],list),T):
-theta6__x__dot3_spline := unapply(%,[T]):</Text-field>
+theta6__x__dot2_spline := unapply(%,[T]):
+theta6__x__dot3_spline := diff(theta6__x__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" labelreference="L62977" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta6__y__dot2],list),T):
-theta6__y__dot3_spline := unapply(%,[T]):</Text-field>
+theta6__y__dot2_spline := unapply(%,[T]):
+theta6__y__dot3_spline := diff(theta6__y__dot2_spline(T),T):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-input="false" labelreference="L62932" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurveFitting:-Spline([seq(step, step =  1 .. steps)], convert(acc_sols[theta6__z__dot2],list),T):
-theta6__z__dot3_spline := unapply(%,[T]):</Text-field>
+theta6__z__dot2_spline := unapply(%,[T]):
+theta6__z__dot3_spline := diff(theta6__z__dot2_spline(T),T):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L62934" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2456,7 +2478,7 @@ theta6__z__dot3_spline := unapply(%,[T]):</Text-field>
 </Group>
 <Group view="code" labelreference="L62993" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(
-plot(s_dot3_spline(T), T=0..steps, color = cc[12], legend = s__dot3),
+plot(s__dot3_spline(T), T=0..steps, color = cc[12], legend = s__dot3),
 plot(x2__dot3_spline(T), T=0..steps, color = cc[1], legend = x2__dot3),
 plot(z2__dot3_spline(T), T=0..steps, color = cc[2], legend = z2__dot3),
 plot(x3__dot3_spline(T), T=0..steps, color = cc[3], legend = x3__dot3),
@@ -2484,28 +2506,43 @@ plot(theta6__z__dot3_spline(T)* 180/Pi, T=0..steps, color = cc[9], legend = thet
 </Input>
 </Group></Presentation-Block>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile (Still to be fixed)</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Seat Profile</Text-field></Title>
 <Group hide-input="false" labelreference="L62914" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Seat := comp_XYZ(project(origin(RFSeat), RF0));</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Seat_ground := comp_XYZ(project(origin(RFSeat), RF0));
+Seat := comp_XYZ(project(origin(RFSeat), RFSeat)): &lt;%&gt;;</Text-field>
 </Input>
 </Group>
 <Group labelreference="L62959" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font bold="true">POSITION</Font></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Font bold="true">POSITION  wrt ground</Font></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L62956" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile := Vector( [ seq( [ subs( data,
-{s(t) = rhs(kin_solutions[x+1][1])},  
-{theta1(t) = rhs(kin_solutions[x+1][2])}, 
-{theta2(t) = rhs(kin_solutions[x+1][3])}, 
-{theta4(t) = rhs(kin_solutions[x+1][4])}, 
-{theta5(t) = rhs(kin_solutions[x+1][5])}, 
-{theta6(t) = rhs(kin_solutions[x+1][6])}, 
-[Seat]) ] , x=0..180) ] ):
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile_ground := Vector( [ seq( [ subs( data,
+{theta1(t) = pos_sols[theta1][x+1]},  
+{theta2(t) = pos_sols[theta2][x+1]},  
+{theta3(t) = pos_sols[theta3][x+1]},  
+{theta4(t) = pos_sols[theta4][x+1]},  
+{theta5(t) = pos_sols[theta5][x+1]},  
+{x2(t) = pos_sols[x2][x+1]},  
+{z2(t) = pos_sols[z2][x+1]},  
+{x3(t) = pos_sols[x3][x+1]},  
+{z3(t) = pos_sols[z3][x+1]},  
+{x4(t) = pos_sols[x4][x+1]},  
+{z4(t) = pos_sols[z4][x+1]},  
+{x5(t) = pos_sols[x5][x+1]},  
+{z5(t) = pos_sols[z5][x+1]},  
+{x6(t) = pos_sols[x6][x+1]},  
+{y6(t) = pos_sols[y6][x+1]},  
+{z6(t) = pos_sols[z6][x+1]},  
+{theta4__5(t) = pos_sols[theta4__5][x+1]},  
+{theta6__x(t) = pos_sols[theta6__x][x+1]},  
+{theta6__y(t) = pos_sols[theta6__y][x+1]}, 
+{theta6__z(t) = pos_sols[theta6__z][x+1]},  
+[Seat_ground]) ] , x=0..steps-1) ] ):
 display( 
-plot(   [  seq(  [  i  ,  seat_profile[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[1],legend=typeset(x) ),
-plot(   [  seq(  [  i  ,  seat_profile[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[2],legend=typeset(y) ), 
-plot(   [  seq(  [  i  ,  seat_profile[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile)  )  ] ,color=cc[3],legend=typeset(z) ), 
+plot(   [  seq(  [  i  ,  seat_profile_ground[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_ground)  )  ] ,color=cc[1],legend=typeset(x) ),
+plot(   [  seq(  [  i  ,  seat_profile_ground[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_ground)  )  ] ,color=cc[2],legend=typeset(y) ), 
+plot(   [  seq(  [  i  ,  seat_profile_ground[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_ground)  )  ] ,color=cc[3],legend=typeset(z) ), 
          labels = [typeset(t,&quot;[s]&quot;),typeset(pos,&quot;[m]&quot;)],
          title = &quot; Position &quot;);</Text-field>
 </Input>
@@ -2515,29 +2552,57 @@ plot(   [  seq(  [  i  ,  seat_profile[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimens
 </Input>
 </Group>
 <Group labelreference="L62957" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_vel := [diff(Seat[1], t), diff(Seat[2], t), diff(Seat[3], t)]:</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_vel_ground := diff(Seat_ground[1], t), diff(Seat_ground[2], t), diff(Seat_ground[3], t): # Projected to ground
+_seat_profile_vel := comp_XYZ(project(velocity(origin(RFSeat)), RFSeat)): # Projected to Seat</Text-field>
 </Input>
 </Group>
-<Group labelreference="L62911" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group labelreference="L65214" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile_vel := Vector( [ seq( [ subs( data,
-{diff(s(t),t) = rhs(kin_solutions_vel[x+1][1])},  
-{diff(theta1(t),t) = rhs(kin_solutions_vel[x+1][2])}, 
-{diff(theta2(t),t) = rhs(kin_solutions_vel[x+1][3])}, 
-{diff(theta4(t),t) = rhs(kin_solutions_vel[x+1][4])}, 
-{diff(theta5(t),t) = rhs(kin_solutions_vel[x+1][5])}, 
-{diff(theta6(t),t) = rhs(kin_solutions_vel[x+1][6])}, 
-{s(t) = rhs(kin_solutions[x+1][1])},  
-{theta1(t) = rhs(kin_solutions[x+1][2])}, 
-{theta2(t) = rhs(kin_solutions[x+1][3])}, 
-{theta4(t) = rhs(kin_solutions[x+1][4])}, 
-{theta5(t) = rhs(kin_solutions[x+1][5])}, 
-{theta6(t) = rhs(kin_solutions[x+1][6])}, 
-[_seat_profile_vel]) ] , x=0..180) ] ):
-
+{diff(theta1(t),t) = vel_sols[theta1__dot][x+1]},  
+{diff(theta2(t),t) = vel_sols[theta2__dot][x+1]},  
+{diff(theta3(t),t) = vel_sols[theta3__dot][x+1]},  
+{diff(theta4(t),t) = vel_sols[theta4__dot][x+1]},  
+{diff(theta5(t),t) = vel_sols[theta5__dot][x+1]},  
+{diff(x2(t),t) = vel_sols[x2__dot][x+1]},  
+{diff(z2(t),t) = vel_sols[z2__dot][x+1]},  
+{diff(x3(t),t) = vel_sols[x3__dot][x+1]},  
+{diff(z3(t),t) = vel_sols[z3__dot][x+1]},  
+{diff(x4(t),t) = vel_sols[x4__dot][x+1]},  
+{diff(z4(t),t) = vel_sols[z4__dot][x+1]},  
+{diff(x5(t),t) = vel_sols[x5__dot][x+1]},  
+{diff(z5(t),t) = vel_sols[z5__dot][x+1]},  
+{diff(x6(t),t) = vel_sols[x6__dot][x+1]},  
+{diff(y6(t),t) = vel_sols[y6__dot][x+1]},  
+{diff(z6(t),t) = vel_sols[z6__dot][x+1]},  
+{diff(theta4__5(t),t) = vel_sols[theta4__5__dot][x+1]},  
+{diff(theta6__x(t),t) = vel_sols[theta6__x__dot][x+1]},  
+{diff(theta6__y(t),t) = vel_sols[theta6__y__dot][x+1]}, 
+{diff(theta6__z(t),t) = vel_sols[theta6__z__dot][x+1]},  
+{theta1(t) = pos_sols[theta1][x+1]},  
+{theta2(t) = pos_sols[theta2][x+1]},  
+{theta3(t) = pos_sols[theta3][x+1]},  
+{theta4(t) = pos_sols[theta4][x+1]},  
+{theta5(t) = pos_sols[theta5][x+1]},  
+{x2(t) = pos_sols[x2][x+1]},  
+{z2(t) = pos_sols[z2][x+1]},  
+{x3(t) = pos_sols[x3][x+1]},  
+{z3(t) = pos_sols[z3][x+1]},  
+{x4(t) = pos_sols[x4][x+1]},  
+{z4(t) = pos_sols[z4][x+1]},  
+{x5(t) = pos_sols[x5][x+1]},  
+{z5(t) = pos_sols[z5][x+1]},  
+{x6(t) = pos_sols[x6][x+1]},  
+{y6(t) = pos_sols[y6][x+1]},  
+{z6(t) = pos_sols[z6][x+1]},  
+{theta4__5(t) = pos_sols[theta4__5][x+1]},  
+{theta6__x(t) = pos_sols[theta6__x][x+1]},  
+{theta6__y(t) = pos_sols[theta6__y][x+1]}, 
+{theta6__z(t) = pos_sols[theta6__z][x+1]},  
+[_seat_profile_vel]) ] , x=0..steps-1) ] ):
 display( 
-plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[1],legend=typeset(x__dot) ),
-plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[2],legend=typeset(y__dot) ), 
-plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[3],legend=typeset(z__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_vel[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[1],legend=typeset(x__dot) ),
+plot(   [  seq(  [  i  ,  seat_profile_vel[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[2],legend=typeset(y__dot) ), 
+plot(   [  seq(  [  i  ,  seat_profile_vel[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_vel)  )  ] ,color=cc[3],legend=typeset(z__dot) ), 
          labels = [typeset(t,&quot;[s]&quot;),typeset(vel,&quot;[m/s]&quot;)],
          title = &quot; Velocity &quot;);</Text-field>
 </Input>
@@ -2547,36 +2612,78 @@ plot(   [  seq(  [  i  ,  seat_profile_vel[i][1][3]/100 ]  ,  i=1..LinearAlgebra
 </Input>
 </Group>
 <Group labelreference="L62940" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_acc := [diff(_seat_profile_vel[1], t), diff(_seat_profile_vel[2], t), diff(_seat_profile_vel[3], t)]:</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_acc_ground := diff(_seat_profile_vel_ground[1], t), diff(_seat_profile_vel_ground[2], t), diff(_seat_profile_vel_ground[3], t): # Projected to ground
+_seat_profile_acc := comp_XYZ(project(acceleration(origin(RFSeat)), RFSeat)): # Projected to Seat</Text-field>
 </Input>
 </Group>
-<Group labelreference="L62910" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group labelreference="L65250" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile_acc := Vector( [ seq( [ subs( data,
-{diff(s(t),t,t) = rhs(kin_solutions_acc[x+1][1])},  
-{diff(theta1(t),t,t) = rhs(kin_solutions_acc[x+1][2])}, 
-{diff(theta2(t),t,t) = rhs(kin_solutions_acc[x+1][3])}, 
-{diff(theta4(t),t,t) = rhs(kin_solutions_acc[x+1][4])}, 
-{diff(theta5(t),t,t) = rhs(kin_solutions_acc[x+1][5])}, 
-{diff(theta6(t),t,t) = rhs(kin_solutions_acc[x+1][6])}, 
-{diff(s(t),t) = rhs(kin_solutions_vel[x+1][1])},  
-{diff(theta1(t),t) = rhs(kin_solutions_vel[x+1][2])}, 
-{diff(theta2(t),t) = rhs(kin_solutions_vel[x+1][3])}, 
-{diff(theta4(t),t) = rhs(kin_solutions_vel[x+1][4])}, 
-{diff(theta5(t),t) = rhs(kin_solutions_vel[x+1][5])}, 
-{diff(theta6(t),t) = rhs(kin_solutions_vel[x+1][6])}, 
-{s(t) = rhs(kin_solutions[x+1][1])},  
-{theta1(t) = rhs(kin_solutions[x+1][2])}, 
-{theta2(t) = rhs(kin_solutions[x+1][3])}, 
-{theta4(t) = rhs(kin_solutions[x+1][4])}, 
-{theta5(t) = rhs(kin_solutions[x+1][5])}, 
-{theta6(t) = rhs(kin_solutions[x+1][6])}, 
-[_seat_profile_acc]) ] , x=0..180) ] ):
-
+{diff(diff(theta1(t),t),t) = acc_sols[theta1__dot2][x+1]},  
+{diff(diff(theta2(t),t),t) = acc_sols[theta2__dot2][x+1]},  
+{diff(diff(theta3(t),t),t) = acc_sols[theta3__dot2][x+1]},  
+{diff(diff(theta4(t),t),t) = acc_sols[theta4__dot2][x+1]},  
+{diff(diff(theta5(t),t),t) = acc_sols[theta5__dot2][x+1]},  
+{diff(diff(x2(t),t),t) = acc_sols[x2__dot2][x+1]},  
+{diff(diff(z2(t),t),t) = acc_sols[z2__dot2][x+1]},  
+{diff(diff(x3(t),t),t) = acc_sols[x3__dot2][x+1]},  
+{diff(diff(z3(t),t),t) = acc_sols[z3__dot2][x+1]},  
+{diff(diff(x4(t),t),t) = acc_sols[x4__dot2][x+1]},  
+{diff(diff(z4(t),t),t) = acc_sols[z4__dot2][x+1]},  
+{diff(diff(x5(t),t),t) = acc_sols[x5__dot2][x+1]},  
+{diff(diff(z5(t),t),t) = acc_sols[z5__dot2][x+1]},  
+{diff(diff(x6(t),t),t) = acc_sols[x6__dot2][x+1]},  
+{diff(diff(y6(t),t),t) = acc_sols[y6__dot2][x+1]},  
+{diff(diff(z6(t),t),t) = acc_sols[z6__dot2][x+1]},  
+{diff(diff(theta4__5(t),t),t) = acc_sols[theta4__5__dot2][x+1]},  
+{diff(diff(theta6__x(t),t),t) = acc_sols[theta6__x__dot2][x+1]},  
+{diff(diff(theta6__y(t),t),t) = acc_sols[theta6__y__dot2][x+1]}, 
+{diff(diff(theta6__z(t),t),t) = acc_sols[theta6__z__dot2][x+1]},  
+{diff(theta1(t),t) = vel_sols[theta1__dot][x+1]},  
+{diff(theta2(t),t) = vel_sols[theta2__dot][x+1]},  
+{diff(theta3(t),t) = vel_sols[theta3__dot][x+1]},  
+{diff(theta4(t),t) = vel_sols[theta4__dot][x+1]},  
+{diff(theta5(t),t) = vel_sols[theta5__dot][x+1]},  
+{diff(x2(t),t) = vel_sols[x2__dot][x+1]},  
+{diff(z2(t),t) = vel_sols[z2__dot][x+1]},  
+{diff(x3(t),t) = vel_sols[x3__dot][x+1]},  
+{diff(z3(t),t) = vel_sols[z3__dot][x+1]},  
+{diff(x4(t),t) = vel_sols[x4__dot][x+1]},  
+{diff(z4(t),t) = vel_sols[z4__dot][x+1]},  
+{diff(x5(t),t) = vel_sols[x5__dot][x+1]},  
+{diff(z5(t),t) = vel_sols[z5__dot][x+1]},  
+{diff(x6(t),t) = vel_sols[x6__dot][x+1]},  
+{diff(y6(t),t) = vel_sols[y6__dot][x+1]},  
+{diff(z6(t),t) = vel_sols[z6__dot][x+1]},  
+{diff(theta4__5(t),t) = vel_sols[theta4__5__dot][x+1]},  
+{diff(theta6__x(t),t) = vel_sols[theta6__x__dot][x+1]},  
+{diff(theta6__y(t),t) = vel_sols[theta6__y__dot][x+1]}, 
+{diff(theta6__z(t),t) = vel_sols[theta6__z__dot][x+1]},  
+{theta1(t) = pos_sols[theta1][x+1]},  
+{theta2(t) = pos_sols[theta2][x+1]},  
+{theta3(t) = pos_sols[theta3][x+1]},  
+{theta4(t) = pos_sols[theta4][x+1]},  
+{theta5(t) = pos_sols[theta5][x+1]},  
+{x2(t) = pos_sols[x2][x+1]},  
+{z2(t) = pos_sols[z2][x+1]},  
+{x3(t) = pos_sols[x3][x+1]},  
+{z3(t) = pos_sols[z3][x+1]},  
+{x4(t) = pos_sols[x4][x+1]},  
+{z4(t) = pos_sols[z4][x+1]},  
+{x5(t) = pos_sols[x5][x+1]},  
+{z5(t) = pos_sols[z5][x+1]},  
+{x6(t) = pos_sols[x6][x+1]},  
+{y6(t) = pos_sols[y6][x+1]},  
+{z6(t) = pos_sols[z6][x+1]},  
+{theta4__5(t) = pos_sols[theta4__5][x+1]},  
+{theta6__x(t) = pos_sols[theta6__x][x+1]},  
+{theta6__y(t) = pos_sols[theta6__y][x+1]}, 
+{theta6__z(t) = pos_sols[theta6__z][x+1]},  
+[_seat_profile_acc]) ] , x=0..steps-1) ] ):
 display( 
-plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[1],legend=typeset(x__dot__dot) ),
-plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[2],legend=typeset(y__dot__dot) ), 
-plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[3],legend=typeset(z__dot__dot) ), 
-         labels = [typeset(t,&quot;[s]&quot;),typeset(acc,&quot;[m/s^2]&quot;)],
+plot(   [  seq(  [  i  ,  seat_profile_acc[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[1],legend=typeset(x__dot2) ),
+plot(   [  seq(  [  i  ,  seat_profile_acc[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[2],legend=typeset(y__dot2) ), 
+plot(   [  seq(  [  i  ,  seat_profile_acc[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_acc)  )  ] ,color=cc[3],legend=typeset(z__dot2) ), 
+         labels = [typeset(t,&quot;[s]&quot;),typeset(vel,&quot;[m/s^2]&quot;)],
          title = &quot; Acceleration &quot;);</Text-field>
 </Input>
 </Group>
@@ -2585,43 +2692,104 @@ plot(   [  seq(  [  i  ,  seat_profile_acc[i][1][3]/100 ]  ,  i=1..LinearAlgebra
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L62915" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_jerk := [diff(_seat_profile_acc[1], t), diff(_seat_profile_acc[2], t), diff(_seat_profile_acc[3], t)]:</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">_seat_profile_jerk_ground := diff(_seat_profile_acc_ground[1], t), diff(_seat_profile_acc_ground[2], t), diff(_seat_profile_acc_ground[3], t): # Projected to ground
+_seat_profile_jerk := diff(_seat_profile_acc[1], t), diff(_seat_profile_acc[2], t), diff(_seat_profile_acc[3], t): # Projected to Seat</Text-field>
 </Input>
 </Group>
-<Group labelreference="L62919" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group labelreference="L65352" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seat_profile_jerk := Vector( [ seq( [ subs( data,
-{diff(s(t),t,t,t) = eval(q_vars_jerk_profile[1](Timer), Timer = x)},  
-{diff(theta1(t),t,t,t) = eval(q_vars_jerk_profile[2](Timer), Timer = x)}, 
-{diff(theta2(t),t,t,t) = eval(q_vars_jerk_profile[3](Timer), Timer = x)}, 
-{diff(theta4(t),t,t,t) = eval(q_vars_jerk_profile[4](Timer), Timer = x)}, 
-{diff(theta5(t),t,t,t) = eval(q_vars_jerk_profile[5](Timer), Timer = x)}, 
-{diff(theta6(t),t,t,t) = eval(q_vars_jerk_profile[6](Timer), Timer = x)}, 
-{diff(s(t),t,t) = rhs(kin_solutions_acc[x+1][1])},  
-{diff(theta1(t),t,t) = rhs(kin_solutions_acc[x+1][2])}, 
-{diff(theta2(t),t,t) = rhs(kin_solutions_acc[x+1][3])}, 
-{diff(theta4(t),t,t) = rhs(kin_solutions_acc[x+1][4])}, 
-{diff(theta5(t),t,t) = rhs(kin_solutions_acc[x+1][5])}, 
-{diff(theta6(t),t,t) = rhs(kin_solutions_acc[x+1][6])}, 
-{diff(s(t),t) = rhs(kin_solutions_vel[x+1][1])},  
-{diff(theta1(t),t) = rhs(kin_solutions_vel[x+1][2])}, 
-{diff(theta2(t),t) = rhs(kin_solutions_vel[x+1][3])}, 
-{diff(theta4(t),t) = rhs(kin_solutions_vel[x+1][4])}, 
-{diff(theta5(t),t) = rhs(kin_solutions_vel[x+1][5])}, 
-{diff(theta6(t),t) = rhs(kin_solutions_vel[x+1][6])}, 
-{s(t) = rhs(kin_solutions[x+1][1])},  
-{theta1(t) = rhs(kin_solutions[x+1][2])}, 
-{theta2(t) = rhs(kin_solutions[x+1][3])}, 
-{theta4(t) = rhs(kin_solutions[x+1][4])}, 
-{theta5(t) = rhs(kin_solutions[x+1][5])}, 
-{theta6(t) = rhs(kin_solutions[x+1][6])}, 
-[_seat_profile_jerk]) ] , x=0..180) ] ):
-
-display( 
-plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[1],legend=typeset(x__dot__dot__dot) ),
-plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[2],legend=typeset(y__dot__dot__dot) ), 
-plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[3],legend=typeset(z__dot__dot__dot) ), 
-         labels = [typeset(t,&quot;[s]&quot;),typeset(jerk,&quot;[m/s^3]&quot;)],
+{diff(diff(diff(theta1(t),t),t),t) = unapply(theta1__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(theta2(t),t),t),t) = unapply(theta2__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(theta3(t),t),t),t) = unapply(theta3__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(theta4(t),t),t),t) = unapply(theta4__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(theta5(t),t),t),t) = unapply(theta5__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(x2(t),t),t),t) = unapply(x2__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(z2(t),t),t),t) = unapply(z2__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(x3(t),t),t),t) = unapply(x3__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(z3(t),t),t),t) = unapply(z3__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(x4(t),t),t),t) = unapply(x4__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(z4(t),t),t),t) = unapply(z4__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(x5(t),t),t),t) = unapply(x5__dot3_spline,T)(x+0.000001)},  
+{ddiff(iff(diff(z5(t),t),t),t) = unapply(z5__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(x6(t),t),t),t) = unapply(x6__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(y6(t),t),t),t) = unapply(y6__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(z6(t),t),t),t) = unapply(z6__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(theta4__5(t),t),t),t) = unapply(theta4__5__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(theta6__x(t),t),t),t) = unapply(theta6__x__dot3_spline,T)(x+0.000001)},  
+{diff(diff(diff(theta6__y(t),t),t),t) = unapply(theta6__y__dot3_spline,T)(x+0.000001)}, 
+{diff(diff(diff(theta6__z(t),t),t),t) = unapply(theta6__z__dot3_spline,T)(x+0.000001)},  
+{diff(diff(theta1(t),t),t) = acc_sols[theta1__dot2][x+1]},  
+{diff(diff(theta2(t),t),t) = acc_sols[theta2__dot2][x+1]},  
+{diff(diff(theta3(t),t),t) = acc_sols[theta3__dot2][x+1]},  
+{diff(diff(theta4(t),t),t) = acc_sols[theta4__dot2][x+1]},  
+{diff(diff(theta5(t),t),t) = acc_sols[theta5__dot2][x+1]},  
+{diff(diff(x2(t),t),t) = acc_sols[x2__dot2][x+1]},  
+{diff(diff(z2(t),t),t) = acc_sols[z2__dot2][x+1]},  
+{diff(diff(x3(t),t),t) = acc_sols[x3__dot2][x+1]},  
+{diff(diff(z3(t),t),t) = acc_sols[z3__dot2][x+1]},  
+{diff(diff(x4(t),t),t) = acc_sols[x4__dot2][x+1]},  
+{diff(diff(z4(t),t),t) = acc_sols[z4__dot2][x+1]},  
+{diff(diff(x5(t),t),t) = acc_sols[x5__dot2][x+1]},  
+{diff(diff(z5(t),t),t) = acc_sols[z5__dot2][x+1]},  
+{diff(diff(x6(t),t),t) = acc_sols[x6__dot2][x+1]},  
+{diff(diff(y6(t),t),t) = acc_sols[y6__dot2][x+1]},  
+{diff(diff(z6(t),t),t) = acc_sols[z6__dot2][x+1]},  
+{diff(diff(theta4__5(t),t),t) = acc_sols[theta4__5__dot2][x+1]},  
+{diff(diff(theta6__x(t),t),t) = acc_sols[theta6__x__dot2][x+1]},  
+{diff(diff(theta6__y(t),t),t) = acc_sols[theta6__y__dot2][x+1]}, 
+{diff(diff(theta6__z(t),t),t) = acc_sols[theta6__z__dot2][x+1]},  
+{diff(theta1(t),t) = vel_sols[theta1__dot][x+1]},  
+{diff(theta2(t),t) = vel_sols[theta2__dot][x+1]},  
+{diff(theta3(t),t) = vel_sols[theta3__dot][x+1]},  
+{diff(theta4(t),t) = vel_sols[theta4__dot][x+1]},  
+{diff(theta5(t),t) = vel_sols[theta5__dot][x+1]},  
+{diff(x2(t),t) = vel_sols[x2__dot][x+1]},  
+{diff(z2(t),t) = vel_sols[z2__dot][x+1]},  
+{diff(x3(t),t) = vel_sols[x3__dot][x+1]},  
+{diff(z3(t),t) = vel_sols[z3__dot][x+1]},  
+{diff(x4(t),t) = vel_sols[x4__dot][x+1]},  
+{diff(z4(t),t) = vel_sols[z4__dot][x+1]},  
+{diff(x5(t),t) = vel_sols[x5__dot][x+1]},  
+{diff(z5(t),t) = vel_sols[z5__dot][x+1]},  
+{diff(x6(t),t) = vel_sols[x6__dot][x+1]},  
+{diff(y6(t),t) = vel_sols[y6__dot][x+1]},  
+{diff(z6(t),t) = vel_sols[z6__dot][x+1]},  
+{diff(theta4__5(t),t) = vel_sols[theta4__5__dot][x+1]},  
+{diff(theta6__x(t),t) = vel_sols[theta6__x__dot][x+1]},  
+{diff(theta6__y(t),t) = vel_sols[theta6__y__dot][x+1]}, 
+{diff(theta6__z(t),t) = vel_sols[theta6__z__dot][x+1]},  
+{theta1(t) = pos_sols[theta1][x+1]},  
+{theta2(t) = pos_sols[theta2][x+1]},  
+{theta3(t) = pos_sols[theta3][x+1]},  
+{theta4(t) = pos_sols[theta4][x+1]},  
+{theta5(t) = pos_sols[theta5][x+1]},  
+{x2(t) = pos_sols[x2][x+1]},  
+{z2(t) = pos_sols[z2][x+1]},  
+{x3(t) = pos_sols[x3][x+1]},  
+{z3(t) = pos_sols[z3][x+1]},  
+{x4(t) = pos_sols[x4][x+1]},  
+{z4(t) = pos_sols[z4][x+1]},  
+{x5(t) = pos_sols[x5][x+1]},  
+{z5(t) = pos_sols[z5][x+1]},  
+{x6(t) = pos_sols[x6][x+1]},  
+{y6(t) = pos_sols[y6][x+1]},  
+{z6(t) = pos_sols[z6][x+1]},  
+{theta4__5(t) = pos_sols[theta4__5][x+1]},  
+{theta6__x(t) = pos_sols[theta6__x][x+1]},  
+{theta6__y(t) = pos_sols[theta6__y][x+1]}, 
+{theta6__z(t) = pos_sols[theta6__z][x+1]},  
+[_seat_profile_jerk]) ] , x=0..steps-1) ] ):</Text-field>
+</Input>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">display( 
+plot(   [  seq(  [  i  ,  seat_profile_jerk[i][1]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[1],legend=typeset(x__dot3) ),
+plot(   [  seq(  [  i  ,  seat_profile_jerk[i][2]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[2],legend=typeset(y__dot3) ), 
+plot(   [  seq(  [  i  ,  seat_profile_jerk[i][3]/100 ]  ,  i=1..LinearAlgebra[Dimension](seat_profile_jerk)  )  ] ,color=cc[3],legend=typeset(z__dot3) ), 
+         labels = [typeset(t,&quot;[s]&quot;),typeset(vel,&quot;[m/s^3]&quot;)],
          title = &quot; Jerk &quot;);</Text-field>
+</Input>
+</Group>
+<Group labelreference="L65881" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
