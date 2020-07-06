@@ -5,7 +5,8 @@ nTimes = 1; % Number of times in which a function is going to be solved
 dimension = 5; % Dimension of the problem
 %populationSize = 60; % Adjust this to your algorithm
 %populationSize = 100;% for GA
-populationSize = 60;% for PSO and DE
+%populationSize = 60;% for PSO and DE
+populationSize = 60;%for modelling
 %SIMONE
 algorithmType=2; %1 is GA, 2 is DE, 3 is PSO
 alphaCrossover=0.5;
@@ -33,16 +34,12 @@ for t = 1:nTimes
         currentEval = 0;
 
         % Start generating the initial population
-
         population = zeros(populationSize, dimension);
-
         for j =1:populationSize
-           % for k =1:dimension
                 population(j,:) = lower + (upper-lower).*rand(1,dimension);
-            %end 
         end
 
-        populationFitness = calculateFitness_FUN_offspring(population); %Fitness values of all individuals (smaller value is better)
+        populationFitness = calculateFitness_FUN_offspring(population,false); %Fitness values of all individuals (smaller value is better)
         bestSolutionFitness = min(populationFitness);
         currentEval = currentEval + populationSize;
         
@@ -124,7 +121,7 @@ for t = 1:nTimes
                 %offspringsMutated=offsprings;
                 
                 %evaluate fitness of offsprings
-                offspringsMutatedFitness = calculateFitness_FUN_offspring(offspringsMutated); %Fitness values of all individuals (smaller value is better)
+                offspringsMutatedFitness = calculateFitness_FUN_offspring(offspringsMutated,false); %Fitness values of all individuals (smaller value is better)
                 bestFitnessNow = min(offspringsMutatedFitness);
                 currentEval = currentEval + populationSize;
                 %evaluate fitness of offsprings END
@@ -180,7 +177,7 @@ for t = 1:nTimes
                 offsprings=population.*~fromOff+mutatedPopulation.*fromOff;
                 
                 %UPDATE POPULATION
-                offspringsFitness = calculateFitness_FUN_offspring(offsprings); %Fitness values of all individuals (smaller value is better)
+                offspringsFitness = calculateFitness_FUN_offspring(offsprings,false); %Fitness values of all individuals (smaller value is better)
                 bestSolutionFitnessNow = min(offspringsFitness);
                 currentEval = currentEval + populationSize;            
                 better=offspringsFitness<populationFitness;
@@ -194,7 +191,7 @@ for t = 1:nTimes
             
             else
                 
-                populationFitness = calculateFitness_FUN_offspring(population); %Fitness values of all individuals (smaller value is better)
+                populationFitness = calculateFitness_FUN_offspring(population,false); %Fitness values of all individuals (smaller value is better)
                 bestSolutionFitnessNow = min(populationFitness);
                 currentEval = currentEval + populationSize;
                 
@@ -253,6 +250,7 @@ for t = 1:nTimes
             fprintf('%dth eval, The best individual fitness is %d  %d \n', currentEval, bestSolutionFitness,fits(1));
             fprintf(' %2d ', pop_ordered(1,:));
             fprintf('\n');
+calculateFitness_FUN_offspring( pop_ordered(1,:),true);
 
         end
 
