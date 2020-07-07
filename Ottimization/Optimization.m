@@ -26,7 +26,7 @@ tot=0;
 for t = 1:nTimes
 
         %maxEval = 10000*dimension; % maximum number of evaluation
-        maxEval = 1000;%*dimension; % maximum number of evaluation
+        maxEval = 800;%*dimension; % maximum number of evaluation
         
         lower=[5, 0.1, 0.1, 0.1, 0.1];
         upper=[30, 2, 2, 2, 5];

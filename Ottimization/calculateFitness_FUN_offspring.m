@@ -25,7 +25,7 @@ function res = calculateFitness_FUN(alpha__s, omega__s, omega__1, omega__5, omeg
 
     
         global fun_total safety
-        if(verbose)disp('start');end
+
         step_size = 0.2;
         tot_seconds = 180;
         i = 1;
