@@ -34,21 +34,22 @@ classdef WinxDAE < DAE3baseClassImplicit
     m4 = 4000;
     m5 = 750;
     m6 = 150;
-    IX2 = 0;     
-    IX3 =0; 
-    IX4 = 0;       
-    IX5 = 0;      
-    IZ1 =0;  
-    IZ6 = 0;      
+    IX2;     
+    IX3; 
+    IX4;       
+    IX5;      
+    IZ1;  
+    IZ6;  
 
+    with_profiles;
 
     c1 = 0;
     c2 = 0;
     c3 = 0;
     c4 = 0;
     c5 = 0;
-    c6 = 10;
-    prism=100;
+    c6 = 0;
+    prism=0;
   end
 
   % methods (Abstract)
@@ -104,9 +105,10 @@ classdef WinxDAE < DAE3baseClassImplicit
   % end
 
   methods
-    function self = WinxDAE( kappa, c, alpha )
+    function self = WinxDAE( kappa, c, alpha,with_profiles )
       % 2 pos/vel, 1 constraints
       self@DAE3baseClassImplicit('WinxDAE',6,2);
+      self.with_profiles= with_profiles; 
       % self.I1    = 0.01;
       % self.R     = 0.1;
       % self.L     = 0.4;
@@ -116,6 +118,23 @@ classdef WinxDAE < DAE3baseClassImplicit
       % self.kappa = kappa;
       % self.c     = c;
       % self.alpha = (alpha*pi)/180;
+      self.IX2 = ((self.L3/2)^2)*self.m2; 
+      self.IX3 = ((self.L4/2)^2)*self.m3;
+      self.IX4 = ((self.L5)^2)*self.m4; 
+      self.IX5 = ((self.L7)^2)*self.m5;
+      self.IZ1 = ((self.L2/2)^2)*self.m1; 
+      self.IZ6 = ((self.L9)^2)*self.m6;
+      if(self.with_profiles)
+        self.c1 = c1_p();          
+        self.c5 = c5_p();
+        self.c6 = c6_p();
+        self.prism = prism_p();
+      else
+        self.c1 = 0;          
+        self.c5 = 0;
+        self.c6 = 0;
+        self.prism = 0;
+      end
     end
     % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     function jac__Mass = M( self, t,  vars__ )
@@ -617,10 +636,17 @@ classdef WinxDAE < DAE3baseClassImplicit
       IX4 = self.IX4;
       IX5 = self.IX5;
       IZ6 = self.IZ6;
-      c1=self.c1;
-      c5=self.c5;
-      c6=self.c6;
-      prism=self.prism;
+      if(self.with_profiles)
+        c1 = self.c1(round(t*10000)+1);          
+        c5 = self.c5(round(t*10000)+1);
+        c6 = self.c6(round(t*10000)+1);
+        prism = self.prism(round(t*10000)+1);
+      else
+        c1 =self.c1;%10^6;% self.c1;%1000000000;          
+        c5 = self.c5;
+        c6 = self.c6;
+        prism = self.prism;%10^6;%self.prism;%-0.253095034823202062e6;
+      end
 
       % extract states
       s = vars__(1);

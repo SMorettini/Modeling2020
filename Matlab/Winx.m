@@ -30,15 +30,15 @@ classdef Winx < ODEbaseClass_P
     IZ6 = 0;      
 
 
-    c1 = 0;
-    c5 = 0;
-    c6 = 0;
-    prism=0;
-
+    c1;
+    c5;
+    c6;
+    prism;
+    with_profiles;
 
   end
   methods
-    function self = Winx( data )
+    function self = Winx( data, with_profiles)
       self@ODEbaseClass_P('Winx',12,4);     % 12 equation 4 invariant
       self.gravity = data.gravity;
 
@@ -50,7 +50,21 @@ classdef Winx < ODEbaseClass_P
       self.IZ6 = ((self.L9)^2)*self.m6;
       self.npos=6;
       self.nvel=6;
+
+      self.with_profiles= with_profiles;
+      if(self.with_profiles)
+        self.c1 = c1_p();          
+        self.c5 = c5_p();
+        self.c6 = c6_p();
+        self.prism = prism_p();
+      else
+        self.c1 = 0;      %1000000000;      
+        self.c5 = 0;
+        self.c6 = 0;
+        self.prism = 0;   %-0.253095034823202062e6;
+      end    
     end
+
     % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     function jac__Mass = Mass( self, t,vars__ )
       L1=self.L1;
@@ -783,10 +797,17 @@ classdef Winx < ODEbaseClass_P
       IX5 = self.IX5;
       IZ6 = self.IZ6;
 
-      c1 = self.c1;    
-      c5 = self.c5;
-      c6 = self.c6;
-      prism = self.prism;
+      if(self.with_profiles)
+        c1 = self.c1(round(t*10000)+1);          
+        c5 = self.c5(round(t*10000)+1);
+        c6 = self.c6(round(t*10000)+1);
+        prism = self.prism(round(t*10000)+1);
+      else
+        c1 = self.c1;        
+        c5 = self.c5;
+        c6 = self.c6;
+        prism = self.prism;
+      end
 
       % extract states
       s = vars__(1);
