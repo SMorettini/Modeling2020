@@ -1202,7 +1202,6 @@ classdef Winx < ODEbaseClass_P
 
 
 
-
     function jac__Hx = Hx( self, t, vars__ )
       L1=self.L1;
       L2=self.L2;
@@ -3162,9 +3161,6 @@ classdef Winx < ODEbaseClass_P
       jac__Wx(2,10) = jac__2_10;
     end
 
-
-    
-
     % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     function res__ode = f( self, t, vars__ )
       pos      = vars__(1:self.npos);
@@ -3205,9 +3201,6 @@ classdef Winx < ODEbaseClass_P
       IZ6 = self.IZ6;
 
       c1 = self.c1;
-      
-      
-      
       c5 = self.c5;
       c6 = self.c6;
       prism = self.prism;
@@ -3261,46 +3254,5 @@ classdef Winx < ODEbaseClass_P
       jac__DhDt = zeros(6,1);
     end
     % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    %function plot( self, vars__ )
-      % extract states
-    %  x1 = vars__(1);
-    %   y1 = vars__(2);
-    %   x2 = vars__(3);
-    %   y2 = vars__(4);
-
-    %   hold off;
-    %   drawAxes( 2, 0.25, 3, 0, 0 );
-    %   hold on;
-
-    %   xm  = x1/2;
-    %   ym  = y1/2;
-    %   dx  = self.L1*x1/hypot(x1,y1);
-    %   dy  = self.L1*y1/hypot(x1,y1);
-    %   xx0 = xm - dx/2;
-    %   yy0 = ym - dy/2;
-    %   xx1 = xm + dx/2;
-    %   yy1 = ym + dy/2;
-
-    %   plot( [xx0,xx1], [yy0,yy1], 'LineWidth',4,'Color','red');
-    %   fillCircle( 'red', xx0, yy0, 0.05 );
-    %   fillCircle( 'red', xx1, yy1, 0.05 );
-
-    %   xm  = (x1+x2)/2;
-    %   ym  = (y1+y2)/2;
-    %   dx  = self.L1*(x2-x1)/hypot(x2-x1,y2-y1);
-    %   dy  = self.L1*(y2-y1)/hypot(x2-x1,y2-y1);
-    %   xx0 = xm - dx/2;
-    %   yy0 = ym - dy/2;
-    %   xx1 = xm + dx/2;
-    %   yy1 = ym + dy/2;
-
-    %   plot( [xx0,xx1], [yy0,yy1], 'LineWidth',4,'Color','red');
-    %   fillCircle( 'red', xx0, yy0, 0.05 );
-    %   fillCircle( 'red', xx1, yy1, 0.05 );
-
-    %   fillCircle( 'black', 0, 0, 0.05 );
-    %   axis equal;
-    %   axis([-1.1 1.1 -1.1 1.1]*(self.L1+self.L2));
-    % end
   end
 end
