@@ -1,18 +1,6 @@
-%
-% Matlab code for the Course:
-%
-%     Modelling and Simulation of Mechatronics System
-%
-% by
-% Enrico Bertolazzi
-% Dipartimento di Ingegneria Industriale
-% Universita` degli Studi di Trento
-% email: enrico.bertolazzi@unitn.it
-%
-%TODOOOOOOOOOOOOOOOOOOOOO
+
 classdef WinxDAE < DAE3baseClassImplicit
   properties (SetAccess = protected, Hidden = true)
-    gravity;
     npos;
     nvel;
     L1 = 1.5*195-25; 
@@ -52,78 +40,19 @@ classdef WinxDAE < DAE3baseClassImplicit
     prism=0;
   end
 
-  % methods (Abstract)
-  %   %
-  %   %  Abstract functions defining an index-3 DAE with some derivatives
-  %   %
-  %   %  q' = v
-  %   %  M(t,p) v' + Phi_p(t,q)^T lambda = gforce( t, q, v )
-  %   %  Phi(t,q) = 0
-  %   %
-  %   %  d Phi(t,q) / dt     = A(t,q,v)
-  %   %  d^2 Phi(t,q) / dt^2 = Phi_q(t,q) v - b(t,q,v)
-  %   %
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   M( self, t, q )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function Phi(t,q)
-  %   Phi( self, t, q )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial Phi(t,q) / \partial t
-  %   Phi_t( self, t, q )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial Phi(t,q) / \partial q
-  %   Phi_q( self, t, q )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial Phi_q(t,q)*v / \partial q
-  %   PhiV_q( self, t, q, v_dot )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial Phi_q(t,q)^T*lambda / \partial q
-  %   PhiL_q( self, t, q, lambda )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial ( M(t,q) v_dot ) / \partial q
-  %   W_q( self, t, q, v_dot )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   gforce( self, t, q, v )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial f( t, q, v ) / \partial q
-  %   gforce_q( self, t, q, v )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial f( t, q, v ) / \partial v
-  %   gforce_v( self, t, q, v )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % d Phi(t,q) / dt     = Phi_q(t,q) v
-  %   % d^2 Phi(t,q) / dt^2 = Phi_q(t,q) v' - b(t,q,v)
-  %   b( self, t, q, v )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial b( t, q, v ) / \partial q
-  %   b_q( self, t, q, v )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  %   % return function \partial b( t, q, v ) / \partial q
-  %   b_v( self, t, q, v )
-  %   % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  % end
-
   methods
-    function self = WinxDAE( kappa, c, alpha,with_profiles )
-      % 2 pos/vel, 1 constraints
+    function self = WinxDAE( with_profiles )
+      % 6 pos/vel, 2 constraints
       self@DAE3baseClassImplicit('WinxDAE',6,2);
       self.with_profiles= with_profiles; 
-      % self.I1    = 0.01;
-      % self.R     = 0.1;
-      % self.L     = 0.4;
-      % self.x30   = 0.5;
-      % self.m2    = 0.2;
-      % self.H     = 0.05;
-      % self.kappa = kappa;
-      % self.c     = c;
-      % self.alpha = (alpha*pi)/180;
+
       self.IX2 = ((self.L3/2)^2)*self.m2; 
       self.IX3 = ((self.L4/2)^2)*self.m3;
       self.IX4 = ((self.L5)^2)*self.m4; 
       self.IX5 = ((self.L7)^2)*self.m5;
       self.IZ1 = ((self.L2/2)^2)*self.m1; 
       self.IZ6 = ((self.L9)^2)*self.m6;
+
       if(self.with_profiles)
         self.c1 = c1_p();          
         self.c5 = c5_p();
@@ -591,23 +520,6 @@ classdef WinxDAE < DAE3baseClassImplicit
       jac__DPhiDp(2,3) = jac__2_3;
       jac__DPhiDp(2,4) = jac__2_4;
     end
-
-    % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function H = PhiL_q( self, t, pos, lambda )
-    %   theta1 = pos(1);
-    %   x2     = pos(2);
-    %   alpha  = self.alpha;
-    %   R      = self.R;
-    %   H      = [ R*cos(alpha+theta1), 0; 0, 0];
-    % end
-    % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function H = PhiV_q( self, t, pos, v_dot )
-    %   theta1 = pos(1);
-    %   x2     = pos(2);
-    %   alpha  = self.alpha;
-    %   R      = self.R;
-    %   H      = [ R*cos(alpha+theta1)*v_dot(1), 0 ];
-    % end
     % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     function res__gfun = gforce( self, t, pos, vel )
       vars__=[pos, vel];
@@ -1051,28 +963,6 @@ classdef WinxDAE < DAE3baseClassImplicit
     end
 
     % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function rhs = gforce_q( self, t, pos, vel )
-    %   theta1 = pos(1); x2 = pos(2);
-    %   omega1 = vel(1); u2 = vel(2);
-    %   L     = self.L;
-    %   x30   = self.x30;
-    %   kappa = self.kappa;
-    %   c     = self.c;
-    %   pos_D = self.positive_part_D( (L + x2 - x30) * kappa - u2 * c);
-    %   rhs   = pos_D * [ 0, 0; 0, -kappa ];
-    % end
-    % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function rhs = gforce_v( self, t, pos, vel )
-    %   theta1 = pos(1); x2 = pos(2);
-    %   omega1 = vel(1); u2 = vel(2);
-    %   L     = self.L;
-    %   x30   = self.x30;
-    %   kappa = self.kappa;
-    %   c     = self.c;
-    %   pos_D = self.positive_part_D( (L + x2 - x30) * kappa - u2 * c);
-    %   rhs   = pos_D * [ 0, 0; 0, c ];
-    % end
-    % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     % d^2 Phi(t,q) / dt^2 = Phi_q(t,q) v' - B(t,q,v)
     function res__B = b( self, t, pos, vel )
       vars__=[pos, vel];
@@ -1130,83 +1020,9 @@ classdef WinxDAE < DAE3baseClassImplicit
       res__B = zeros(2,1);
       res__B(1) = res__1;
       res__B(2) = res__2;
-      end
+    end
 
-    % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function rhs = b_q( self, t, pos, vel )
-    %   theta1 = pos(1); x2 = pos(2);
-    %   omega1 = vel(1); u2 = vel(2);
-    %   R      = self.R;
-    %   alpha  = self.alpha;
-    %   rhs    = [sin(alpha+theta1)*omega1^2*R;0];
-    % end
-    % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function rhs = b_v( self, t, pos, vel )
-    %   theta1 = pos(1); x2 = pos(2);
-    %   omega1 = vel(1); u2 = vel(2);
-    %   R      = self.R;
-    %   alpha  = self.alpha;
-    %   rhs    = [-2*cos(alpha+theta1)*omega1*R;0];
-    % end
-    % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function J = W_q( self, t, pos, v_dot )
-    %   J = [R*cos(alpha+theta1)*v1, 0];
-    % end
-    % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function res = T( self, t )
-    %   res = 1;
-    % end
-    % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function res = positive_part( self, x )
-    %   res = max(x,0);
-    % end
-    % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function res = positive_part_D( self, x )
-    %   if x > 0
-    %     res = 1;
-    %   else
-    %     res = 0;
-    %   end;
-    % end
-    % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function x2 = theta_to_x2( self, theta1 )
-    %   alpha = self.alpha;
-    %   R     = self.R;
-    %   H     = self.H;
-    %   x2    = (sin(alpha) * H + cos(alpha + theta1) * R)/cos(alpha);
-    % end
-    % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    % function plot( self, pos )
-    %   theta1 = pos(1);
-    %   x2     = pos(2);
-    %   R      = self.R;
-    %   x30    = self.x30;
-    %   H      = self.H;
-    %   alpha  = self.alpha;
-    %   ell    = R;
-    %   xx1    = x2+ell*sin(alpha);
-    %   yy1    = H+ell*cos(alpha);
-    %   xx2    = x2-(ell+2*H)*sin(alpha);
-    %   yy2    = H-(ell+2*H)*cos(alpha);
-    %   hh     = R/4;
-
-    %   hold off;
-    %   drawAxes(2,0.25,0.5,0,0);
-    %   hold on;
-    %   fillRect( 'blue', xx1-xx2+2*hh, yy1-yy2+2*hh, xx2-hh, yy2-hh );
-    %   fillRect( 'blue', x30, 2*hh, x2, H-hh );
-    %   drawLine( xx1, yy1, xx2, yy2, 'LineWidth', 4, 'Color', 'white' );
-    %   %drawLine( x2, H, x2+x30, H, 'LineWidth', 4, 'Color', 'blue' );
-    %   drawLine( 0, 0, R*cos(theta1), R*sin(theta1), 'LineWidth', 2, 'Color', 'red' );
-    %   drawCircle( 0, 0, R, 'LineWidth', 2, 'Color', 'k' ); % 0, 180*theta1/pi,
-    %   drawCOG( R/10, 0, 0 );
-    %   drawCOG( R/10, R*cos(theta1), R*sin(theta1) );
-    %   drawCOG( R/10, x2, H );
-    %   xlim([-0.2,0.8]);
-    %   ylim([-0.2,0.2]);
-    % end
-
-        %
+    %
     %  Abstract functions defining an index-3 DAE with some derivatives
     %
     %  q' = v

@@ -1,13 +1,9 @@
-
-%addpath(genpath(path))
-
 nTimes = 1; % Number of times in which a function is going to be solved
 dimension = 5; % Dimension of the problem
 %populationSize = 60; % Adjust this to your algorithm
 %populationSize = 100;% for GA
-%populationSize = 60;% for PSO and DE
-populationSize = 60;%for modelling
-%SIMONE
+populationSize = 60;% for PSO and DE
+
 algorithmType=2; %1 is GA, 2 is DE, 3 is PSO
 alphaCrossover=0.5;
 probabilityOfMutation=0.5;
@@ -18,8 +14,6 @@ recombinationProbability=0.8;
 Vmax=pi;
 Wcognitivo=1;
 Wsocial=2;
-
-%SIMONE
 
 tot=0;
 
@@ -66,7 +60,6 @@ for t = 1:nTimes
         %%%%!!!!! END PSO INTIALIZATION !!!!!%%%%%
         
         % Algorithm loop
-
         while(currentEval < maxEval)
 
             if(algorithmType==1)
@@ -213,21 +206,11 @@ for t = 1:nTimes
                     bestNeighbour(q,:)=(populationBestFitness(neighbour(q,4))==minn)*population(neighbour(q,4),:);
                     bestNeighbour(q,:)=(populationBestFitness(neighbour(q,5))==minn)*population(neighbour(q,5),:);
                 end
-                %rand1=diag(rand(populationSize,1));
-                %rand2=diag(rand(populationSize,1));
                 rand1=rand(populationSize,dimension);
                 rand2=rand(populationSize,dimension);
                 Velocity=Velocity+Wcognitivo*rand1.*(pBestPosition-population)+Wsocial*rand2.*(bestNeighbour-population);
                 Velocity(Velocity>Vmax)=Vmax;
-                Velocity(Velocity<-Vmax)=-Vmax;
-                % input('aa');
-                
-                
-                
-                
-                
-                
-                
+                Velocity(Velocity<-Vmax)=-Vmax;             
                 
                 %PSO
                 population=population+Velocity;
@@ -235,7 +218,6 @@ for t = 1:nTimes
                 %population(population<lower)=lower; ONLY FOR ONE SINGLE UPPER
                 population=population.*(population>lower)+lower.*(population<=lower);
                 population=population.*(population<upper)+upper.*(population>=upper);
-                
                 
             
                 if(bestSolutionFitnessNow<bestSolutionFitness)
@@ -255,7 +237,6 @@ calculateFitness_FUN_offspring( pop_ordered(1,:),true);
         end
 
         % best individual
-        % bestSolutionFitness = min(populationFitness);
         fprintf('%dth run, The best individual fitness is %d  \n', t, bestSolutionFitness);
         
         tot=tot+bestSolutionFitness;
