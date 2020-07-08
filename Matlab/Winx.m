@@ -1,6 +1,6 @@
 classdef Winx < ODEbaseClass_P
   properties (SetAccess = protected, Hidden = true)
-    gravity;
+    gravity=-9.81;
     npos;
     nvel;
     L1 = 1.5*195-25; 
@@ -38,9 +38,8 @@ classdef Winx < ODEbaseClass_P
 
   end
   methods
-    function self = Winx( data, with_profiles)
+    function self = Winx( with_profiles)
       self@ODEbaseClass_P('Winx',12,4);     % 12 equation 4 invariant
-      self.gravity = data.gravity;
 
       self.IX2 = ((self.L3/2)^2)*self.m2; 
       self.IX3 = ((self.L4/2)^2)*self.m3;

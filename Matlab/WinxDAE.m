@@ -1,7 +1,6 @@
 
 classdef WinxDAE < DAE3baseClassImplicit
   properties (SetAccess = protected, Hidden = true)
-    gravity;
     npos;
     nvel;
     L1 = 1.5*195-25; 
@@ -42,7 +41,7 @@ classdef WinxDAE < DAE3baseClassImplicit
   end
 
   methods
-    function self = WinxDAE( kappa, c, alpha,with_profiles )
+    function self = WinxDAE( with_profiles )
       % 6 pos/vel, 2 constraints
       self@DAE3baseClassImplicit('WinxDAE',6,2);
       self.with_profiles= with_profiles; 
