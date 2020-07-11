@@ -1,7 +1,9 @@
 # Modeling a luna park carousel
 This is a univesity project for the course of Modelling and Simulation of Mechatronics Systems of University of Trento. The objective is to model a luna park carousel.
 
-![Carousel image](https://github.com/MesSem/Modeling2020/blob/master/carousel.jpeg)
+<p align="center">
+<img align="center" src="https://github.com/MesSem/Modeling2020/blob/master/carousel.jpeg">
+</p>
 
 ## Software and external libraries
 
@@ -39,3 +41,11 @@ The files not listed above contains tests or old implementation that had some er
 * Add a close loop when solving the dynamics to reduce the error during direct dynamic either in Matlab and in Maple;
 * Adjust the MapleSim to give as input the motor profiles;
 * Reduce the approximation in weight evaluation;
+
+## Team members
+* [Marco Boffo](https://github.com/boffomarco)
+* [Giulia Brusadin](https://github.com/GiuliaBrusadin)
+* [Maria Camporese](https://github.com/mariacamporese)
+* [Simone Morettini](https://github.com/MesSem)
+
+For more information loot at the Presentation file or feel free to ask us questions.
