@@ -40,7 +40,7 @@ The files not listed above contains tests or old implementation that had some er
 
 * Add a close loop when solving the dynamics to reduce the error during direct dynamic either in Matlab and in Maple;
 * Adjust the MapleSim to give as input the motor profiles;
-* Reduce the approximation in weight evaluation;
+* Reduce the approximation in weight evaluation.
 
 ## Team members
 * [Marco Boffo](https://github.com/boffomarco)
